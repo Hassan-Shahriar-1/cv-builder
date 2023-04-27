@@ -12,8 +12,15 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('subscriptions', function (Blueprint $table) {
-            $table->id();
+            $table->uuid('id')->primary();
+            $table->uuid('user_id');
+            $table->dateTime('start_date');
+            $table->dateTime('end_date');
             $table->timestamps();
+        });
+
+        Schema::table('subscriptions', function (Blueprint $table) {
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 

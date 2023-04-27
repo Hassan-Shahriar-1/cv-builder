@@ -12,8 +12,18 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('payments', function (Blueprint $table) {
-            $table->id();
+            $table->uuid('id')->primary();
+            $table->uuid('user_id');
+            $table->enum('payment_method', ['bkash', 'stripe'])->default('bkash');
+            $table->string('payment_id');
+            $table->double('payment_amount');
+            $table->uuid('plan_id');
             $table->timestamps();
+        });
+
+        Schema::table('payments', function (Blueprint $table) {
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('plan_id')->references('id')->on('plans')->onDelete('cascade');
         });
     }
 
