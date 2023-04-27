@@ -11,9 +11,21 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('education', function (Blueprint $table) {
-            $table->id();
+        Schema::create('educations', function (Blueprint $table) {
+            $table->uuid('id');
+            $table->uuid('user_id');
+            $table->string('name');
+            $table->string('school_name');
+            $table->string('location')->nullable();
+            $table->string('feild_of_study')->nullable();
+            $table->dateTime('start_date');
+            $table->dateTime('end_date')->nullable();
+            $table->boolean('active')->default(false);
             $table->timestamps();
+        });
+
+        Schema::table('educations', function (Blueprint $table) {
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
@@ -22,6 +34,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('education');
+        Schema::dropIfExists('educations');
     }
 };

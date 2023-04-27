@@ -12,8 +12,18 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('projects', function (Blueprint $table) {
-            $table->id();
+            $table->uuid('id')->primary();
+            $table->uuid('user_id');
+            $table->string('title');
+            $table->string('role')->nullable();
+            $table->date('start_date');
+            $table->date('end_date')->nullable();
+            $table->longText('details');
             $table->timestamps();
+        });
+
+        Schema::table('projects', function (Blueprint $table) {
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
