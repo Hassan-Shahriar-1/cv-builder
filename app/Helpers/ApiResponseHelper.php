@@ -13,7 +13,10 @@ class ApiResponseHelper
         return response()->json([
             'status' => false,
             'status_code' => 500,
-            'message' => 'Server Error'
+            'message' => 'Server Error',
+            'error_message' => $e->getMessage(),
+            'error_line' => $e->getLine(),
+            'error_file' => $e->getFile()
         ], 500);
     }
 
