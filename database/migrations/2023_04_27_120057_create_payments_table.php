@@ -11,15 +11,19 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('skills', function (Blueprint $table) {
+        Schema::create('payments', function (Blueprint $table) {
             $table->uuid('id')->primary();
             $table->uuid('user_id');
-            $table->string('name');
+            $table->enum('payment_method', ['bkash', 'stripe'])->default('bkash');
+            $table->string('payment_id');
+            $table->double('payment_amount');
+            $table->uuid('plan_id');
             $table->timestamps();
         });
 
-        Schema::table('skills', function (Blueprint $table) {
+        Schema::table('payments', function (Blueprint $table) {
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('plan_id')->references('id')->on('plans')->onDelete('cascade');
         });
     }
 
@@ -28,6 +32,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('skills');
+        Schema::dropIfExists('payments');
     }
 };

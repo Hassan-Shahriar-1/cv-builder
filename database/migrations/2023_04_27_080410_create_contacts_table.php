@@ -12,8 +12,25 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('contacts', function (Blueprint $table) {
-            $table->id();
+            $table->uuid('id')->primary();
+            $table->uuid('user_id');
+            $table->string('first_name');
+            $table->string('last_name');
+            $table->string('email');
+            $table->string('job_title');
+            $table->string('phone');
+            $table->string('location');
+            $table->string('linkedin_link')->nullable();
+            $table->string('facebook_link')->nullable();
+            $table->string('github_link')->nullable();
+            $table->string('twitter_link')->nullable();
+            $table->string('website')->nullable();
             $table->timestamps();
+            $table->softDeletes();
+        });
+
+        Schema::table('contacts', function (Blueprint $table) {
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
