@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password')->nullable();
+            $table->uuid('user_type');
             $table->enum('login_type', ['default', 'social'])->default('default');
             $table->string('social_id')->nullable();
             $table->rememberToken();
