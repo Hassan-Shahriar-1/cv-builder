@@ -9,6 +9,7 @@ use App\Services\userService;
 use Exception;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class AuthController extends Controller
 {
@@ -25,10 +26,13 @@ class AuthController extends Controller
     {
         $requestData = $request->all();
         $requestData['user_type'] = $this->userService::USER_ROLE;
+        DB::beginTransaction();
         try{
             $user = new UserResource($this->userService->createUser($requestData));
+            DB::commit();
             return ApiResponseHelper::otherResponse(true, 200, 'created', $user, 201);
         } catch (Exception $e) {
+            DB::rollBack();
             return ApiResponseHelper::serverError($e);
         }
     }

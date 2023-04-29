@@ -40,7 +40,7 @@ class VerificationMail extends Mailable
     {
         return new Content(
             view: 'mail.account-verification',
-            htmlString: 'please use this link to verify your account. remember this link only valid for 1 hour.<br><a href='."'".$this->verifyLink.'"'.'>Click here to verify your link</a>'
+            htmlString: 'please use this link to verify your account. remember this link only valid for 1 hour.<a href="'.$this->verifyLink.'">Click here to verify your link</a>'
         );
     }
 

@@ -2,9 +2,11 @@
 
 namespace App\Services;
 
+use App\Mail\VerificationMail;
 use App\Models\User;
 use App\Models\VerifyAccount;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Str;
 
 class userService 
@@ -37,7 +39,7 @@ class userService
         } else {  
             $user = User::create($data);
             $verificationData = $this->storeVerificationToken($user);
-            $this->verificationMailSending($user->email, $verificationData->verify_token);
+            $this->verificationMailSending($user->email, $verificationData->verify_url);
         }
         return $user;
     }
@@ -60,10 +62,10 @@ class userService
      * Account verification mail send
      * @param string $email
      * @param string $verifyurl
+     * @return void
      */
-    public function verificationMailSending(string $email, string $token) : void
+    public function verificationMailSending(string $email, string $verifyUrl) : void
     {
-
-
+        Mail::to($email)->send(new VerificationMail($verifyUrl));
     }
 }
