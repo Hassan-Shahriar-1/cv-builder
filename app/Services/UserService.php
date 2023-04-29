@@ -3,7 +3,9 @@
 namespace App\Services;
 
 use App\Models\User;
+use App\Models\VerifyAccount;
 use Carbon\Carbon;
+use Illuminate\Support\Str;
 
 class userService 
 {
@@ -25,7 +27,7 @@ class userService
         $data['password'] = bcrypt($data['password']);
 
         $checkTrash = User::where('email', $data['email'])->withTrashed()->first();
-        
+
         if($checkTrash) {
             $user = $checkTrash->restore();
             $user->password = $data['password'];
@@ -34,7 +36,34 @@ class userService
             $user->save();
         } else {  
             $user = User::create($data);
+            $verificationData = $this->storeVerificationToken($user);
+            $this->verificationMailSending($user->email, $verificationData->verify_token);
         }
         return $user;
+    }
+
+    /**
+     * Store verification token
+     * @param object $user
+     * @return object $verificationtoken
+     */
+    public function storeVerificationToken(object $user) :object
+    {
+        $data = [];
+        $data['user_id'] = $user->id;
+        $data['verify_token'] = Str::random(64);
+        $data['expire'] = Carbon::now()->addMinutes(60);
+        return VerifyAccount::create($data);
+    }
+
+    /**
+     * Account verification mail send
+     * @param string $email
+     * @param string $verifyurl
+     */
+    public function verificationMailSending(string $email, string $token) : void
+    {
+
+
     }
 }

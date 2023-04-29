@@ -20,7 +20,11 @@ class UserResource extends JsonResource
             'name' => $this->name,
             'email' => $this->email,
             'role' => $this->user_type == userService::USER_ROLE ? 'user' : 'admin',
-            'login_type' => $this->login_type ? $this->login_type : 'default'
+            'login_type' => $this->login_type ? $this->login_type : 'default',
+            'active' => $this->active ? $this->active : false,
+            'deleted_at' => $this->deleted_at,
+            'created_at' => $this->created_at,
+            'updated_at' => $this->updated_at
         ];
     }
 }
