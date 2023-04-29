@@ -17,7 +17,7 @@ class SignupRequest extends BaseRequest
             'name' => 'required|string|max:255',
             'email' => 'required|email|unique:users,email',
             'password' => 'required|string|min:6|max:255',
-            'confirm_password' => 'same|password',
+            'confirm_password' => 'required|same:password',
         ];
     }
 }

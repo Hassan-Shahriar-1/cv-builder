@@ -22,15 +22,17 @@ class userService
     {
         unset($data['confirm_password']);
 
+        $data['password'] = bcrypt($data['password']);
+
         $checkTrash = User::where('email', $data['email'])->withTrashed()->first();
         
         if($checkTrash) {
             $user = $checkTrash->restore();
-            $user->password = bcrypt($data['password']);
+            $user->password = $data['password'];
             $user->name = $data['name'];
             $user->updated_at = Carbon::now();
             $user->save();
-        } else {
+        } else {  
             $user = User::create($data);
         }
         return $user;
