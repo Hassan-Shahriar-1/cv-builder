@@ -20,6 +20,7 @@ return new class extends Migration
             $table->uuid('user_type');
             $table->enum('login_type', ['default', 'social'])->default('default');
             $table->string('social_id')->nullable();
+            $table->boolean('active')->default(false);
             $table->rememberToken();
             $table->timestamps();
             $table->softDeletes();
