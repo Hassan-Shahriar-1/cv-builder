@@ -38,4 +38,18 @@ class ApiResponseHelper
             'data' => $data
         ], $responseStatus);
     }
+
+    /**
+     * Error response
+     * @param $message
+     */
+    public static function errorResponse(string $message)
+    {
+        return response()->json([
+            'status' => false,
+            'status_code' => 400,
+            'message' => $message,
+            'data' => []
+        ], 400);
+    }
 }
