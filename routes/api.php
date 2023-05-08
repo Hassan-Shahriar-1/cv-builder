@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ForgotPasswordController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::post('signup', [AuthController::class, 'signup'])->name('page.signup');
 Route::post('login', [ AuthController::class, 'login'])->name('login');
+Route::post('reset-password-link', [ForgotPasswordController::class, 'sendResetLinkEmail']);
+Route::post('reset-password', [ForgotPasswordController::class, 'resetPassword']);
