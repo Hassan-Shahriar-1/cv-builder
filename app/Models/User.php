@@ -29,6 +29,9 @@ class User extends Authenticatable
         'active'
     ];
 
+    // add this attribute to your model
+    protected $refresh_token;
+
     /**
      * The attributes that should be hidden for serialization.
      *
@@ -47,6 +50,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    // add this method to set the value of the refresh_token attribute
+    public function setRefreshTokenAttribute($value)
+    {
+        $this->refresh_token = $value;
+    }
 
     public function contact(){
         return $this->hasOne(Contact::class, 'user_id', 'id');

@@ -12,6 +12,8 @@ use Illuminate\Http\JsonResponse;
 use App\Models\User;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
@@ -50,21 +52,23 @@ class AuthController extends Controller
         $status = false;
         $code = 400;
         try{
-            $user = User::where('email', $request->email)->first();
-            if ($user) {
-                if (Hash::check($request->password, $user->password)) {
-                    $msg = '';
-                    $status = true;
-                    $code = 200;
-                    $token = $user->createToken('Laravel Password Grant Client')->accessToken;
-                    $data = ['token' => $token];
-               
-                } else {
-                    $msg = 'Password mismatch';
-                    $data = [];
-                }
+        
+            if (Auth::attempt($credentials)) {
+                $user = Auth::user();
+                $msg = '';
+                $status = true;
+                $code = 200;
+                $accessToken = $user->createToken('cv builder login token')->accessToken;
+                $refreshToken = $user->createToken('cv builder login token', ['refresh_token'])->accessToken;
+
+                $data = [
+                        'access_token' => $accessToken,
+                        'token_type' => 'Bearer',
+                        'expires_at' => now()->addHours(1),
+                        'refresh_token' =>  $refreshToken
+                    ];
             } else {
-                $msg = 'User does not exist';
+                $msg = 'Wrong Credentails';
                 $data = [];
             }
             return ApiResponseHelper::otherResponse($status, $code, $msg, $data, 200);
