@@ -100,7 +100,7 @@ return [
             'provider' => 'users',
             'table' => 'password_reset_tokens',
             'expire' => 60,
-            'throttle' => 60,
+            'throttle' => config('settings.throttole.password') ? config('settings.throttole.password') : 60,
         ],
     ],
 
