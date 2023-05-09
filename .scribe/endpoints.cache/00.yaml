@@ -5,14 +5,14 @@ description: ''
 endpoints:
   -
     httpMethods:
-      - GET
-    uri: api/user
+      - POST
+    uri: api/signup
     metadata:
       groupName: Endpoints
       groupDescription: ''
       subgroup: ''
       subgroupDescription: ''
-      title: ''
+      title: 'User Registration'
       description: ''
       authenticated: false
       custom: []
@@ -23,19 +23,42 @@ endpoints:
     cleanUrlParameters: []
     queryParameters: []
     cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
-    fileParameters: []
-    responses:
-      -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
-        headers:
-          cache-control: 'no-cache, private'
-          content-type: application/json
-          access-control-allow-origin: '*'
-        description: null
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: pbowfvk
+        type: string
         custom: []
+      email:
+        name: email
+        description: 'Must be a valid email address.'
+        required: true
+        example: ashlynn.armstrong@example.com
+        type: string
+        custom: []
+      password:
+        name: password
+        description: 'Must be at least 6 characters. Must not be greater than 255 characters.'
+        required: true
+        example: '211P5#~E[y}CwK}'
+        type: string
+        custom: []
+      confirm_password:
+        name: confirm_password
+        description: 'The value and <code>password</code> must match.'
+        required: true
+        example: deleniti
+        type: string
+        custom: []
+    cleanBodyParameters:
+      name: pbowfvk
+      email: ashlynn.armstrong@example.com
+      password: '211P5#~E[y}CwK}'
+      confirm_password: deleniti
+    fileParameters: []
+    responses: []
     responseFields: []
     auth: []
     controller: null
@@ -44,14 +67,14 @@ endpoints:
     custom: []
   -
     httpMethods:
-      - GET
-    uri: api/signup
+      - POST
+    uri: api/login
     metadata:
       groupName: Endpoints
       groupDescription: ''
       subgroup: ''
       subgroupDescription: ''
-      title: 'Sign up page loading'
+      title: Login
       description: ''
       authenticated: false
       custom: []
@@ -62,21 +85,118 @@ endpoints:
     cleanUrlParameters: []
     queryParameters: []
     cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
-    fileParameters: []
-    responses:
-      -
-        status: 200
-        content: ''
-        headers:
-          content-type: 'text/html; charset=UTF-8'
-          cache-control: 'no-cache, private'
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '59'
-          access-control-allow-origin: '*'
-        description: null
+    bodyParameters:
+      email:
+        name: email
+        description: 'Must be a valid email address.'
+        required: true
+        example: hickle.hermann@example.com
+        type: string
         custom: []
+      password:
+        name: password
+        description: 'Must be at least 6 characters.'
+        required: true
+        example: 'EhEsOA&}~KBs3#'
+        type: string
+        custom: []
+    cleanBodyParameters:
+      email: hickle.hermann@example.com
+      password: 'EhEsOA&}~KBs3#'
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/reset-password-link
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Sending reset password link'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      email:
+        name: email
+        description: 'Must be a valid email address.'
+        required: true
+        example: kweber@example.org
+        type: string
+        custom: []
+    cleanBodyParameters:
+      email: kweber@example.org
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/reset-password
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Password reset'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      token:
+        name: token
+        description: ''
+        required: true
+        example: eum
+        type: string
+        custom: []
+      password:
+        name: password
+        description: 'Must be at least 6 characters.'
+        required: true
+        example: xQUj.%V1!;=Mm|
+        type: string
+        custom: []
+      email:
+        name: email
+        description: 'Must be a valid email address.'
+        required: true
+        example: nsteuber@example.org
+        type: string
+        custom: []
+    cleanBodyParameters:
+      token: eum
+      password: xQUj.%V1!;=Mm|
+      email: nsteuber@example.org
+    fileParameters: []
+    responses: []
     responseFields: []
     auth: []
     controller: null
