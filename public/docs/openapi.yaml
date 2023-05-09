@@ -7,44 +7,127 @@ servers:
   -
     url: 'http://localhost'
 paths:
-  /api/user:
-    get:
-      summary: ''
-      operationId: getApiUser
-      description: ''
-      parameters: []
-      responses:
-        401:
-          description: ''
-          content:
-            application/json:
-              schema:
-                type: object
-                example:
-                  message: Unauthenticated.
-                properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
-      tags:
-        - Endpoints
-      security: []
   /api/signup:
-    get:
-      summary: 'Sign up page loading'
-      operationId: signUpPageLoading
+    post:
+      summary: 'User Registration'
+      operationId: userRegistration
       description: ''
       parameters: []
-      responses:
-        200:
-          description: ''
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: ''
+      responses: {  }
       tags:
         - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: pbowfvk
+                email:
+                  type: string
+                  description: 'Must be a valid email address.'
+                  example: ashlynn.armstrong@example.com
+                password:
+                  type: string
+                  description: 'Must be at least 6 characters. Must not be greater than 255 characters.'
+                  example: '211P5#~E[y}CwK}'
+                confirm_password:
+                  type: string
+                  description: 'The value and <code>password</code> must match.'
+                  example: deleniti
+              required:
+                - name
+                - email
+                - password
+                - confirm_password
+      security: []
+  /api/login:
+    post:
+      summary: Login
+      operationId: login
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  description: 'Must be a valid email address.'
+                  example: hickle.hermann@example.com
+                password:
+                  type: string
+                  description: 'Must be at least 6 characters.'
+                  example: 'EhEsOA&}~KBs3#'
+              required:
+                - email
+                - password
+      security: []
+  /api/reset-password-link:
+    post:
+      summary: 'Sending reset password link'
+      operationId: sendingResetPasswordLink
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  description: 'Must be a valid email address.'
+                  example: kweber@example.org
+              required:
+                - email
+      security: []
+  /api/reset-password:
+    post:
+      summary: 'Password reset'
+      operationId: passwordReset
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                token:
+                  type: string
+                  description: ''
+                  example: eum
+                password:
+                  type: string
+                  description: 'Must be at least 6 characters.'
+                  example: xQUj.%V1!;=Mm|
+                email:
+                  type: string
+                  description: 'Must be a valid email address.'
+                  example: nsteuber@example.org
+              required:
+                - token
+                - password
+                - email
       security: []
 tags:
   -
