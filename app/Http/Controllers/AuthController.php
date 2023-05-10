@@ -6,7 +6,7 @@ use App\Helpers\ApiResponseHelper;
 use App\Http\Requests\LoginRequest;
 use App\Http\Requests\SignupRequest;
 use App\Http\Resources\UserResource;
-use App\Services\userService;
+use App\Services\UserService;
 use Exception;
 use Illuminate\Http\JsonResponse;
 use App\Models\User;
