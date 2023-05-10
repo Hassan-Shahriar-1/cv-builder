@@ -17,11 +17,11 @@ use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
-    private $userService;
-    public function __construct(userService $userService)
+    public function __construct( private UserService $userService)
     {
-        $this->userService = $userService;
+     
     }
+
     /**
      * User Registration
      * @param SignupRequest $request
