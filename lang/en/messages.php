@@ -8,5 +8,8 @@ return [
     'reset_password_problem' => 'There was a problem resetting your password.',
     'reset_password' => 'Password Reseted Successfully',
     'invalid_user' => 'Requested user not found',
-    'Unauthenticated' => 'Unauthenticated'
+    'Unauthenticated' => 'Unauthenticated',
+
+    //profile 
+    'profile-update' => 'profile updated successfully',
 ];

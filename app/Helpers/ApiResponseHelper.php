@@ -31,14 +31,14 @@ class ApiResponseHelper
      * @param int $responseStatus
      * @return JsonResponse
      */
-    public static function otherResponse(bool $status = true, int $code = 200, string $message = '', $data = [], int $responseStatus = 200)
+    public static function otherResponse(bool $status = true, int $code = 200, string $message = '', $data = [], int $responseHeaderCode = 200)
     {
         return response()->json([
             'status' => $status,
             'status_code' => $code,
             'message' => $message,
             'data' => $data
-        ], $responseStatus);
+        ], $responseHeaderCode);
     }
 
     /**

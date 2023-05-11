@@ -68,4 +68,14 @@ class UserService
     {
         Mail::to($email)->send(new VerificationMail($verifyUrl));
     }
+
+    /**
+     * update profile data
+     * @param $prodileData
+     * @return void
+     */
+    public function updateProfile(array $prodileData): void
+    {
+        User::where('id', $prodileData['id'])->update($prodileData);
+    }
 }
