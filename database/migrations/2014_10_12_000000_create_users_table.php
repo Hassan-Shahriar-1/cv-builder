@@ -22,6 +22,8 @@ return new class extends Migration
             $table->string('social_id')->nullable();
             $table->boolean('active')->default(false);
             $table->rememberToken();
+            $table->date('dob')->nullable();
+            $table->string('phone');
             $table->timestamps();
             $table->softDeletes();
         });
