@@ -18,12 +18,12 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password')->nullable();
             $table->uuid('user_type');
+            $table->date('dob')->nullable();
+            $table->string('phone')->unique()->nullable();
             $table->enum('login_type', ['default', 'social'])->default('default');
             $table->string('social_id')->nullable();
             $table->boolean('active')->default(false);
             $table->rememberToken();
-            $table->date('dob')->nullable();
-            $table->string('phone');
             $table->timestamps();
             $table->softDeletes();
         });
