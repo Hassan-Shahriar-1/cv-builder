@@ -15,7 +15,7 @@ paths:
       parameters: []
       responses: {  }
       tags:
-        - Endpoints
+        - 'Auth routes'
       requestBody:
         required: true
         content:
@@ -26,19 +26,19 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: pbowfvk
+                  example: vkmeir
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: ashlynn.armstrong@example.com
+                  example: lrosenbaum@example.org
                 password:
                   type: string
                   description: 'Must be at least 6 characters. Must not be greater than 255 characters.'
-                  example: '211P5#~E[y}CwK}'
+                  example: ZES<K%IL
                 confirm_password:
                   type: string
                   description: 'The value and <code>password</code> must match.'
-                  example: deleniti
+                  example: fuga
               required:
                 - name
                 - email
@@ -53,7 +53,7 @@ paths:
       parameters: []
       responses: {  }
       tags:
-        - Endpoints
+        - 'Auth routes'
       requestBody:
         required: true
         content:
@@ -64,15 +64,95 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: hickle.hermann@example.com
+                  example: morissette.seth@example.com
                 password:
                   type: string
                   description: 'Must be at least 6 characters.'
-                  example: 'EhEsOA&}~KBs3#'
+                  example: '-wZE)bF1r;C-@p1SpwF'
               required:
                 - email
                 - password
       security: []
+  /api/profile/data:
+    get:
+      summary: 'Get Profile Data'
+      operationId: getProfileData
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {YOUR_AUTH_KEY}'
+          schema:
+            type: string
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  status: true
+                  status_code: 200
+                  message: ''
+                  data:
+                    id: ac49ffdc-8568-481c-8587-5cb3f846af5f
+                    name: 'test data'
+                    email: hassanshahriar18@gmail.com
+                    user_type: User
+                    login_type: default
+                    dob: null
+                    phone: null
+                    created_at: '2023-05-11T07:16:47.000000Z'
+                    updated_at: '2023-05-11T07:16:47.000000Z'
+                    deleted_at: null
+                properties:
+                  status:
+                    type: boolean
+                    example: true
+                  status_code:
+                    type: integer
+                    example: 200
+                  message:
+                    type: string
+                    example: ''
+                  data:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                        example: ac49ffdc-8568-481c-8587-5cb3f846af5f
+                      name:
+                        type: string
+                        example: 'test data'
+                      email:
+                        type: string
+                        example: hassanshahriar18@gmail.com
+                      user_type:
+                        type: string
+                        example: User
+                      login_type:
+                        type: string
+                        example: default
+                      dob:
+                        type: string
+                        example: null
+                      phone:
+                        type: string
+                        example: null
+                      created_at:
+                        type: string
+                        example: '2023-05-11T07:16:47.000000Z'
+                      updated_at:
+                        type: string
+                        example: '2023-05-11T07:16:47.000000Z'
+                      deleted_at:
+                        type: string
+                        example: null
+      tags:
+        - Profile
   /api/reset-password-link:
     post:
       summary: 'Sending reset password link'
@@ -81,7 +161,7 @@ paths:
       parameters: []
       responses: {  }
       tags:
-        - Endpoints
+        - 'Reset password'
       requestBody:
         required: true
         content:
@@ -92,7 +172,7 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: kweber@example.org
+                  example: dbraun@example.net
               required:
                 - email
       security: []
@@ -104,7 +184,7 @@ paths:
       parameters: []
       responses: {  }
       tags:
-        - Endpoints
+        - 'Reset password'
       requestBody:
         required: true
         content:
@@ -115,15 +195,15 @@ paths:
                 token:
                   type: string
                   description: ''
-                  example: eum
+                  example: non
                 password:
                   type: string
                   description: 'Must be at least 6 characters.'
-                  example: xQUj.%V1!;=Mm|
+                  example: 'D%!RD&Udw~C\_{5@.'
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: nsteuber@example.org
+                  example: dickinson.cyril@example.com
               required:
                 - token
                 - password
@@ -131,5 +211,20 @@ paths:
       security: []
 tags:
   -
-    name: Endpoints
+    name: 'Auth routes'
     description: ''
+  -
+    name: Profile
+    description: ''
+  -
+    name: 'Reset password'
+    description: ''
+components:
+  securitySchemes:
+    default:
+      type: http
+      scheme: bearer
+      description: ''
+security:
+  -
+    default: []

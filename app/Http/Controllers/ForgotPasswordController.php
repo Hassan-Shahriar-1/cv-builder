@@ -16,6 +16,10 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 
+/**
+ * @group Reset password
+ * @unauthenticated
+ */
 class ForgotPasswordController extends Controller
 {
     /**
