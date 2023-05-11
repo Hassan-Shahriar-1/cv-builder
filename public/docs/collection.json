@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "eff8bf09-1bb1-4184-94ae-a9761ea16f24",
+        "_postman_id": "8ab8e3e9-480e-4c83-a227-a256ac338e9c",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -41,7 +41,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"vkmeir\",\"email\":\"lrosenbaum@example.org\",\"password\":\"ZES<K%IL\",\"confirm_password\":\"fuga\"}"
+                            "raw": "{\"name\":\"uclhjss\",\"email\":\"ortiz.garett@example.com\",\"password\":\"~A<AiZHrx&HTF(b@T#m-\",\"confirm_password\":\"atque\"}"
                         },
                         "description": "",
                         "auth": {
@@ -72,7 +72,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"morissette.seth@example.com\",\"password\":\"-wZE)bF1r;C-@p1SpwF\"}"
+                            "raw": "{\"email\":\"antoinette06@example.com\",\"password\":\"gP#`1$vq\\\"\"}"
                         },
                         "description": "",
                         "auth": {
@@ -127,7 +127,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "58"
+                                    "value": "59"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -135,10 +135,38 @@
                                 }
                             ],
                             "code": 200,
-                            "body": "{\"status\":true,\"status_code\":200,\"message\":\"\",\"data\":{\"id\":\"ac49ffdc-8568-481c-8587-5cb3f846af5f\",\"name\":\"test data\",\"email\":\"hassanshahriar18@gmail.com\",\"user_type\":\"User\",\"login_type\":\"default\",\"dob\":null,\"phone\":null,\"created_at\":\"2023-05-11T07:16:47.000000Z\",\"updated_at\":\"2023-05-11T07:16:47.000000Z\",\"deleted_at\":null}}",
+                            "body": "{\"status\":true,\"status_code\":200,\"message\":\"\",\"data\":{\"id\":\"ac49ffdc-8568-481c-8587-5cb3f846af5f\",\"name\":\"test update\",\"email\":\"hassanshahriar18@gmail.com\",\"user_type\":\"User\",\"login_type\":\"default\",\"dob\":\"2022-01-01\",\"phone\":\"11111111111\",\"created_at\":\"2023-05-11T07:16:47.000000Z\",\"updated_at\":\"2023-05-11T17:36:39.000000Z\",\"deleted_at\":null}}",
                             "name": ""
                         }
                     ]
+                },
+                {
+                    "name": "Update Profile",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/profile\/update",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/profile\/update"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"id\":\"cumque\",\"name\":\"nf\",\"dob\":\"2023-05-11\",\"phone\":\"kjriyphfjwv\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": []
                 }
             ]
         },
@@ -168,7 +196,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"dbraun@example.net\"}"
+                            "raw": "{\"email\":\"tschmitt@example.com\"}"
                         },
                         "description": "",
                         "auth": {
@@ -199,7 +227,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"token\":\"non\",\"password\":\"D%!RD&Udw~C\\\\_{5@.\",\"email\":\"dickinson.cyril@example.com\"}"
+                            "raw": "{\"token\":\"dicta\",\"password\":\"5z,%UFF5x2lC\",\"email\":\"dino.mraz@example.com\"}"
                         },
                         "description": "",
                         "auth": {

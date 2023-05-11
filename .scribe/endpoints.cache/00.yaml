@@ -28,35 +28,35 @@ endpoints:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: vkmeir
+        example: uclhjss
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: lrosenbaum@example.org
+        example: ortiz.garett@example.com
         type: string
         custom: []
       password:
         name: password
         description: 'Must be at least 6 characters. Must not be greater than 255 characters.'
         required: true
-        example: ZES<K%IL
+        example: '~A<AiZHrx&HTF(b@T#m-'
         type: string
         custom: []
       confirm_password:
         name: confirm_password
         description: 'The value and <code>password</code> must match.'
         required: true
-        example: fuga
+        example: atque
         type: string
         custom: []
     cleanBodyParameters:
-      name: vkmeir
-      email: lrosenbaum@example.org
-      password: ZES<K%IL
-      confirm_password: fuga
+      name: uclhjss
+      email: ortiz.garett@example.com
+      password: '~A<AiZHrx&HTF(b@T#m-'
+      confirm_password: atque
     fileParameters: []
     responses: []
     responseFields: []
@@ -90,19 +90,19 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: morissette.seth@example.com
+        example: antoinette06@example.com
         type: string
         custom: []
       password:
         name: password
         description: 'Must be at least 6 characters.'
         required: true
-        example: '-wZE)bF1r;C-@p1SpwF'
+        example: 'gP#`1$vq"'
         type: string
         custom: []
     cleanBodyParameters:
-      email: morissette.seth@example.com
-      password: '-wZE)bF1r;C-@p1SpwF'
+      email: antoinette06@example.com
+      password: 'gP#`1$vq"'
     fileParameters: []
     responses: []
     responseFields: []

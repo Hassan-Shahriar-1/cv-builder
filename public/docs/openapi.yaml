@@ -26,19 +26,19 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: vkmeir
+                  example: uclhjss
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: lrosenbaum@example.org
+                  example: ortiz.garett@example.com
                 password:
                   type: string
                   description: 'Must be at least 6 characters. Must not be greater than 255 characters.'
-                  example: ZES<K%IL
+                  example: '~A<AiZHrx&HTF(b@T#m-'
                 confirm_password:
                   type: string
                   description: 'The value and <code>password</code> must match.'
-                  example: fuga
+                  example: atque
               required:
                 - name
                 - email
@@ -64,11 +64,11 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: morissette.seth@example.com
+                  example: antoinette06@example.com
                 password:
                   type: string
                   description: 'Must be at least 6 characters.'
-                  example: '-wZE)bF1r;C-@p1SpwF'
+                  example: 'gP#`1$vq"'
               required:
                 - email
                 - password
@@ -99,14 +99,14 @@ paths:
                   message: ''
                   data:
                     id: ac49ffdc-8568-481c-8587-5cb3f846af5f
-                    name: 'test data'
+                    name: 'test update'
                     email: hassanshahriar18@gmail.com
                     user_type: User
                     login_type: default
-                    dob: null
-                    phone: null
+                    dob: '2022-01-01'
+                    phone: '11111111111'
                     created_at: '2023-05-11T07:16:47.000000Z'
-                    updated_at: '2023-05-11T07:16:47.000000Z'
+                    updated_at: '2023-05-11T17:36:39.000000Z'
                     deleted_at: null
                 properties:
                   status:
@@ -126,7 +126,7 @@ paths:
                         example: ac49ffdc-8568-481c-8587-5cb3f846af5f
                       name:
                         type: string
-                        example: 'test data'
+                        example: 'test update'
                       email:
                         type: string
                         example: hassanshahriar18@gmail.com
@@ -138,21 +138,63 @@ paths:
                         example: default
                       dob:
                         type: string
-                        example: null
+                        example: '2022-01-01'
                       phone:
                         type: string
-                        example: null
+                        example: '11111111111'
                       created_at:
                         type: string
                         example: '2023-05-11T07:16:47.000000Z'
                       updated_at:
                         type: string
-                        example: '2023-05-11T07:16:47.000000Z'
+                        example: '2023-05-11T17:36:39.000000Z'
                       deleted_at:
                         type: string
                         example: null
       tags:
         - Profile
+  /api/profile/update:
+    post:
+      summary: 'Update Profile'
+      operationId: updateProfile
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {YOUR_AUTH_KEY}'
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Profile
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: string
+                  description: ''
+                  example: cumque
+                name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: nf
+                dob:
+                  type: string
+                  description: 'Must be a valid date in the format <code>Y-m-d</code>.'
+                  example: '2023-05-11'
+                phone:
+                  type: string
+                  description: 'Must be 11 characters.'
+                  example: kjriyphfjwv
+              required:
+                - id
+                - name
   /api/reset-password-link:
     post:
       summary: 'Sending reset password link'
@@ -172,7 +214,7 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: dbraun@example.net
+                  example: tschmitt@example.com
               required:
                 - email
       security: []
@@ -195,15 +237,15 @@ paths:
                 token:
                   type: string
                   description: ''
-                  example: non
+                  example: dicta
                 password:
                   type: string
                   description: 'Must be at least 6 characters.'
-                  example: 'D%!RD&Udw~C\_{5@.'
+                  example: '5z,%UFF5x2lC'
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: dickinson.cyril@example.com
+                  example: dino.mraz@example.com
               required:
                 - token
                 - password

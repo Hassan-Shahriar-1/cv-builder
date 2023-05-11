@@ -25,4 +25,5 @@ Route::post('reset-password', [ForgotPasswordController::class, 'resetPassword']
 //profile routes
 Route::group(['prefix' => 'profile', 'middleware'=> 'auth:api'], function(){
     Route::get('data', [ProfileController::class, 'getProfileData'])->name('profile.get-data');
+    Route::post('update', [ProfileController::class, 'updateProfile'])->name('profile.update');
 });

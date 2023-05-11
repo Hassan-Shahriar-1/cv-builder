@@ -89,6 +89,9 @@
                                                     <li class="tocify-item level-2" data-unique="profile-GETapi-profile-data">
                                 <a href="#profile-GETapi-profile-data">Get Profile Data</a>
                             </li>
+                                                                                <li class="tocify-item level-2" data-unique="profile-POSTapi-profile-update">
+                                <a href="#profile-POSTapi-profile-update">Update Profile</a>
+                            </li>
                                                                         </ul>
                             </ul>
                     <ul id="tocify-header-reset-password" class="tocify-header">
@@ -154,10 +157,10 @@ You can switch the language used with the tabs at the top right (or from the nav
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"vkmeir\",
-    \"email\": \"lrosenbaum@example.org\",
-    \"password\": \"ZES&lt;K%IL\",
-    \"confirm_password\": \"fuga\"
+    \"name\": \"uclhjss\",
+    \"email\": \"ortiz.garett@example.com\",
+    \"password\": \"~A&lt;AiZHrx&amp;HTF(b@T#m-\",
+    \"confirm_password\": \"atque\"
 }"
 </code></pre></div>
 
@@ -173,10 +176,10 @@ const headers = {
 };
 
 let body = {
-    "name": "vkmeir",
-    "email": "lrosenbaum@example.org",
-    "password": "ZES&lt;K%IL",
-    "confirm_password": "fuga"
+    "name": "uclhjss",
+    "email": "ortiz.garett@example.com",
+    "password": "~A&lt;AiZHrx&amp;HTF(b@T#m-",
+    "confirm_password": "atque"
 };
 
 fetch(url, {
@@ -196,10 +199,10 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'name' =&gt; 'vkmeir',
-            'email' =&gt; 'lrosenbaum@example.org',
-            'password' =&gt; 'ZES&lt;K%IL',
-            'confirm_password' =&gt; 'fuga',
+            'name' =&gt; 'uclhjss',
+            'email' =&gt; 'ortiz.garett@example.com',
+            'password' =&gt; '~A&lt;AiZHrx&amp;HTF(b@T#m-',
+            'confirm_password' =&gt; 'atque',
         ],
     ]
 );
@@ -286,10 +289,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="name"                data-endpoint="POSTapi-signup"
-               value="vkmeir"
+               value="uclhjss"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>vkmeir</code></p>
+<p>Must not be greater than 255 characters. Example: <code>uclhjss</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -297,10 +300,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-signup"
-               value="lrosenbaum@example.org"
+               value="ortiz.garett@example.com"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>lrosenbaum@example.org</code></p>
+<p>Must be a valid email address. Example: <code>ortiz.garett@example.com</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -308,10 +311,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="password"                data-endpoint="POSTapi-signup"
-               value="ZES<K%IL"
+               value="~A<AiZHrx&HTF(b@T#m-"
                data-component="body">
     <br>
-<p>Must be at least 6 characters. Must not be greater than 255 characters. Example: <code>ZES&lt;K%IL</code></p>
+<p>Must be at least 6 characters. Must not be greater than 255 characters. Example: <code>~A&lt;AiZHrx&amp;HTF(b@T#m-</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>confirm_password</code></b>&nbsp;&nbsp;
@@ -319,10 +322,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="confirm_password"                data-endpoint="POSTapi-signup"
-               value="fuga"
+               value="atque"
                data-component="body">
     <br>
-<p>The value and <code>password</code> must match. Example: <code>fuga</code></p>
+<p>The value and <code>password</code> must match. Example: <code>atque</code></p>
         </div>
         </form>
 
@@ -343,8 +346,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"morissette.seth@example.com\",
-    \"password\": \"-wZE)bF1r;C-@p1SpwF\"
+    \"email\": \"antoinette06@example.com\",
+    \"password\": \"gP#`1$vq\\\"\"
 }"
 </code></pre></div>
 
@@ -360,8 +363,8 @@ const headers = {
 };
 
 let body = {
-    "email": "morissette.seth@example.com",
-    "password": "-wZE)bF1r;C-@p1SpwF"
+    "email": "antoinette06@example.com",
+    "password": "gP#`1$vq\""
 };
 
 fetch(url, {
@@ -381,8 +384,8 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'email' =&gt; 'morissette.seth@example.com',
-            'password' =&gt; '-wZE)bF1r;C-@p1SpwF',
+            'email' =&gt; 'antoinette06@example.com',
+            'password' =&gt; 'gP#`1$vq"',
         ],
     ]
 );
@@ -469,10 +472,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-login"
-               value="morissette.seth@example.com"
+               value="antoinette06@example.com"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>morissette.seth@example.com</code></p>
+<p>Must be a valid email address. Example: <code>antoinette06@example.com</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -480,10 +483,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="password"                data-endpoint="POSTapi-login"
-               value="-wZE)bF1r;C-@p1SpwF"
+               value="gP#`1$vq""
                data-component="body">
     <br>
-<p>Must be at least 6 characters. Example: <code>-wZE)bF1r;C-@p1SpwF</code></p>
+<p>Must be at least 6 characters. Example: <code>gP#</code>1$vq&quot;`</p>
         </div>
         </form>
 
@@ -556,7 +559,7 @@ print_r(json_decode((string) $body));</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 58
+x-ratelimit-remaining: 59
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -566,14 +569,14 @@ access-control-allow-origin: *
     &quot;message&quot;: &quot;&quot;,
     &quot;data&quot;: {
         &quot;id&quot;: &quot;ac49ffdc-8568-481c-8587-5cb3f846af5f&quot;,
-        &quot;name&quot;: &quot;test data&quot;,
+        &quot;name&quot;: &quot;test update&quot;,
         &quot;email&quot;: &quot;hassanshahriar18@gmail.com&quot;,
         &quot;user_type&quot;: &quot;User&quot;,
         &quot;login_type&quot;: &quot;default&quot;,
-        &quot;dob&quot;: null,
-        &quot;phone&quot;: null,
+        &quot;dob&quot;: &quot;2022-01-01&quot;,
+        &quot;phone&quot;: &quot;11111111111&quot;,
         &quot;created_at&quot;: &quot;2023-05-11T07:16:47.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2023-05-11T07:16:47.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2023-05-11T17:36:39.000000Z&quot;,
         &quot;deleted_at&quot;: null
     }
 }</code>
@@ -661,6 +664,210 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                         </form>
 
+                    <h2 id="profile-POSTapi-profile-update">Update Profile</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-POSTapi-profile-update">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost/api/profile/update" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"id\": \"cumque\",
+    \"name\": \"nf\",
+    \"dob\": \"2023-05-11\",
+    \"phone\": \"kjriyphfjwv\"
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/profile/update"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "id": "cumque",
+    "name": "nf",
+    "dob": "2023-05-11",
+    "phone": "kjriyphfjwv"
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+
+<div class="php-example">
+    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
+$response = $client-&gt;post(
+    'http://localhost/api/profile/update',
+    [
+        'headers' =&gt; [
+            'Authorization' =&gt; 'Bearer {YOUR_AUTH_KEY}',
+            'Content-Type' =&gt; 'application/json',
+            'Accept' =&gt; 'application/json',
+        ],
+        'json' =&gt; [
+            'id' =&gt; 'cumque',
+            'name' =&gt; 'nf',
+            'dob' =&gt; '2023-05-11',
+            'phone' =&gt; 'kjriyphfjwv',
+        ],
+    ]
+);
+$body = $response-&gt;getBody();
+print_r(json_decode((string) $body));</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-profile-update">
+</span>
+<span id="execution-results-POSTapi-profile-update" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-profile-update"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-profile-update"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-profile-update" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-profile-update">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-profile-update" data-method="POST"
+      data-path="api/profile/update"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-profile-update', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-profile-update"
+                    onclick="tryItOut('POSTapi-profile-update');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-profile-update"
+                    onclick="cancelTryOut('POSTapi-profile-update');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-profile-update"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/profile/update</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+               name="Authorization" class="auth-value"               data-endpoint="POSTapi-profile-update"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+               name="Content-Type"                data-endpoint="POSTapi-profile-update"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+               name="Accept"                data-endpoint="POSTapi-profile-update"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+               name="id"                data-endpoint="POSTapi-profile-update"
+               value="cumque"
+               data-component="body">
+    <br>
+<p>Example: <code>cumque</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>name</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+               name="name"                data-endpoint="POSTapi-profile-update"
+               value="nf"
+               data-component="body">
+    <br>
+<p>Must not be greater than 255 characters. Example: <code>nf</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>dob</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="text" style="display: none"
+               name="dob"                data-endpoint="POSTapi-profile-update"
+               value="2023-05-11"
+               data-component="body">
+    <br>
+<p>Must be a valid date in the format <code>Y-m-d</code>. Example: <code>2023-05-11</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>phone</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="text" style="display: none"
+               name="phone"                data-endpoint="POSTapi-profile-update"
+               value="kjriyphfjwv"
+               data-component="body">
+    <br>
+<p>Must be 11 characters. Example: <code>kjriyphfjwv</code></p>
+        </div>
+        </form>
+
                 <h1 id="reset-password">Reset password</h1>
 
     
@@ -682,7 +889,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"dbraun@example.net\"
+    \"email\": \"tschmitt@example.com\"
 }"
 </code></pre></div>
 
@@ -698,7 +905,7 @@ const headers = {
 };
 
 let body = {
-    "email": "dbraun@example.net"
+    "email": "tschmitt@example.com"
 };
 
 fetch(url, {
@@ -718,7 +925,7 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'email' =&gt; 'dbraun@example.net',
+            'email' =&gt; 'tschmitt@example.com',
         ],
     ]
 );
@@ -805,10 +1012,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-reset-password-link"
-               value="dbraun@example.net"
+               value="tschmitt@example.com"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>dbraun@example.net</code></p>
+<p>Must be a valid email address. Example: <code>tschmitt@example.com</code></p>
         </div>
         </form>
 
@@ -829,9 +1036,9 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"token\": \"non\",
-    \"password\": \"D%!RD&amp;Udw~C\\\\_{5@.\",
-    \"email\": \"dickinson.cyril@example.com\"
+    \"token\": \"dicta\",
+    \"password\": \"5z,%UFF5x2lC\",
+    \"email\": \"dino.mraz@example.com\"
 }"
 </code></pre></div>
 
@@ -847,9 +1054,9 @@ const headers = {
 };
 
 let body = {
-    "token": "non",
-    "password": "D%!RD&amp;Udw~C\\_{5@.",
-    "email": "dickinson.cyril@example.com"
+    "token": "dicta",
+    "password": "5z,%UFF5x2lC",
+    "email": "dino.mraz@example.com"
 };
 
 fetch(url, {
@@ -869,9 +1076,9 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'token' =&gt; 'non',
-            'password' =&gt; 'D%!RD&amp;Udw~C\\_{5@.',
-            'email' =&gt; 'dickinson.cyril@example.com',
+            'token' =&gt; 'dicta',
+            'password' =&gt; '5z,%UFF5x2lC',
+            'email' =&gt; 'dino.mraz@example.com',
         ],
     ]
 );
@@ -958,10 +1165,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="token"                data-endpoint="POSTapi-reset-password"
-               value="non"
+               value="dicta"
                data-component="body">
     <br>
-<p>Example: <code>non</code></p>
+<p>Example: <code>dicta</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -969,10 +1176,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="password"                data-endpoint="POSTapi-reset-password"
-               value="D%!RD&Udw~C\_{5@."
+               value="5z,%UFF5x2lC"
                data-component="body">
     <br>
-<p>Must be at least 6 characters. Example: <code>D%!RD&amp;Udw~C\_{5@.</code></p>
+<p>Must be at least 6 characters. Example: <code>5z,%UFF5x2lC</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -980,10 +1187,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-reset-password"
-               value="dickinson.cyril@example.com"
+               value="dino.mraz@example.com"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>dickinson.cyril@example.com</code></p>
+<p>Must be a valid email address. Example: <code>dino.mraz@example.com</code></p>
         </div>
         </form>
 
