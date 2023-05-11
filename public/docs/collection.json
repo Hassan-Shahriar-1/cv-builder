@@ -10,13 +10,13 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "0fb96151-016d-44f9-9adc-95dc70ab6760",
+        "_postman_id": "be8ca12b-66f5-473f-bde0-690798496bdd",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
     "item": [
         {
-            "name": "Endpoints",
+            "name": "Auth routes",
             "description": "",
             "item": [
                 {
@@ -41,7 +41,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"pbowfvk\",\"email\":\"ashlynn.armstrong@example.com\",\"password\":\"211P5#~E[y}CwK}\",\"confirm_password\":\"deleniti\"}"
+                            "raw": "{\"name\":\"fclfxrzydfjbwo\",\"email\":\"joanny24@example.com\",\"password\":\"\\\"bD9U1Id`\",\"confirm_password\":\"vitae\"}"
                         },
                         "description": "",
                         "auth": {
@@ -72,7 +72,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"hickle.hermann@example.com\",\"password\":\"EhEsOA&}~KBs3#\"}"
+                            "raw": "{\"email\":\"kub.jerome@example.org\",\"password\":\",IrUKLA0{6E9D\"}"
                         },
                         "description": "",
                         "auth": {
@@ -80,7 +80,64 @@
                         }
                     },
                     "response": []
-                },
+                }
+            ]
+        },
+        {
+            "name": "Profile",
+            "description": "",
+            "item": [
+                {
+                    "name": "Get Profile Data",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/profile\/data",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/profile\/data"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Reset password",
+            "description": "",
+            "item": [
                 {
                     "name": "Sending reset password link",
                     "request": {
@@ -103,7 +160,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"kweber@example.org\"}"
+                            "raw": "{\"email\":\"buckridge.keely@example.net\"}"
                         },
                         "description": "",
                         "auth": {
@@ -134,7 +191,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"token\":\"eum\",\"password\":\"xQUj.%V1!;=Mm|\",\"email\":\"nsteuber@example.org\"}"
+                            "raw": "{\"token\":\"labore\",\"password\":\"Jti9B)j4i-Ho\",\"email\":\"kenyon.wunsch@example.net\"}"
                         },
                         "description": "",
                         "auth": {
@@ -147,6 +204,13 @@
         }
     ],
     "auth": {
-        "type": "noauth"
+        "type": "bearer",
+        "bearer": [
+            {
+                "key": "key",
+                "value": "",
+                "type": "string"
+            }
+        ]
     }
 }

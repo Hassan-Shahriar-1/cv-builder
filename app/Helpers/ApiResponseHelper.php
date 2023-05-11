@@ -2,6 +2,8 @@
 
 namespace App\Helpers;
 
+use Illuminate\Http\JsonResponse;
+
 class ApiResponseHelper 
 {
     /**
@@ -51,5 +53,19 @@ class ApiResponseHelper
             'message' => $message,
             'data' => []
         ], 400);
+    }
+
+    /**
+     * Untuthenticate response
+     * @return JsonResponse
+     */
+    public static function unauthenticateResponse() :JsonResponse
+    {
+        return response()->json([
+            'status' => false,
+            'status_code' => 401,
+            'message' => trans('messages.Unauthenticated'),
+            'data' => []
+        ], 401);
     }
 }

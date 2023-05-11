@@ -15,7 +15,7 @@ paths:
       parameters: []
       responses: {  }
       tags:
-        - Endpoints
+        - 'Auth routes'
       requestBody:
         required: true
         content:
@@ -26,19 +26,19 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: pbowfvk
+                  example: fclfxrzydfjbwo
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: ashlynn.armstrong@example.com
+                  example: joanny24@example.com
                 password:
                   type: string
                   description: 'Must be at least 6 characters. Must not be greater than 255 characters.'
-                  example: '211P5#~E[y}CwK}'
+                  example: '"bD9U1Id`'
                 confirm_password:
                   type: string
                   description: 'The value and <code>password</code> must match.'
-                  example: deleniti
+                  example: vitae
               required:
                 - name
                 - email
@@ -53,7 +53,7 @@ paths:
       parameters: []
       responses: {  }
       tags:
-        - Endpoints
+        - 'Auth routes'
       requestBody:
         required: true
         content:
@@ -64,15 +64,43 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: hickle.hermann@example.com
+                  example: kub.jerome@example.org
                 password:
                   type: string
                   description: 'Must be at least 6 characters.'
-                  example: 'EhEsOA&}~KBs3#'
+                  example: ',IrUKLA0{6E9D'
               required:
                 - email
                 - password
       security: []
+  /api/profile/data:
+    get:
+      summary: 'Get Profile Data'
+      operationId: getProfileData
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {YOUR_AUTH_KEY}'
+          schema:
+            type: string
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Profile
   /api/reset-password-link:
     post:
       summary: 'Sending reset password link'
@@ -81,7 +109,7 @@ paths:
       parameters: []
       responses: {  }
       tags:
-        - Endpoints
+        - 'Reset password'
       requestBody:
         required: true
         content:
@@ -92,7 +120,7 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: kweber@example.org
+                  example: buckridge.keely@example.net
               required:
                 - email
       security: []
@@ -104,7 +132,7 @@ paths:
       parameters: []
       responses: {  }
       tags:
-        - Endpoints
+        - 'Reset password'
       requestBody:
         required: true
         content:
@@ -115,15 +143,15 @@ paths:
                 token:
                   type: string
                   description: ''
-                  example: eum
+                  example: labore
                 password:
                   type: string
                   description: 'Must be at least 6 characters.'
-                  example: xQUj.%V1!;=Mm|
+                  example: Jti9B)j4i-Ho
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: nsteuber@example.org
+                  example: kenyon.wunsch@example.net
               required:
                 - token
                 - password
@@ -131,5 +159,20 @@ paths:
       security: []
 tags:
   -
-    name: Endpoints
+    name: 'Auth routes'
     description: ''
+  -
+    name: Profile
+    description: ''
+  -
+    name: 'Reset password'
+    description: ''
+components:
+  securitySchemes:
+    default:
+      type: http
+      scheme: bearer
+      description: ''
+security:
+  -
+    default: []

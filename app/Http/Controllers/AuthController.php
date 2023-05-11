@@ -15,6 +15,10 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
+/**
+ * @group Auth routes
+ * @unauthenticated
+ */
 class AuthController extends Controller
 {
     public function __construct( private UserService $userService)
