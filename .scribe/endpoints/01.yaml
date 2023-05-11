@@ -26,11 +26,11 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: buckridge.keely@example.net
+        example: dbraun@example.net
         type: string
         custom: []
     cleanBodyParameters:
-      email: buckridge.keely@example.net
+      email: dbraun@example.net
     fileParameters: []
     responses: []
     responseFields: []
@@ -64,27 +64,27 @@ endpoints:
         name: token
         description: ''
         required: true
-        example: labore
+        example: non
         type: string
         custom: []
       password:
         name: password
         description: 'Must be at least 6 characters.'
         required: true
-        example: Jti9B)j4i-Ho
+        example: 'D%!RD&Udw~C\_{5@.'
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: kenyon.wunsch@example.net
+        example: dickinson.cyril@example.com
         type: string
         custom: []
     cleanBodyParameters:
-      token: labore
-      password: Jti9B)j4i-Ho
-      email: kenyon.wunsch@example.net
+      token: non
+      password: 'D%!RD&Udw~C\_{5@.'
+      email: dickinson.cyril@example.com
     fileParameters: []
     responses: []
     responseFields: []

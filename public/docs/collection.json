@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "be8ca12b-66f5-473f-bde0-690798496bdd",
+        "_postman_id": "eff8bf09-1bb1-4184-94ae-a9761ea16f24",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -41,7 +41,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"fclfxrzydfjbwo\",\"email\":\"joanny24@example.com\",\"password\":\"\\\"bD9U1Id`\",\"confirm_password\":\"vitae\"}"
+                            "raw": "{\"name\":\"vkmeir\",\"email\":\"lrosenbaum@example.org\",\"password\":\"ZES<K%IL\",\"confirm_password\":\"fuga\"}"
                         },
                         "description": "",
                         "auth": {
@@ -72,7 +72,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"kub.jerome@example.org\",\"password\":\",IrUKLA0{6E9D\"}"
+                            "raw": "{\"email\":\"morissette.seth@example.com\",\"password\":\"-wZE)bF1r;C-@p1SpwF\"}"
                         },
                         "description": "",
                         "auth": {
@@ -122,12 +122,20 @@
                                     "value": "application\/json"
                                 },
                                 {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "58"
+                                },
+                                {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "code": 200,
+                            "body": "{\"status\":true,\"status_code\":200,\"message\":\"\",\"data\":{\"id\":\"ac49ffdc-8568-481c-8587-5cb3f846af5f\",\"name\":\"test data\",\"email\":\"hassanshahriar18@gmail.com\",\"user_type\":\"User\",\"login_type\":\"default\",\"dob\":null,\"phone\":null,\"created_at\":\"2023-05-11T07:16:47.000000Z\",\"updated_at\":\"2023-05-11T07:16:47.000000Z\",\"deleted_at\":null}}",
                             "name": ""
                         }
                     ]
@@ -160,7 +168,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"buckridge.keely@example.net\"}"
+                            "raw": "{\"email\":\"dbraun@example.net\"}"
                         },
                         "description": "",
                         "auth": {
@@ -191,7 +199,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"token\":\"labore\",\"password\":\"Jti9B)j4i-Ho\",\"email\":\"kenyon.wunsch@example.net\"}"
+                            "raw": "{\"token\":\"non\",\"password\":\"D%!RD&Udw~C\\\\_{5@.\",\"email\":\"dickinson.cyril@example.com\"}"
                         },
                         "description": "",
                         "auth": {
@@ -208,7 +216,7 @@
         "bearer": [
             {
                 "key": "key",
-                "value": "",
+                "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5OTIzYzcyZi1jOTIyLTRkOGUtOGY0ZC01MjUwYjRhYjI0MTQiLCJqdGkiOiJhM2QwOWUxZjk1OTEzNDhhNzI5YmEyZTI2MDg1ZjYxODk2ZGQxMTY4NWRlY2Q3YTY3NmQ0MWU5ODI4YzA3OGQwYjlkYTc2YmFlYWYzODIyOCIsImlhdCI6MTY4Mzc4OTQ4Mi4zNzEzOTYsIm5iZiI6MTY4Mzc4OTQ4Mi4zNzE0MDEsImV4cCI6MTcxNTQxMTg4Mi4wODM4OSwic3ViIjoiYWM0OWZmZGMtODU2OC00ODFjLTg1ODctNWNiM2Y4NDZhZjVmIiwic2NvcGVzIjpbXX0.fLeQldzAss2VSr9swcyslE4IygpmSux30G-OI_qPbrWkLWgsQF2j5pgchL7IyPTyuxV4teARnGYXEcpksXAn9idP5toIjKmQToLlJpMSGuChvYZnniCk-h4K4F_V3-S73C0e_a_Pbkba9i3ylLjZvhJY5Vkm_XedDIU3eAVyaOxNLOi1Y6FYCSY5I-eWk4R_Ll7Fd4ituBVv99UO2FTOcSeAlY8sMIH-5ub8poaZcVPtabkGFDi1cue6YSDId9gkrhBLSrtz4HLE8AoZYaF7Ar8IHUN9bE92MJON33LtpVo5ufQgxWawI6Nc9QGbCAZOROk4FK__H80WSQA-tdAeJc8QbY3MUYKYjgIDuscdQRA9TcV3tMfgzB8MSzeG9S26B6WD9gEjZf_O3COq6osA6XZe69tVR4axRPIDR7Fjzwxv3OJM3zIrGy428I1h6aPrWNTfBQnx18vckTOi3qt_SdlHUfd9qZpj_cbeUY3lBVnnH6r4HR-9WZnVrvo__bVHbYXG8jjsZTTk3NnWainpTJ6AKAV5DGpr_AWkGv6DV4wuWMpuyy8UE_lcmuoErqHVvSExloHoTu-I4SMRksGdExwR7lK3csT8kvqjlg4k6RvutbNFgmIQkCcUKMFNd2-ELmbn-UoCLAOvnZ-hww42YIpmWjihcQRZCABvI4Kl7Ak",
                 "type": "string"
             }
         ]

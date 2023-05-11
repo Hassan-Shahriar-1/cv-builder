@@ -28,35 +28,35 @@ endpoints:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: fclfxrzydfjbwo
+        example: vkmeir
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: joanny24@example.com
+        example: lrosenbaum@example.org
         type: string
         custom: []
       password:
         name: password
         description: 'Must be at least 6 characters. Must not be greater than 255 characters.'
         required: true
-        example: '"bD9U1Id`'
+        example: ZES<K%IL
         type: string
         custom: []
       confirm_password:
         name: confirm_password
         description: 'The value and <code>password</code> must match.'
         required: true
-        example: vitae
+        example: fuga
         type: string
         custom: []
     cleanBodyParameters:
-      name: fclfxrzydfjbwo
-      email: joanny24@example.com
-      password: '"bD9U1Id`'
-      confirm_password: vitae
+      name: vkmeir
+      email: lrosenbaum@example.org
+      password: ZES<K%IL
+      confirm_password: fuga
     fileParameters: []
     responses: []
     responseFields: []
@@ -90,19 +90,19 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: kub.jerome@example.org
+        example: morissette.seth@example.com
         type: string
         custom: []
       password:
         name: password
         description: 'Must be at least 6 characters.'
         required: true
-        example: ',IrUKLA0{6E9D'
+        example: '-wZE)bF1r;C-@p1SpwF'
         type: string
         custom: []
     cleanBodyParameters:
-      email: kub.jerome@example.org
-      password: ',IrUKLA0{6E9D'
+      email: morissette.seth@example.com
+      password: '-wZE)bF1r;C-@p1SpwF'
     fileParameters: []
     responses: []
     responseFields: []
