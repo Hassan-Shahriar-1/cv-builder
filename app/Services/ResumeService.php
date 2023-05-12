@@ -14,12 +14,13 @@ class ResumeService {
      */
     public function createOrUpdateContact(array $data) : object
     {
-        $data['user_id'] = Auth::user()->id;
-        
         if(isset($data['id'])) {
-            
-
+            $contact = Contact::findOrFail($data['id']);
+            unset($data['user_id'], $data['id']);
+            $contact->update($data);
+            return $contact;
         }else {
+            $data['user_id'] = Auth::user()->id;
             return Contact::create($data);
         }
     }
