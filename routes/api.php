@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ForgotPasswordController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ResumeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,4 +27,9 @@ Route::post('reset-password', [ForgotPasswordController::class, 'resetPassword']
 Route::group(['prefix' => 'profile', 'middleware'=> 'auth:api'], function(){
     Route::get('data', [ProfileController::class, 'getProfileData'])->name('profile.get-data');
     Route::post('update', [ProfileController::class, 'updateProfile'])->name('profile.update');
+});
+
+///cv create routes
+Route::group(['prefix' => 'resume', 'middleware' => 'auth:api'], function(){
+    Route::post('contact',[ResumeController::class, 'contact'])->name('contact');
 });
