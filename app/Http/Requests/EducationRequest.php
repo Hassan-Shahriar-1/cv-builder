@@ -20,7 +20,8 @@ class EducationRequest extends BaseRequest
             'location' => 'sometimes|nullable|String|max:255',
             'feild_of_study' => 'sometimes|nullable|string|max:255',
             'start_date' => 'required|date_format:Y-m-d',
-            'end_date' => 'sometimes|nullable|date_format:Y-m-d',
+            'active' => 'required|boolean',
+            'end_date' => 'sometimes|nullable|date_format:Y-m-d|required_if:active,true',
         ];
     }
 }
