@@ -26,35 +26,35 @@ endpoints:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: yffgnn
+        example: aggku
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: kassulke.kylie@example.com
+        example: hermiston.kacie@example.org
         type: string
         custom: []
       password:
         name: password
         description: 'Must be at least 6 characters. Must not be greater than 255 characters.'
         required: true
-        example: 'W+h&Z+<=hvT'
+        example: 'l=mJL<g8T,<qx+@CJ0e'
         type: string
         custom: []
       confirm_password:
         name: confirm_password
         description: 'The value and <code>password</code> must match.'
         required: true
-        example: repellendus
+        example: fugiat
         type: string
         custom: []
     cleanBodyParameters:
-      name: yffgnn
-      email: kassulke.kylie@example.com
-      password: 'W+h&Z+<=hvT'
-      confirm_password: repellendus
+      name: aggku
+      email: hermiston.kacie@example.org
+      password: 'l=mJL<g8T,<qx+@CJ0e'
+      confirm_password: fugiat
     fileParameters: []
     responses: []
     responseFields: []
@@ -88,19 +88,19 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: jmurray@example.com
+        example: ashtyn68@example.org
         type: string
         custom: []
       password:
         name: password
         description: 'Must be at least 6 characters.'
         required: true
-        example: '9BD!cX"(Ma17rfM$BP'
+        example: 'b)jW"L`q*;d>?`,a'
         type: string
         custom: []
     cleanBodyParameters:
-      email: jmurray@example.com
-      password: '9BD!cX"(Ma17rfM$BP'
+      email: ashtyn68@example.org
+      password: 'b)jW"L`q*;d>?`,a'
     fileParameters: []
     responses: []
     responseFields: []

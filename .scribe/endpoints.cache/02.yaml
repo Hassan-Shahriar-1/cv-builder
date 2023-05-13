@@ -74,14 +74,14 @@ endpoints:
         name: id
         description: ''
         required: true
-        example: architecto
+        example: voluptatibus
         type: string
         custom: []
       name:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: pkqrnbdecqwnhtapmuucgu
+        example: gosejcsrtjfmmzmmqdqmue
         type: string
         custom: []
       dob:
@@ -95,14 +95,14 @@ endpoints:
         name: phone
         description: 'Must be 11 characters.'
         required: false
-        example: aosmqnrixfv
+        example: gjfdomqchbc
         type: string
         custom: []
     cleanBodyParameters:
-      id: architecto
-      name: pkqrnbdecqwnhtapmuucgu
+      id: voluptatibus
+      name: gosejcsrtjfmmzmmqdqmue
       dob: '2023-05-13'
-      phone: aosmqnrixfv
+      phone: gjfdomqchbc
     fileParameters: []
     responses: []
     responseFields: []

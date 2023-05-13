@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "b3a5de49-a2d1-40e8-b1c2-35ac6440ce5e",
+        "_postman_id": "694c7913-4904-44c2-bf2d-6de62c64d62f",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -41,7 +41,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"yffgnn\",\"email\":\"kassulke.kylie@example.com\",\"password\":\"W+h&Z+<=hvT\",\"confirm_password\":\"repellendus\"}"
+                            "raw": "{\"name\":\"aggku\",\"email\":\"hermiston.kacie@example.org\",\"password\":\"l=mJL<g8T,<qx+@CJ0e\",\"confirm_password\":\"fugiat\"}"
                         },
                         "description": "",
                         "auth": {
@@ -72,7 +72,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"jmurray@example.com\",\"password\":\"9BD!cX\\\"(Ma17rfM$BP\"}"
+                            "raw": "{\"email\":\"ashtyn68@example.org\",\"password\":\"b)jW\\\"L`q*;d>?`,a\"}"
                         },
                         "description": "",
                         "auth": {
@@ -162,7 +162,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"id\":\"architecto\",\"name\":\"pkqrnbdecqwnhtapmuucgu\",\"dob\":\"2023-05-13\",\"phone\":\"aosmqnrixfv\"}"
+                            "raw": "{\"id\":\"voluptatibus\",\"name\":\"gosejcsrtjfmmzmmqdqmue\",\"dob\":\"2023-05-13\",\"phone\":\"gjfdomqchbc\"}"
                         },
                         "description": ""
                     },
@@ -196,7 +196,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"thora.toy@example.org\"}"
+                            "raw": "{\"email\":\"marilyne.strosin@example.net\"}"
                         },
                         "description": "",
                         "auth": {
@@ -227,7 +227,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"token\":\"voluptas\",\"password\":\"n{R'we%P`*h4\",\"email\":\"coby73@example.com\"}"
+                            "raw": "{\"token\":\"velit\",\"password\":\"n6IElbMix&+\",\"email\":\"junius.nicolas@example.com\"}"
                         },
                         "description": "",
                         "auth": {
@@ -264,7 +264,35 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"id\":\"dolorem\",\"first_name\":\"nvrooecocfxeryt\",\"last_name\":\"mgjowenzprzihwozbpiimfda\",\"email\":\"derek.schumm@example.org\",\"job_title\":\"ofct\",\"phone\":\"xqzysbwdnlmrpmppdmgyw\",\"location\":\"gdigmhszcornjpdorkawuv\",\"linkedin_link\":\"kqmqofyzeqaonlywpru\",\"facebook_link\":\"maduvwa\",\"twitter_link\":\"dljarjhnu\",\"website\":\"t\"}"
+                            "raw": "{\"id\":\"dolor\",\"first_name\":\"klgkuszhlfcg\",\"last_name\":\"cqzetakwisdklnelnbq\",\"email\":\"joan83@example.com\",\"job_title\":\"zapivroeyqjxadkr\",\"phone\":\"mugojwikbelovsl\",\"location\":\"ggnarbwffmzfizxfvo\",\"linkedin_link\":\"rmncgmxzrlzgk\",\"facebook_link\":\"pxpegpfkjkafpbjey\",\"twitter_link\":\"kbajxpxscfqyrjk\",\"website\":\"nibcnohxpp\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "create or update education",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/resume\/education",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/resume\/education"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"pudmkkpzwayqezpfsvwfmamkj\",\"school_name\":\"mzyyanellmuxpyrr\",\"location\":\"owpqpkt\",\"feild_of_study\":\"rppudexc\",\"start_date\":\"2023-05-13\",\"active\":true,\"end_date\":\"2023-05-13\"}"
                         },
                         "description": ""
                     },
