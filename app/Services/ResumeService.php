@@ -5,7 +5,8 @@ namespace App\Services;
 use App\Models\Contact;
 use Illuminate\Support\Facades\Auth;
 
-class ResumeService {
+class ResumeService 
+{
     
     /**
      * create or update contact data
@@ -24,4 +25,15 @@ class ResumeService {
             return Contact::create($data);
         }
     }
+
+    /**
+     * Education create and update
+     * @param $array $educationData
+     * @return object
+     */
+    public function createOrUpdateEducation(array $educationData) : object
+    {
+
+    }
+
 }
