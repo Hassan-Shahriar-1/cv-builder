@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "8ab8e3e9-480e-4c83-a227-a256ac338e9c",
+        "_postman_id": "b3a5de49-a2d1-40e8-b1c2-35ac6440ce5e",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -41,7 +41,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"uclhjss\",\"email\":\"ortiz.garett@example.com\",\"password\":\"~A<AiZHrx&HTF(b@T#m-\",\"confirm_password\":\"atque\"}"
+                            "raw": "{\"name\":\"yffgnn\",\"email\":\"kassulke.kylie@example.com\",\"password\":\"W+h&Z+<=hvT\",\"confirm_password\":\"repellendus\"}"
                         },
                         "description": "",
                         "auth": {
@@ -72,7 +72,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"antoinette06@example.com\",\"password\":\"gP#`1$vq\\\"\"}"
+                            "raw": "{\"email\":\"jmurray@example.com\",\"password\":\"9BD!cX\\\"(Ma17rfM$BP\"}"
                         },
                         "description": "",
                         "auth": {
@@ -162,7 +162,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"id\":\"cumque\",\"name\":\"nf\",\"dob\":\"2023-05-11\",\"phone\":\"kjriyphfjwv\"}"
+                            "raw": "{\"id\":\"architecto\",\"name\":\"pkqrnbdecqwnhtapmuucgu\",\"dob\":\"2023-05-13\",\"phone\":\"aosmqnrixfv\"}"
                         },
                         "description": ""
                     },
@@ -196,7 +196,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"tschmitt@example.com\"}"
+                            "raw": "{\"email\":\"thora.toy@example.org\"}"
                         },
                         "description": "",
                         "auth": {
@@ -227,12 +227,46 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"token\":\"dicta\",\"password\":\"5z,%UFF5x2lC\",\"email\":\"dino.mraz@example.com\"}"
+                            "raw": "{\"token\":\"voluptas\",\"password\":\"n{R'we%P`*h4\",\"email\":\"coby73@example.com\"}"
                         },
                         "description": "",
                         "auth": {
                             "type": "noauth"
                         }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Resume",
+            "description": "",
+            "item": [
+                {
+                    "name": "create or update contact",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/resume\/contact",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/resume\/contact"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"id\":\"dolorem\",\"first_name\":\"nvrooecocfxeryt\",\"last_name\":\"mgjowenzprzihwozbpiimfda\",\"email\":\"derek.schumm@example.org\",\"job_title\":\"ofct\",\"phone\":\"xqzysbwdnlmrpmppdmgyw\",\"location\":\"gdigmhszcornjpdorkawuv\",\"linkedin_link\":\"kqmqofyzeqaonlywpru\",\"facebook_link\":\"maduvwa\",\"twitter_link\":\"dljarjhnu\",\"website\":\"t\"}"
+                        },
+                        "description": ""
                     },
                     "response": []
                 }

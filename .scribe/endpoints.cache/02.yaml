@@ -74,35 +74,35 @@ endpoints:
         name: id
         description: ''
         required: true
-        example: cumque
+        example: architecto
         type: string
         custom: []
       name:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: nf
+        example: pkqrnbdecqwnhtapmuucgu
         type: string
         custom: []
       dob:
         name: dob
         description: 'Must be a valid date in the format <code>Y-m-d</code>.'
         required: false
-        example: '2023-05-11'
+        example: '2023-05-13'
         type: string
         custom: []
       phone:
         name: phone
         description: 'Must be 11 characters.'
         required: false
-        example: kjriyphfjwv
+        example: aosmqnrixfv
         type: string
         custom: []
     cleanBodyParameters:
-      id: cumque
-      name: nf
-      dob: '2023-05-11'
-      phone: kjriyphfjwv
+      id: architecto
+      name: pkqrnbdecqwnhtapmuucgu
+      dob: '2023-05-13'
+      phone: aosmqnrixfv
     fileParameters: []
     responses: []
     responseFields: []

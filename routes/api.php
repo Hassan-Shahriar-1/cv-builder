@@ -31,5 +31,6 @@ Route::group(['prefix' => 'profile', 'middleware'=> 'auth:api'], function(){
 
 ///cv create routes
 Route::group(['prefix' => 'resume', 'middleware' => 'auth:api'], function(){
-    Route::post('contact',[ResumeController::class, 'contact'])->name('contact');
+    Route::post('contact', [ResumeController::class, 'contact'])->name('contact');
+    Route::post('education', [ResumeController::class, 'education'])->name('education');
 });
