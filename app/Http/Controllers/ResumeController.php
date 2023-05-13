@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Helpers\ApiResponseHelper;
 use App\Http\Requests\ContactRequest;
+use App\Http\Requests\EducationRequest;
+use App\Http\Resources\EducationResouce;
 use App\Services\ResumeService;
 use Exception;
 use Illuminate\Http\JsonResponse;
@@ -19,6 +21,7 @@ class ResumeController extends Controller
     {
         
     }
+
     /**
      * create or update contact
      * @param ContactRequest $request
@@ -33,5 +36,23 @@ class ResumeController extends Controller
         } catch (Exception $e) {
             return ApiResponseHelper::serverError($e);
         }
+    }
+
+    /**
+     * create or update education
+     * @param EducationRequest $request
+     * @return JsonResponse
+     */
+    public function education(EducationRequest $request) : JsonResponse
+    {
+        $data = $request->validated();
+        try{
+            $educationData = $this->resumeService->createOrUpdateEducation($data);
+            
+            return ApiResponseHelper::otherResponse(true, 200, '', new EducationResouce($educationData),201);           
+        } catch (Exception $e) {
+            return ApiResponseHelper::serverError($e);
+        }
+
     }
 }

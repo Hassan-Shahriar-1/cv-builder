@@ -3,9 +3,11 @@
 namespace App\Services;
 
 use App\Models\Contact;
+use App\Models\Education;
 use Illuminate\Support\Facades\Auth;
 
-class ResumeService {
+class ResumeService 
+{
     
     /**
      * create or update contact data
@@ -24,4 +26,25 @@ class ResumeService {
             return Contact::create($data);
         }
     }
+
+    /**
+     * Education create and update
+     * @param $array $educationData
+     * @return object
+     */
+    public function createOrUpdateEducation(array $educationData) : object
+    {
+        $educationData['user_id'] = Auth::user()->id;
+
+        if(isset($educationData['id']))
+        {
+            $data = Education::where('id', $educationData['id'])->first();
+            unset($educationData['id'], $educationData['user_id']);
+            $data->update($educationData);
+            return $data;
+        }else {
+            return Education::create($educationData);
+        }
+    }
+
 }

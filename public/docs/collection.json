@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "8ab8e3e9-480e-4c83-a227-a256ac338e9c",
+        "_postman_id": "694c7913-4904-44c2-bf2d-6de62c64d62f",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -41,7 +41,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"uclhjss\",\"email\":\"ortiz.garett@example.com\",\"password\":\"~A<AiZHrx&HTF(b@T#m-\",\"confirm_password\":\"atque\"}"
+                            "raw": "{\"name\":\"aggku\",\"email\":\"hermiston.kacie@example.org\",\"password\":\"l=mJL<g8T,<qx+@CJ0e\",\"confirm_password\":\"fugiat\"}"
                         },
                         "description": "",
                         "auth": {
@@ -72,7 +72,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"antoinette06@example.com\",\"password\":\"gP#`1$vq\\\"\"}"
+                            "raw": "{\"email\":\"ashtyn68@example.org\",\"password\":\"b)jW\\\"L`q*;d>?`,a\"}"
                         },
                         "description": "",
                         "auth": {
@@ -162,7 +162,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"id\":\"cumque\",\"name\":\"nf\",\"dob\":\"2023-05-11\",\"phone\":\"kjriyphfjwv\"}"
+                            "raw": "{\"id\":\"voluptatibus\",\"name\":\"gosejcsrtjfmmzmmqdqmue\",\"dob\":\"2023-05-13\",\"phone\":\"gjfdomqchbc\"}"
                         },
                         "description": ""
                     },
@@ -196,7 +196,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"tschmitt@example.com\"}"
+                            "raw": "{\"email\":\"marilyne.strosin@example.net\"}"
                         },
                         "description": "",
                         "auth": {
@@ -227,12 +227,74 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"token\":\"dicta\",\"password\":\"5z,%UFF5x2lC\",\"email\":\"dino.mraz@example.com\"}"
+                            "raw": "{\"token\":\"velit\",\"password\":\"n6IElbMix&+\",\"email\":\"junius.nicolas@example.com\"}"
                         },
                         "description": "",
                         "auth": {
                             "type": "noauth"
                         }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Resume",
+            "description": "",
+            "item": [
+                {
+                    "name": "create or update contact",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/resume\/contact",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/resume\/contact"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"id\":\"dolor\",\"first_name\":\"klgkuszhlfcg\",\"last_name\":\"cqzetakwisdklnelnbq\",\"email\":\"joan83@example.com\",\"job_title\":\"zapivroeyqjxadkr\",\"phone\":\"mugojwikbelovsl\",\"location\":\"ggnarbwffmzfizxfvo\",\"linkedin_link\":\"rmncgmxzrlzgk\",\"facebook_link\":\"pxpegpfkjkafpbjey\",\"twitter_link\":\"kbajxpxscfqyrjk\",\"website\":\"nibcnohxpp\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "create or update education",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/resume\/education",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/resume\/education"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"pudmkkpzwayqezpfsvwfmamkj\",\"school_name\":\"mzyyanellmuxpyrr\",\"location\":\"owpqpkt\",\"feild_of_study\":\"rppudexc\",\"start_date\":\"2023-05-13\",\"active\":true,\"end_date\":\"2023-05-13\"}"
+                        },
+                        "description": ""
                     },
                     "response": []
                 }

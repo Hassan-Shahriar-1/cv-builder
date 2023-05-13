@@ -29,91 +29,188 @@ endpoints:
         name: id
         description: ''
         required: true
-        example: consequatur
+        example: dolor
         type: string
         custom: []
       first_name:
         name: first_name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: uvxiczi
+        example: klgkuszhlfcg
         type: string
         custom: []
       last_name:
         name: last_name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: f
+        example: cqzetakwisdklnelnbq
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: nhansen@example.net
+        example: joan83@example.com
         type: string
         custom: []
       job_title:
         name: job_title
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: jdmjoqqluawdpzscunhxfeapa
+        example: zapivroeyqjxadkr
         type: string
         custom: []
       phone:
         name: phone
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: cjcjfebumsgtxypcawhu
+        example: mugojwikbelovsl
         type: string
         custom: []
       location:
         name: location
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: xelmsv
+        example: ggnarbwffmzfizxfvo
         type: string
         custom: []
       linkedin_link:
         name: linkedin_link
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: itabxgiigstpfol
+        example: rmncgmxzrlzgk
         type: string
         custom: []
       facebook_link:
         name: facebook_link
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: lxwpqrejqdq
+        example: pxpegpfkjkafpbjey
         type: string
         custom: []
       twitter_link:
         name: twitter_link
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: vuwcgflzeqwkhtar
+        example: kbajxpxscfqyrjk
         type: string
         custom: []
       website:
         name: website
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: vsc
+        example: nibcnohxpp
         type: string
         custom: []
     cleanBodyParameters:
-      id: consequatur
-      first_name: uvxiczi
-      last_name: f
-      email: nhansen@example.net
-      job_title: jdmjoqqluawdpzscunhxfeapa
-      phone: cjcjfebumsgtxypcawhu
-      location: xelmsv
-      linkedin_link: itabxgiigstpfol
-      facebook_link: lxwpqrejqdq
-      twitter_link: vuwcgflzeqwkhtar
-      website: vsc
+      id: dolor
+      first_name: klgkuszhlfcg
+      last_name: cqzetakwisdklnelnbq
+      email: joan83@example.com
+      job_title: zapivroeyqjxadkr
+      phone: mugojwikbelovsl
+      location: ggnarbwffmzfizxfvo
+      linkedin_link: rmncgmxzrlzgk
+      facebook_link: pxpegpfkjkafpbjey
+      twitter_link: kbajxpxscfqyrjk
+      website: nibcnohxpp
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5OTIzYzcyZi1jOTIyLTRkOGUtOGY0ZC01MjUwYjRhYjI0MTQiLCJqdGkiOiJhM2QwOWUxZjk1OTEzNDhhNzI5YmEyZTI2MDg1ZjYxODk2ZGQxMTY4NWRlY2Q3YTY3NmQ0MWU5ODI4YzA3OGQwYjlkYTc2YmFlYWYzODIyOCIsImlhdCI6MTY4Mzc4OTQ4Mi4zNzEzOTYsIm5iZiI6MTY4Mzc4OTQ4Mi4zNzE0MDEsImV4cCI6MTcxNTQxMTg4Mi4wODM4OSwic3ViIjoiYWM0OWZmZGMtODU2OC00ODFjLTg1ODctNWNiM2Y4NDZhZjVmIiwic2NvcGVzIjpbXX0.fLeQldzAss2VSr9swcyslE4IygpmSux30G-OI_qPbrWkLWgsQF2j5pgchL7IyPTyuxV4teARnGYXEcpksXAn9idP5toIjKmQToLlJpMSGuChvYZnniCk-h4K4F_V3-S73C0e_a_Pbkba9i3ylLjZvhJY5Vkm_XedDIU3eAVyaOxNLOi1Y6FYCSY5I-eWk4R_Ll7Fd4ituBVv99UO2FTOcSeAlY8sMIH-5ub8poaZcVPtabkGFDi1cue6YSDId9gkrhBLSrtz4HLE8AoZYaF7Ar8IHUN9bE92MJON33LtpVo5ufQgxWawI6Nc9QGbCAZOROk4FK__H80WSQA-tdAeJc8QbY3MUYKYjgIDuscdQRA9TcV3tMfgzB8MSzeG9S26B6WD9gEjZf_O3COq6osA6XZe69tVR4axRPIDR7Fjzwxv3OJM3zIrGy428I1h6aPrWNTfBQnx18vckTOi3qt_SdlHUfd9qZpj_cbeUY3lBVnnH6r4HR-9WZnVrvo__bVHbYXG8jjsZTTk3NnWainpTJ6AKAV5DGpr_AWkGv6DV4wuWMpuyy8UE_lcmuoErqHVvSExloHoTu-I4SMRksGdExwR7lK3csT8kvqjlg4k6RvutbNFgmIQkCcUKMFNd2-ELmbn-UoCLAOvnZ-hww42YIpmWjihcQRZCABvI4Kl7Ak'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/resume/education
+    metadata:
+      groupName: Resume
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'create or update education'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      id:
+        name: id
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      name:
+        name: name
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: pudmkkpzwayqezpfsvwfmamkj
+        type: string
+        custom: []
+      school_name:
+        name: school_name
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: mzyyanellmuxpyrr
+        type: string
+        custom: []
+      location:
+        name: location
+        description: 'Must not be greater than 255 characters.'
+        required: false
+        example: owpqpkt
+        type: string
+        custom: []
+      feild_of_study:
+        name: feild_of_study
+        description: 'Must not be greater than 255 characters.'
+        required: false
+        example: rppudexc
+        type: string
+        custom: []
+      start_date:
+        name: start_date
+        description: 'Must be a valid date in the format <code>Y-m-d</code>.'
+        required: true
+        example: '2023-05-13'
+        type: string
+        custom: []
+      active:
+        name: active
+        description: ''
+        required: true
+        example: true
+        type: boolean
+        custom: []
+      end_date:
+        name: end_date
+        description: 'Must be a valid date in the format <code>Y-m-d</code>. This field is required when <code>active</code> is <code>true</code>.'
+        required: false
+        example: '2023-05-13'
+        type: string
+        custom: []
+    cleanBodyParameters:
+      name: pudmkkpzwayqezpfsvwfmamkj
+      school_name: mzyyanellmuxpyrr
+      location: owpqpkt
+      feild_of_study: rppudexc
+      start_date: '2023-05-13'
+      active: true
+      end_date: '2023-05-13'
     fileParameters: []
     responses: []
     responseFields: []

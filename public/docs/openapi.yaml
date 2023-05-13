@@ -26,19 +26,19 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: uclhjss
+                  example: aggku
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: ortiz.garett@example.com
+                  example: hermiston.kacie@example.org
                 password:
                   type: string
                   description: 'Must be at least 6 characters. Must not be greater than 255 characters.'
-                  example: '~A<AiZHrx&HTF(b@T#m-'
+                  example: 'l=mJL<g8T,<qx+@CJ0e'
                 confirm_password:
                   type: string
                   description: 'The value and <code>password</code> must match.'
-                  example: atque
+                  example: fugiat
               required:
                 - name
                 - email
@@ -64,11 +64,11 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: antoinette06@example.com
+                  example: ashtyn68@example.org
                 password:
                   type: string
                   description: 'Must be at least 6 characters.'
-                  example: 'gP#`1$vq"'
+                  example: 'b)jW"L`q*;d>?`,a'
               required:
                 - email
                 - password
@@ -179,19 +179,19 @@ paths:
                 id:
                   type: string
                   description: ''
-                  example: cumque
+                  example: voluptatibus
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: nf
+                  example: gosejcsrtjfmmzmmqdqmue
                 dob:
                   type: string
                   description: 'Must be a valid date in the format <code>Y-m-d</code>.'
-                  example: '2023-05-11'
+                  example: '2023-05-13'
                 phone:
                   type: string
                   description: 'Must be 11 characters.'
-                  example: kjriyphfjwv
+                  example: gjfdomqchbc
               required:
                 - id
                 - name
@@ -214,7 +214,7 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: tschmitt@example.com
+                  example: marilyne.strosin@example.net
               required:
                 - email
       security: []
@@ -237,20 +237,155 @@ paths:
                 token:
                   type: string
                   description: ''
-                  example: dicta
+                  example: velit
                 password:
                   type: string
                   description: 'Must be at least 6 characters.'
-                  example: '5z,%UFF5x2lC'
+                  example: 'n6IElbMix&+'
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: dino.mraz@example.com
+                  example: junius.nicolas@example.com
               required:
                 - token
                 - password
                 - email
       security: []
+  /api/resume/contact:
+    post:
+      summary: 'create or update contact'
+      operationId: createOrUpdateContact
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {YOUR_AUTH_KEY}'
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Resume
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: string
+                  description: ''
+                  example: dolor
+                first_name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: klgkuszhlfcg
+                last_name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: cqzetakwisdklnelnbq
+                email:
+                  type: string
+                  description: 'Must be a valid email address.'
+                  example: joan83@example.com
+                job_title:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: zapivroeyqjxadkr
+                phone:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: mugojwikbelovsl
+                location:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: ggnarbwffmzfizxfvo
+                linkedin_link:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: rmncgmxzrlzgk
+                facebook_link:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: pxpegpfkjkafpbjey
+                twitter_link:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: kbajxpxscfqyrjk
+                website:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: nibcnohxpp
+              required:
+                - id
+                - first_name
+                - last_name
+                - email
+                - job_title
+                - phone
+                - location
+  /api/resume/education:
+    post:
+      summary: 'create or update education'
+      operationId: createOrUpdateEducation
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {YOUR_AUTH_KEY}'
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Resume
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: string
+                  description: ''
+                  example: null
+                name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: pudmkkpzwayqezpfsvwfmamkj
+                school_name:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: mzyyanellmuxpyrr
+                location:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: owpqpkt
+                feild_of_study:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: rppudexc
+                start_date:
+                  type: string
+                  description: 'Must be a valid date in the format <code>Y-m-d</code>.'
+                  example: '2023-05-13'
+                active:
+                  type: boolean
+                  description: ''
+                  example: true
+                end_date:
+                  type: string
+                  description: 'Must be a valid date in the format <code>Y-m-d</code>. This field is required when <code>active</code> is <code>true</code>.'
+                  example: '2023-05-13'
+              required:
+                - name
+                - school_name
+                - start_date
+                - active
 tags:
   -
     name: 'Auth routes'
@@ -260,6 +395,9 @@ tags:
     description: ''
   -
     name: 'Reset password'
+    description: ''
+  -
+    name: Resume
     description: ''
 components:
   securitySchemes:
