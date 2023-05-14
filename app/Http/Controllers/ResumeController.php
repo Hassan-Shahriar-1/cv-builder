@@ -7,6 +7,7 @@ use App\Http\Requests\ContactRequest;
 use App\Http\Requests\EducationRequest;
 use App\Http\Requests\SkillRequest;
 use App\Http\Resources\EducationResouce;
+use App\Http\Resources\SkillResource;
 use App\Services\ResumeService;
 use Exception;
 use Illuminate\Http\JsonResponse;
@@ -73,8 +74,8 @@ class ResumeController extends Controller
                 $msg = trans('messages.created');
             }
 
-            return ApiResponseHelper::otherResponse(true, 200, $msg, $data, 201);
-            
+            return ApiResponseHelper::otherResponse(true, 200, $msg, SkillResource::collection($data), 201);
+
         } catch (Exception $e) {
             return ApiResponseHelper::serverError($e);
         }
