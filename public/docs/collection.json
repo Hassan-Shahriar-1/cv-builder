@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "694c7913-4904-44c2-bf2d-6de62c64d62f",
+        "_postman_id": "e37a8ff1-4fca-46f0-9226-7798cf5a463e",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -41,14 +41,42 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"aggku\",\"email\":\"hermiston.kacie@example.org\",\"password\":\"l=mJL<g8T,<qx+@CJ0e\",\"confirm_password\":\"fugiat\"}"
+                            "raw": "{\"name\":\"ztzplusaieiskwvhimjmwbkvj\",\"email\":\"jadon.rosenbaum@example.com\",\"password\":\"D]P\\\\oiJ;?p\",\"confirm_password\":\"voluptatem\"}"
                         },
                         "description": "",
                         "auth": {
                             "type": "noauth"
                         }
                     },
-                    "response": []
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "59"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 422,
+                            "body": "{\"status\":false,\"status_code\":400,\"message\":\"The confirm password field must match password.\",\"errors\":{\"confirm_password\":[\"The confirm password field must match password.\"]},\"data\":[]}",
+                            "name": ""
+                        }
+                    ]
                 },
                 {
                     "name": "Login",
@@ -72,14 +100,42 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"ashtyn68@example.org\",\"password\":\"b)jW\\\"L`q*;d>?`,a\"}"
+                            "raw": "{\"email\":\"ratke.crawford@example.com\",\"password\":\"8]c.$=\"}"
                         },
                         "description": "",
                         "auth": {
                             "type": "noauth"
                         }
                     },
-                    "response": []
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "58"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 422,
+                            "body": "{\"status\":false,\"status_code\":400,\"message\":\"The selected email is invalid.\",\"errors\":{\"email\":[\"The selected email is invalid.\"]},\"data\":[]}",
+                            "name": ""
+                        }
+                    ]
                 }
             ]
         },
@@ -122,20 +178,12 @@
                                     "value": "application\/json"
                                 },
                                 {
-                                    "key": "x-ratelimit-limit",
-                                    "value": "60"
-                                },
-                                {
-                                    "key": "x-ratelimit-remaining",
-                                    "value": "59"
-                                },
-                                {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 200,
-                            "body": "{\"status\":true,\"status_code\":200,\"message\":\"\",\"data\":{\"id\":\"ac49ffdc-8568-481c-8587-5cb3f846af5f\",\"name\":\"test update\",\"email\":\"hassanshahriar18@gmail.com\",\"user_type\":\"User\",\"login_type\":\"default\",\"dob\":\"2022-01-01\",\"phone\":\"11111111111\",\"created_at\":\"2023-05-11T07:16:47.000000Z\",\"updated_at\":\"2023-05-11T17:36:39.000000Z\",\"deleted_at\":null}}",
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
                             "name": ""
                         }
                     ]
@@ -162,11 +210,31 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"id\":\"voluptatibus\",\"name\":\"gosejcsrtjfmmzmmqdqmue\",\"dob\":\"2023-05-13\",\"phone\":\"gjfdomqchbc\"}"
+                            "raw": "{\"id\":\"voluptatem\",\"name\":\"ezqtxtsntkptwxrhsbuxhiyel\",\"dob\":\"2023-05-14\",\"phone\":\"umeybfuvsrh\"}"
                         },
                         "description": ""
                     },
-                    "response": []
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
                 }
             ]
         },
@@ -196,14 +264,42 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"marilyne.strosin@example.net\"}"
+                            "raw": "{\"email\":\"myles35@example.com\"}"
                         },
                         "description": "",
                         "auth": {
                             "type": "noauth"
                         }
                     },
-                    "response": []
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "57"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 422,
+                            "body": "{\"status\":false,\"status_code\":400,\"message\":\"The selected email is invalid.\",\"errors\":{\"email\":[\"The selected email is invalid.\"]},\"data\":[]}",
+                            "name": ""
+                        }
+                    ]
                 },
                 {
                     "name": "Password reset",
@@ -227,14 +323,42 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"token\":\"velit\",\"password\":\"n6IElbMix&+\",\"email\":\"junius.nicolas@example.com\"}"
+                            "raw": "{\"token\":\"tempora\",\"password\":\"0Yt<5G,\\\"M~1Z!9\",\"email\":\"jmclaughlin@example.net\"}"
                         },
                         "description": "",
                         "auth": {
                             "type": "noauth"
                         }
                     },
-                    "response": []
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "56"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 422,
+                            "body": "{\"status\":false,\"status_code\":400,\"message\":\"The selected email is invalid.\",\"errors\":{\"email\":[\"The selected email is invalid.\"]},\"data\":[]}",
+                            "name": ""
+                        }
+                    ]
                 }
             ]
         },
@@ -264,11 +388,31 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"id\":\"dolor\",\"first_name\":\"klgkuszhlfcg\",\"last_name\":\"cqzetakwisdklnelnbq\",\"email\":\"joan83@example.com\",\"job_title\":\"zapivroeyqjxadkr\",\"phone\":\"mugojwikbelovsl\",\"location\":\"ggnarbwffmzfizxfvo\",\"linkedin_link\":\"rmncgmxzrlzgk\",\"facebook_link\":\"pxpegpfkjkafpbjey\",\"twitter_link\":\"kbajxpxscfqyrjk\",\"website\":\"nibcnohxpp\"}"
+                            "raw": "{\"id\":\"error\",\"first_name\":\"lijiapkqvmep\",\"last_name\":\"neqi\",\"email\":\"maymie26@example.com\",\"job_title\":\"zfpbdeffnc\",\"phone\":\"syecs\",\"location\":\"fastfld\",\"linkedin_link\":\"pcfitnpbee\",\"facebook_link\":\"dezultkpqeyazcopm\",\"twitter_link\":\"hokktjkdevmfejaleo\",\"website\":\"kdmedoxkoxvehjh\"}"
                         },
                         "description": ""
                     },
-                    "response": []
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
                 },
                 {
                     "name": "create or update education",
@@ -292,8 +436,101 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"pudmkkpzwayqezpfsvwfmamkj\",\"school_name\":\"mzyyanellmuxpyrr\",\"location\":\"owpqpkt\",\"feild_of_study\":\"rppudexc\",\"start_date\":\"2023-05-13\",\"active\":true,\"end_date\":\"2023-05-13\"}"
+                            "raw": "{\"name\":\"kmjzjtozddcjndeeucooqn\",\"school_name\":\"db\",\"location\":\"eghpuykysszjle\",\"feild_of_study\":\"zwvtbtf\",\"start_date\":\"2023-05-14\",\"active\":true,\"end_date\":\"2023-05-14\"}"
                         },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Skills create or update",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/resume\/skill",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/resume\/skill"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"skills\":[\"enim\"]}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Delete skill",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/resume\/skill",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/resume\/skill"
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
                         "description": ""
                     },
                     "response": []

@@ -13,7 +13,43 @@ paths:
       operationId: userRegistration
       description: ''
       parameters: []
-      responses: {  }
+      responses:
+        422:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  status: false
+                  status_code: 400
+                  message: 'The confirm password field must match password.'
+                  errors:
+                    confirm_password:
+                      - 'The confirm password field must match password.'
+                  data: []
+                properties:
+                  status:
+                    type: boolean
+                    example: false
+                  status_code:
+                    type: integer
+                    example: 400
+                  message:
+                    type: string
+                    example: 'The confirm password field must match password.'
+                  errors:
+                    type: object
+                    properties:
+                      confirm_password:
+                        type: array
+                        example:
+                          - 'The confirm password field must match password.'
+                        items:
+                          type: string
+                  data:
+                    type: array
+                    example: []
       tags:
         - 'Auth routes'
       requestBody:
@@ -26,19 +62,19 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: aggku
+                  example: ztzplusaieiskwvhimjmwbkvj
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: hermiston.kacie@example.org
+                  example: jadon.rosenbaum@example.com
                 password:
                   type: string
                   description: 'Must be at least 6 characters. Must not be greater than 255 characters.'
-                  example: 'l=mJL<g8T,<qx+@CJ0e'
+                  example: 'D]P\oiJ;?p'
                 confirm_password:
                   type: string
                   description: 'The value and <code>password</code> must match.'
-                  example: fugiat
+                  example: voluptatem
               required:
                 - name
                 - email
@@ -51,7 +87,43 @@ paths:
       operationId: login
       description: ''
       parameters: []
-      responses: {  }
+      responses:
+        422:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  status: false
+                  status_code: 400
+                  message: 'The selected email is invalid.'
+                  errors:
+                    email:
+                      - 'The selected email is invalid.'
+                  data: []
+                properties:
+                  status:
+                    type: boolean
+                    example: false
+                  status_code:
+                    type: integer
+                    example: 400
+                  message:
+                    type: string
+                    example: 'The selected email is invalid.'
+                  errors:
+                    type: object
+                    properties:
+                      email:
+                        type: array
+                        example:
+                          - 'The selected email is invalid.'
+                        items:
+                          type: string
+                  data:
+                    type: array
+                    example: []
       tags:
         - 'Auth routes'
       requestBody:
@@ -64,11 +136,11 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: ashtyn68@example.org
+                  example: ratke.crawford@example.com
                 password:
                   type: string
                   description: 'Must be at least 6 characters.'
-                  example: 'b)jW"L`q*;d>?`,a'
+                  example: '8]c.$='
               required:
                 - email
                 - password
@@ -87,70 +159,18 @@ paths:
           schema:
             type: string
       responses:
-        200:
+        401:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  status: true
-                  status_code: 200
-                  message: ''
-                  data:
-                    id: ac49ffdc-8568-481c-8587-5cb3f846af5f
-                    name: 'test update'
-                    email: hassanshahriar18@gmail.com
-                    user_type: User
-                    login_type: default
-                    dob: '2022-01-01'
-                    phone: '11111111111'
-                    created_at: '2023-05-11T07:16:47.000000Z'
-                    updated_at: '2023-05-11T17:36:39.000000Z'
-                    deleted_at: null
+                  message: Unauthenticated.
                 properties:
-                  status:
-                    type: boolean
-                    example: true
-                  status_code:
-                    type: integer
-                    example: 200
                   message:
                     type: string
-                    example: ''
-                  data:
-                    type: object
-                    properties:
-                      id:
-                        type: string
-                        example: ac49ffdc-8568-481c-8587-5cb3f846af5f
-                      name:
-                        type: string
-                        example: 'test update'
-                      email:
-                        type: string
-                        example: hassanshahriar18@gmail.com
-                      user_type:
-                        type: string
-                        example: User
-                      login_type:
-                        type: string
-                        example: default
-                      dob:
-                        type: string
-                        example: '2022-01-01'
-                      phone:
-                        type: string
-                        example: '11111111111'
-                      created_at:
-                        type: string
-                        example: '2023-05-11T07:16:47.000000Z'
-                      updated_at:
-                        type: string
-                        example: '2023-05-11T17:36:39.000000Z'
-                      deleted_at:
-                        type: string
-                        example: null
+                    example: Unauthenticated.
       tags:
         - Profile
   /api/profile/update:
@@ -166,7 +186,19 @@ paths:
           example: 'Bearer {YOUR_AUTH_KEY}'
           schema:
             type: string
-      responses: {  }
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
       tags:
         - Profile
       requestBody:
@@ -179,19 +211,19 @@ paths:
                 id:
                   type: string
                   description: ''
-                  example: voluptatibus
+                  example: voluptatem
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: gosejcsrtjfmmzmmqdqmue
+                  example: ezqtxtsntkptwxrhsbuxhiyel
                 dob:
                   type: string
                   description: 'Must be a valid date in the format <code>Y-m-d</code>.'
-                  example: '2023-05-13'
+                  example: '2023-05-14'
                 phone:
                   type: string
                   description: 'Must be 11 characters.'
-                  example: gjfdomqchbc
+                  example: umeybfuvsrh
               required:
                 - id
                 - name
@@ -201,7 +233,43 @@ paths:
       operationId: sendingResetPasswordLink
       description: ''
       parameters: []
-      responses: {  }
+      responses:
+        422:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  status: false
+                  status_code: 400
+                  message: 'The selected email is invalid.'
+                  errors:
+                    email:
+                      - 'The selected email is invalid.'
+                  data: []
+                properties:
+                  status:
+                    type: boolean
+                    example: false
+                  status_code:
+                    type: integer
+                    example: 400
+                  message:
+                    type: string
+                    example: 'The selected email is invalid.'
+                  errors:
+                    type: object
+                    properties:
+                      email:
+                        type: array
+                        example:
+                          - 'The selected email is invalid.'
+                        items:
+                          type: string
+                  data:
+                    type: array
+                    example: []
       tags:
         - 'Reset password'
       requestBody:
@@ -214,7 +282,7 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: marilyne.strosin@example.net
+                  example: myles35@example.com
               required:
                 - email
       security: []
@@ -224,7 +292,43 @@ paths:
       operationId: passwordReset
       description: ''
       parameters: []
-      responses: {  }
+      responses:
+        422:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  status: false
+                  status_code: 400
+                  message: 'The selected email is invalid.'
+                  errors:
+                    email:
+                      - 'The selected email is invalid.'
+                  data: []
+                properties:
+                  status:
+                    type: boolean
+                    example: false
+                  status_code:
+                    type: integer
+                    example: 400
+                  message:
+                    type: string
+                    example: 'The selected email is invalid.'
+                  errors:
+                    type: object
+                    properties:
+                      email:
+                        type: array
+                        example:
+                          - 'The selected email is invalid.'
+                        items:
+                          type: string
+                  data:
+                    type: array
+                    example: []
       tags:
         - 'Reset password'
       requestBody:
@@ -237,15 +341,15 @@ paths:
                 token:
                   type: string
                   description: ''
-                  example: velit
+                  example: tempora
                 password:
                   type: string
                   description: 'Must be at least 6 characters.'
-                  example: 'n6IElbMix&+'
+                  example: '0Yt<5G,"M~1Z!9'
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: junius.nicolas@example.com
+                  example: jmclaughlin@example.net
               required:
                 - token
                 - password
@@ -264,7 +368,19 @@ paths:
           example: 'Bearer {YOUR_AUTH_KEY}'
           schema:
             type: string
-      responses: {  }
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
       tags:
         - Resume
       requestBody:
@@ -277,47 +393,47 @@ paths:
                 id:
                   type: string
                   description: ''
-                  example: dolor
+                  example: error
                 first_name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: klgkuszhlfcg
+                  example: lijiapkqvmep
                 last_name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: cqzetakwisdklnelnbq
+                  example: neqi
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: joan83@example.com
+                  example: maymie26@example.com
                 job_title:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: zapivroeyqjxadkr
+                  example: zfpbdeffnc
                 phone:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: mugojwikbelovsl
+                  example: syecs
                 location:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: ggnarbwffmzfizxfvo
+                  example: fastfld
                 linkedin_link:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: rmncgmxzrlzgk
+                  example: pcfitnpbee
                 facebook_link:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: pxpegpfkjkafpbjey
+                  example: dezultkpqeyazcopm
                 twitter_link:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: kbajxpxscfqyrjk
+                  example: hokktjkdevmfejaleo
                 website:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: nibcnohxpp
+                  example: kdmedoxkoxvehjh
               required:
                 - id
                 - first_name
@@ -339,7 +455,19 @@ paths:
           example: 'Bearer {YOUR_AUTH_KEY}'
           schema:
             type: string
-      responses: {  }
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
       tags:
         - Resume
       requestBody:
@@ -356,23 +484,23 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: pudmkkpzwayqezpfsvwfmamkj
+                  example: kmjzjtozddcjndeeucooqn
                 school_name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: mzyyanellmuxpyrr
+                  example: db
                 location:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: owpqpkt
+                  example: eghpuykysszjle
                 feild_of_study:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: rppudexc
+                  example: zwvtbtf
                 start_date:
                   type: string
                   description: 'Must be a valid date in the format <code>Y-m-d</code>.'
-                  example: '2023-05-13'
+                  example: '2023-05-14'
                 active:
                   type: boolean
                   description: ''
@@ -380,12 +508,69 @@ paths:
                 end_date:
                   type: string
                   description: 'Must be a valid date in the format <code>Y-m-d</code>. This field is required when <code>active</code> is <code>true</code>.'
-                  example: '2023-05-13'
+                  example: '2023-05-14'
               required:
                 - name
                 - school_name
                 - start_date
                 - active
+  /api/resume/skill:
+    post:
+      summary: 'Skills create or update'
+      operationId: skillsCreateOrUpdate
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {YOUR_AUTH_KEY}'
+          schema:
+            type: string
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Resume
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                skills:
+                  type: array
+                  description: ''
+                  example:
+                    - enim
+                  items:
+                    type: string
+    delete:
+      summary: 'Delete skill'
+      operationId: deleteSkill
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {YOUR_AUTH_KEY}'
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Resume
 tags:
   -
     name: 'Auth routes'
