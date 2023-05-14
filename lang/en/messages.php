@@ -9,6 +9,7 @@ return [
     'reset_password' => 'Password Reseted Successfully',
     'invalid_user' => 'Requested user not found',
     'Unauthenticated' => 'Unauthenticated',
+    'created' => 'Successfully stored',
 
     //profile 
     'profile-update' => 'profile updated successfully',

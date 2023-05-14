@@ -33,4 +33,5 @@ Route::group(['prefix' => 'profile', 'middleware'=> 'auth:api'], function(){
 Route::group(['prefix' => 'resume', 'middleware' => 'auth:api'], function(){
     Route::post('contact', [ResumeController::class, 'contact'])->name('contact');
     Route::post('education', [ResumeController::class, 'education'])->name('education');
+    Route::post('skill', [ResumeController::class, 'skills'])->name('skill');
 });

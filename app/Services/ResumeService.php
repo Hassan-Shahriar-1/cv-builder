@@ -4,6 +4,7 @@ namespace App\Services;
 
 use App\Models\Contact;
 use App\Models\Education;
+use App\Models\Skill;
 use Illuminate\Support\Facades\Auth;
 
 class ResumeService 
@@ -45,6 +46,30 @@ class ResumeService
         }else {
             return Education::create($educationData);
         }
+    }
+
+    /**
+     * create or update skills
+     * @param array
+     * @return array
+     */
+    public function createOrUpdateSkills(array $skills) : array
+    {
+        $userId = Auth::user()->id;
+        $updateData = [];
+        foreach($skills as $skill) {
+            // updating skills
+            if(isset($skill['id']) && $skill['id'] != null) {
+                $data = Skill::where('id', $skill['id'])->first();
+                unset($skill['id']);
+                $data->update($skill);
+                $updateData [] = $data;
+            } else{
+                $skill['user_id'] = $userId;
+                $updateData [] = Skill::create($skill);
+            }
+        }
+        return $updateData;
     }
 
 }

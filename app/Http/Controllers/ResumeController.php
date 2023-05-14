@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Helpers\ApiResponseHelper;
 use App\Http\Requests\ContactRequest;
 use App\Http\Requests\EducationRequest;
+use App\Http\Requests\SkillRequest;
 use App\Http\Resources\EducationResouce;
 use App\Services\ResumeService;
 use Exception;
@@ -54,5 +55,28 @@ class ResumeController extends Controller
             return ApiResponseHelper::serverError($e);
         }
 
+    }
+
+    /**
+     * Skills create or update
+     * @param SkillRequest $request
+     * @return JsonResponse
+     */
+    public function skills(SkillRequest $request): JsonResponse
+    {
+        $skills = $request->validated();
+        $msg = '';
+        $data = [];
+        try{
+            if(!empty($skills)){
+                $data = $this->resumeService->createOrUpdateSkills($skills);
+                $msg = trans('messages.created');
+            }
+
+            return ApiResponseHelper::otherResponse(true, 200, $msg, $data, 201);
+            
+        } catch (Exception $e) {
+            return ApiResponseHelper::serverError($e);
+        }
     }
 }
