@@ -6,6 +6,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ForgotPasswordController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ResumeController;
+use App\Models\Skill;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,4 +35,5 @@ Route::group(['prefix' => 'resume', 'middleware' => 'auth:api'], function(){
     Route::post('contact', [ResumeController::class, 'contact'])->name('contact');
     Route::post('education', [ResumeController::class, 'education'])->name('education');
     Route::post('skill', [ResumeController::class, 'skills'])->name('skill');
+    Route::delete('skill', [ResumeController::class, 'deleteSkill'])->name('skill.delete');
 });

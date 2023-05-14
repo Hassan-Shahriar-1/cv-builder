@@ -10,6 +10,8 @@ return [
     'invalid_user' => 'Requested user not found',
     'Unauthenticated' => 'Unauthenticated',
     'created' => 'Successfully stored',
+    'delete' => 'Successfully Deleted',
+    '404' => 'requested data not found',
 
     //profile 
     'profile-update' => 'profile updated successfully',

@@ -8,6 +8,7 @@ use App\Http\Requests\EducationRequest;
 use App\Http\Requests\SkillRequest;
 use App\Http\Resources\EducationResouce;
 use App\Http\Resources\SkillResource;
+use App\Models\Skill;
 use App\Services\ResumeService;
 use Exception;
 use Illuminate\Http\JsonResponse;
@@ -79,5 +80,27 @@ class ResumeController extends Controller
         } catch (Exception $e) {
             return ApiResponseHelper::serverError($e);
         }
+    }
+
+    /**
+     * Delete skill
+     * @param string $skillId
+     * @return JsonResponse
+     */
+    public function deleteSkill(string $skillId) :JsonResponse
+    {
+        try{
+            $check = Skill::where('id', $skillId)->first();
+            if($check) {
+                $check->delete();
+                return ApiResponseHelper::otherResponse(true, 200, trans('messages.delete'), [], 201);
+            } else {
+                return ApiResponseHelper::otherResponse(false, 400, trans('messages.404'), [], 201);
+            }
+
+        }catch(Exception $e){
+            return ApiResponseHelper::serverError($e);
+        }
+
     }
 }
