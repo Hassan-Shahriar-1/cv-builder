@@ -5,7 +5,10 @@ namespace App\Http\Controllers;
 use App\Helpers\ApiResponseHelper;
 use App\Http\Requests\ContactRequest;
 use App\Http\Requests\EducationRequest;
+use App\Http\Requests\SkillRequest;
 use App\Http\Resources\EducationResouce;
+use App\Http\Resources\SkillResource;
+use App\Models\Skill;
 use App\Services\ResumeService;
 use Exception;
 use Illuminate\Http\JsonResponse;
@@ -51,6 +54,51 @@ class ResumeController extends Controller
             
             return ApiResponseHelper::otherResponse(true, 200, '', new EducationResouce($educationData),201);           
         } catch (Exception $e) {
+            return ApiResponseHelper::serverError($e);
+        }
+
+    }
+
+    /**
+     * Skills create or update
+     * @param SkillRequest $request
+     * @return JsonResponse
+     */
+    public function skills(SkillRequest $request): JsonResponse
+    {
+        $skills = $request->validated();
+        $msg = '';
+        $data = [];
+        try{
+            if(!empty($skills)){
+                $data = $this->resumeService->createOrUpdateSkills($skills);
+                $msg = trans('messages.created');
+            }
+
+            return ApiResponseHelper::otherResponse(true, 200, $msg, SkillResource::collection($data), 201);
+
+        } catch (Exception $e) {
+            return ApiResponseHelper::serverError($e);
+        }
+    }
+
+    /**
+     * Delete skill
+     * @param string $skillId
+     * @return JsonResponse
+     */
+    public function deleteSkill(string $skillId) :JsonResponse
+    {
+        try{
+            $check = Skill::where('id', $skillId)->first();
+            if($check) {
+                $check->delete();
+                return ApiResponseHelper::otherResponse(true, 200, trans('messages.delete'), [], 201);
+            } else {
+                return ApiResponseHelper::otherResponse(false, 400, trans('messages.404'), [], 201);
+            }
+
+        }catch(Exception $e){
             return ApiResponseHelper::serverError($e);
         }
 

@@ -29,93 +29,102 @@ endpoints:
         name: id
         description: ''
         required: true
-        example: dolor
+        example: error
         type: string
         custom: []
       first_name:
         name: first_name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: klgkuszhlfcg
+        example: lijiapkqvmep
         type: string
         custom: []
       last_name:
         name: last_name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: cqzetakwisdklnelnbq
+        example: neqi
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: joan83@example.com
+        example: maymie26@example.com
         type: string
         custom: []
       job_title:
         name: job_title
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: zapivroeyqjxadkr
+        example: zfpbdeffnc
         type: string
         custom: []
       phone:
         name: phone
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: mugojwikbelovsl
+        example: syecs
         type: string
         custom: []
       location:
         name: location
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: ggnarbwffmzfizxfvo
+        example: fastfld
         type: string
         custom: []
       linkedin_link:
         name: linkedin_link
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: rmncgmxzrlzgk
+        example: pcfitnpbee
         type: string
         custom: []
       facebook_link:
         name: facebook_link
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: pxpegpfkjkafpbjey
+        example: dezultkpqeyazcopm
         type: string
         custom: []
       twitter_link:
         name: twitter_link
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: kbajxpxscfqyrjk
+        example: hokktjkdevmfejaleo
         type: string
         custom: []
       website:
         name: website
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: nibcnohxpp
+        example: kdmedoxkoxvehjh
         type: string
         custom: []
     cleanBodyParameters:
-      id: dolor
-      first_name: klgkuszhlfcg
-      last_name: cqzetakwisdklnelnbq
-      email: joan83@example.com
-      job_title: zapivroeyqjxadkr
-      phone: mugojwikbelovsl
-      location: ggnarbwffmzfizxfvo
-      linkedin_link: rmncgmxzrlzgk
-      facebook_link: pxpegpfkjkafpbjey
-      twitter_link: kbajxpxscfqyrjk
-      website: nibcnohxpp
+      id: error
+      first_name: lijiapkqvmep
+      last_name: neqi
+      email: maymie26@example.com
+      job_title: zfpbdeffnc
+      phone: syecs
+      location: fastfld
+      linkedin_link: pcfitnpbee
+      facebook_link: dezultkpqeyazcopm
+      twitter_link: hokktjkdevmfejaleo
+      website: kdmedoxkoxvehjh
     fileParameters: []
-    responses: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
     responseFields: []
     auth:
       - headers
@@ -158,35 +167,35 @@ endpoints:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: pudmkkpzwayqezpfsvwfmamkj
+        example: kmjzjtozddcjndeeucooqn
         type: string
         custom: []
       school_name:
         name: school_name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: mzyyanellmuxpyrr
+        example: db
         type: string
         custom: []
       location:
         name: location
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: owpqpkt
+        example: eghpuykysszjle
         type: string
         custom: []
       feild_of_study:
         name: feild_of_study
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: rppudexc
+        example: zwvtbtf
         type: string
         custom: []
       start_date:
         name: start_date
         description: 'Must be a valid date in the format <code>Y-m-d</code>.'
         required: true
-        example: '2023-05-13'
+        example: '2023-05-14'
         type: string
         custom: []
       active:
@@ -200,17 +209,127 @@ endpoints:
         name: end_date
         description: 'Must be a valid date in the format <code>Y-m-d</code>. This field is required when <code>active</code> is <code>true</code>.'
         required: false
-        example: '2023-05-13'
+        example: '2023-05-14'
         type: string
         custom: []
     cleanBodyParameters:
-      name: pudmkkpzwayqezpfsvwfmamkj
-      school_name: mzyyanellmuxpyrr
-      location: owpqpkt
-      feild_of_study: rppudexc
-      start_date: '2023-05-13'
+      name: kmjzjtozddcjndeeucooqn
+      school_name: db
+      location: eghpuykysszjle
+      feild_of_study: zwvtbtf
+      start_date: '2023-05-14'
       active: true
-      end_date: '2023-05-13'
+      end_date: '2023-05-14'
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5OTIzYzcyZi1jOTIyLTRkOGUtOGY0ZC01MjUwYjRhYjI0MTQiLCJqdGkiOiJhM2QwOWUxZjk1OTEzNDhhNzI5YmEyZTI2MDg1ZjYxODk2ZGQxMTY4NWRlY2Q3YTY3NmQ0MWU5ODI4YzA3OGQwYjlkYTc2YmFlYWYzODIyOCIsImlhdCI6MTY4Mzc4OTQ4Mi4zNzEzOTYsIm5iZiI6MTY4Mzc4OTQ4Mi4zNzE0MDEsImV4cCI6MTcxNTQxMTg4Mi4wODM4OSwic3ViIjoiYWM0OWZmZGMtODU2OC00ODFjLTg1ODctNWNiM2Y4NDZhZjVmIiwic2NvcGVzIjpbXX0.fLeQldzAss2VSr9swcyslE4IygpmSux30G-OI_qPbrWkLWgsQF2j5pgchL7IyPTyuxV4teARnGYXEcpksXAn9idP5toIjKmQToLlJpMSGuChvYZnniCk-h4K4F_V3-S73C0e_a_Pbkba9i3ylLjZvhJY5Vkm_XedDIU3eAVyaOxNLOi1Y6FYCSY5I-eWk4R_Ll7Fd4ituBVv99UO2FTOcSeAlY8sMIH-5ub8poaZcVPtabkGFDi1cue6YSDId9gkrhBLSrtz4HLE8AoZYaF7Ar8IHUN9bE92MJON33LtpVo5ufQgxWawI6Nc9QGbCAZOROk4FK__H80WSQA-tdAeJc8QbY3MUYKYjgIDuscdQRA9TcV3tMfgzB8MSzeG9S26B6WD9gEjZf_O3COq6osA6XZe69tVR4axRPIDR7Fjzwxv3OJM3zIrGy428I1h6aPrWNTfBQnx18vckTOi3qt_SdlHUfd9qZpj_cbeUY3lBVnnH6r4HR-9WZnVrvo__bVHbYXG8jjsZTTk3NnWainpTJ6AKAV5DGpr_AWkGv6DV4wuWMpuyy8UE_lcmuoErqHVvSExloHoTu-I4SMRksGdExwR7lK3csT8kvqjlg4k6RvutbNFgmIQkCcUKMFNd2-ELmbn-UoCLAOvnZ-hww42YIpmWjihcQRZCABvI4Kl7Ak'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/resume/skill
+    metadata:
+      groupName: Resume
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Skills create or update'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      skills:
+        name: skills
+        description: ''
+        required: false
+        example:
+          - enim
+        type: 'string[]'
+        custom: []
+      'skills[].id':
+        name: 'skills[].id'
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      'skills[].name':
+        name: 'skills[].name'
+        description: 'Must not be greater than 255 characters.'
+        required: true
+        example: azoiewajszgitwg
+        type: string
+        custom: []
+    cleanBodyParameters:
+      skills:
+        - enim
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5OTIzYzcyZi1jOTIyLTRkOGUtOGY0ZC01MjUwYjRhYjI0MTQiLCJqdGkiOiJhM2QwOWUxZjk1OTEzNDhhNzI5YmEyZTI2MDg1ZjYxODk2ZGQxMTY4NWRlY2Q3YTY3NmQ0MWU5ODI4YzA3OGQwYjlkYTc2YmFlYWYzODIyOCIsImlhdCI6MTY4Mzc4OTQ4Mi4zNzEzOTYsIm5iZiI6MTY4Mzc4OTQ4Mi4zNzE0MDEsImV4cCI6MTcxNTQxMTg4Mi4wODM4OSwic3ViIjoiYWM0OWZmZGMtODU2OC00ODFjLTg1ODctNWNiM2Y4NDZhZjVmIiwic2NvcGVzIjpbXX0.fLeQldzAss2VSr9swcyslE4IygpmSux30G-OI_qPbrWkLWgsQF2j5pgchL7IyPTyuxV4teARnGYXEcpksXAn9idP5toIjKmQToLlJpMSGuChvYZnniCk-h4K4F_V3-S73C0e_a_Pbkba9i3ylLjZvhJY5Vkm_XedDIU3eAVyaOxNLOi1Y6FYCSY5I-eWk4R_Ll7Fd4ituBVv99UO2FTOcSeAlY8sMIH-5ub8poaZcVPtabkGFDi1cue6YSDId9gkrhBLSrtz4HLE8AoZYaF7Ar8IHUN9bE92MJON33LtpVo5ufQgxWawI6Nc9QGbCAZOROk4FK__H80WSQA-tdAeJc8QbY3MUYKYjgIDuscdQRA9TcV3tMfgzB8MSzeG9S26B6WD9gEjZf_O3COq6osA6XZe69tVR4axRPIDR7Fjzwxv3OJM3zIrGy428I1h6aPrWNTfBQnx18vckTOi3qt_SdlHUfd9qZpj_cbeUY3lBVnnH6r4HR-9WZnVrvo__bVHbYXG8jjsZTTk3NnWainpTJ6AKAV5DGpr_AWkGv6DV4wuWMpuyy8UE_lcmuoErqHVvSExloHoTu-I4SMRksGdExwR7lK3csT8kvqjlg4k6RvutbNFgmIQkCcUKMFNd2-ELmbn-UoCLAOvnZ-hww42YIpmWjihcQRZCABvI4Kl7Ak'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: api/resume/skill
+    metadata:
+      groupName: Resume
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Delete skill'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
     fileParameters: []
     responses: []
     responseFields: []

@@ -27,13 +27,11 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 200
-        content: '{"status":true,"status_code":200,"message":"","data":{"id":"ac49ffdc-8568-481c-8587-5cb3f846af5f","name":"test update","email":"hassanshahriar18@gmail.com","user_type":"User","login_type":"default","dob":"2022-01-01","phone":"11111111111","created_at":"2023-05-11T07:16:47.000000Z","updated_at":"2023-05-11T17:36:39.000000Z","deleted_at":null}}'
+        status: 401
+        content: '{"message":"Unauthenticated."}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '59'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -72,37 +70,46 @@ endpoints:
         name: id
         description: ''
         required: true
-        example: voluptatibus
+        example: voluptatem
         type: string
         custom: []
       name:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: gosejcsrtjfmmzmmqdqmue
+        example: ezqtxtsntkptwxrhsbuxhiyel
         type: string
         custom: []
       dob:
         name: dob
         description: 'Must be a valid date in the format <code>Y-m-d</code>.'
         required: false
-        example: '2023-05-13'
+        example: '2023-05-14'
         type: string
         custom: []
       phone:
         name: phone
         description: 'Must be 11 characters.'
         required: false
-        example: gjfdomqchbc
+        example: umeybfuvsrh
         type: string
         custom: []
     cleanBodyParameters:
-      id: voluptatibus
-      name: gosejcsrtjfmmzmmqdqmue
-      dob: '2023-05-13'
-      phone: gjfdomqchbc
+      id: voluptatem
+      name: ezqtxtsntkptwxrhsbuxhiyel
+      dob: '2023-05-14'
+      phone: umeybfuvsrh
     fileParameters: []
-    responses: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
     responseFields: []
     auth:
       - headers
