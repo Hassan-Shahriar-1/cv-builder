@@ -28,35 +28,35 @@ endpoints:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: srupsctigskgfrxwxxtqyf
+        example: cnogyat
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: koepp.adolfo@example.com
+        example: eduardo.mann@example.com
         type: string
         custom: []
       password:
         name: password
         description: 'Must be at least 6 characters. Must not be greater than 255 characters.'
         required: true
-        example: h^RD(8(ej(!x`g-A.
+        example: '5fGZId1?e61nk|KQ@A>'
         type: string
         custom: []
       confirm_password:
         name: confirm_password
         description: 'The value and <code>password</code> must match.'
         required: true
-        example: assumenda
+        example: ut
         type: string
         custom: []
     cleanBodyParameters:
-      name: srupsctigskgfrxwxxtqyf
-      email: koepp.adolfo@example.com
-      password: h^RD(8(ej(!x`g-A.
-      confirm_password: assumenda
+      name: cnogyat
+      email: eduardo.mann@example.com
+      password: '5fGZId1?e61nk|KQ@A>'
+      confirm_password: ut
     fileParameters: []
     responses:
       -
@@ -101,19 +101,19 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: wwest@example.com
+        example: kohler.cole@example.org
         type: string
         custom: []
       password:
         name: password
         description: 'Must be at least 6 characters.'
         required: true
-        example: '<!>MQbZ'
+        example: DNDL;K
         type: string
         custom: []
     cleanBodyParameters:
-      email: wwest@example.com
-      password: '<!>MQbZ'
+      email: kohler.cole@example.org
+      password: DNDL;K
     fileParameters: []
     responses:
       -

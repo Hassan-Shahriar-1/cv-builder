@@ -41,5 +41,5 @@ Route::group(['prefix' => 'resume', 'middleware' => 'auth:api'], function(){
     Route::post('project', [ResumeController::class, 'project'])->name('project');
     Route::delete('project/{project_id}', [ResumeController::class, 'deleteProject'])->name('project.delete');
     Route::post('experience', [ResumeController::class, 'experience'])->name('experience');
-    Route::delete('experience', [ResumeController::class, 'deleteExperiece'])->name('experience.delete');
+    Route::delete('experience/{experience}', [ResumeController::class, 'deleteExperiece'])->name('experience.delete');
 });

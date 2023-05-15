@@ -17,6 +17,7 @@ use App\Http\Resources\SkillResource;
 use App\Models\CareerObjective;
 use App\Models\Project;
 use App\Models\Skill;
+use App\Models\WorkExperience;
 use App\Services\ResumeService;
 use Exception;
 use Illuminate\Http\JsonResponse;
@@ -182,6 +183,21 @@ class ResumeController extends Controller
         try{
             $experienceData = $this->resumeService->createOrUpdateExperience($experienceRequestData);
             return ApiResponseHelper::otherResponse(true, 200, trans('messages.created'), new ExperienceResource($experienceData), 201);
+        } catch (Exception $e) {
+            return ApiResponseHelper::serverError($e);
+        }
+    }
+
+    /**
+     * Delete Experience
+     * @param WorkExperience $experience
+     * @return JsonResponse
+     */
+    public function deleteExperiece(WorkExperience $experience) :JsonResponse
+    {
+        try{
+            $experience->delete();            
+            return ApiResponseHelper::otherResponse(true, 200, trans('messages.delete'), [], 201);
         } catch (Exception $e) {
             return ApiResponseHelper::serverError($e);
         }
