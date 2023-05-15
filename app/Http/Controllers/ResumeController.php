@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Helpers\ApiResponseHelper;
 use App\Http\Requests\ContactRequest;
 use App\Http\Requests\EducationRequest;
+use App\Http\Requests\ObjectiveRequest;
 use App\Http\Requests\SkillRequest;
 use App\Http\Resources\EducationResouce;
 use App\Http\Resources\SkillResource;
@@ -99,6 +100,22 @@ class ResumeController extends Controller
             }
 
         }catch(Exception $e){
+            return ApiResponseHelper::serverError($e);
+        }
+
+    }
+
+    /**
+     * create or update objective
+     * @param ObjectiveRequest $request
+     * @return JsonResponse
+     */
+    public function crareerObjective(ObjectiveRequest $request) :JsonResponse
+    {
+        $objectiveData = $request->validated();
+        try{
+            
+        } catch(Exception $e){
             return ApiResponseHelper::serverError($e);
         }
 
