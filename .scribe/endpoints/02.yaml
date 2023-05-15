@@ -72,14 +72,14 @@ endpoints:
         name: id
         description: ''
         required: true
-        example: soluta
+        example: et
         type: string
         custom: []
       name:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: ldhchmxyceu
+        example: cdlclnqgxqnqqqqlsk
         type: string
         custom: []
       dob:
@@ -93,14 +93,14 @@ endpoints:
         name: phone
         description: 'Must be 11 characters.'
         required: false
-        example: ymickzqkwrj
+        example: rjutvznxgbx
         type: string
         custom: []
     cleanBodyParameters:
-      id: soluta
-      name: ldhchmxyceu
+      id: et
+      name: cdlclnqgxqnqqqqlsk
       dob: '2023-05-15'
-      phone: ymickzqkwrj
+      phone: rjutvznxgbx
     fileParameters: []
     responses:
       -
