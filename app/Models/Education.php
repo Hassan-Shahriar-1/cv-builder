@@ -9,6 +9,8 @@ use Illuminate\Database\Eloquent\Model;
 class Education extends Model
 {
     use HasFactory, UsesUuid;
+    
+    protected $table = 'educations';
 
     protected $fillable = [
         'user_id',

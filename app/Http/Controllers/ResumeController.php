@@ -5,9 +5,12 @@ namespace App\Http\Controllers;
 use App\Helpers\ApiResponseHelper;
 use App\Http\Requests\ContactRequest;
 use App\Http\Requests\EducationRequest;
+use App\Http\Requests\ObjectiveRequest;
 use App\Http\Requests\SkillRequest;
 use App\Http\Resources\EducationResouce;
+use App\Http\Resources\ObjectiveResource;
 use App\Http\Resources\SkillResource;
+use App\Models\CareerObjective;
 use App\Models\Skill;
 use App\Services\ResumeService;
 use Exception;
@@ -99,6 +102,29 @@ class ResumeController extends Controller
             }
 
         }catch(Exception $e){
+            return ApiResponseHelper::serverError($e);
+        }
+
+    }
+
+    /**
+     * create or update objective
+     * @param ObjectiveRequest $request
+     * @return JsonResponse
+     */
+    public function crareerObjective(ObjectiveRequest $request) :JsonResponse
+    {
+        $objectiveData = $request->validated();
+        
+           $checker =  CareerObjective::where('user_id', Auth::user()->id)->first();
+           if($checker && (isset($objectiveData['id']) == null || $objectiveData['id'] == null)) {
+                return ApiResponseHelper::errorResponse(trans('messages.integrity_message'));
+           }
+        
+        try{
+            $data = $this->resumeService->createOrUpdateObjective($objectiveData);
+            return ApiResponseHelper::otherResponse(true, 200, '', new ObjectiveResource($data), 201);
+        } catch(Exception $e){
             return ApiResponseHelper::serverError($e);
         }
 

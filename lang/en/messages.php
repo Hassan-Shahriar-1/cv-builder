@@ -15,4 +15,7 @@ return [
 
     //profile 
     'profile-update' => 'profile updated successfully',
+
+    //resume
+    'integrity_message' => 'Already created data please update your data, if you want any modification',
 ];

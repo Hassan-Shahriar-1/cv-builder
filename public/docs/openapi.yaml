@@ -62,19 +62,19 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: ztzplusaieiskwvhimjmwbkvj
+                  example: g
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: jadon.rosenbaum@example.com
+                  example: bernhard.destiny@example.net
                 password:
                   type: string
                   description: 'Must be at least 6 characters. Must not be greater than 255 characters.'
-                  example: 'D]P\oiJ;?p'
+                  example: '07dM<b''au&~"2vZR'
                 confirm_password:
                   type: string
                   description: 'The value and <code>password</code> must match.'
-                  example: voluptatem
+                  example: rem
               required:
                 - name
                 - email
@@ -136,11 +136,11 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: ratke.crawford@example.com
+                  example: westley12@example.org
                 password:
                   type: string
                   description: 'Must be at least 6 characters.'
-                  example: '8]c.$='
+                  example: 'zQENLC{'
               required:
                 - email
                 - password
@@ -159,18 +159,70 @@ paths:
           schema:
             type: string
       responses:
-        401:
+        200:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  status: true
+                  status_code: 200
+                  message: ''
+                  data:
+                    id: ac49ffdc-8568-481c-8587-5cb3f846af5f
+                    name: 'test update'
+                    email: hassanshahriar18@gmail.com
+                    user_type: User
+                    login_type: default
+                    dob: '2022-01-01'
+                    phone: '11111111111'
+                    created_at: '2023-05-11T07:16:47.000000Z'
+                    updated_at: '2023-05-15T11:05:59.000000Z'
+                    deleted_at: null
                 properties:
+                  status:
+                    type: boolean
+                    example: true
+                  status_code:
+                    type: integer
+                    example: 200
                   message:
                     type: string
-                    example: Unauthenticated.
+                    example: ''
+                  data:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                        example: ac49ffdc-8568-481c-8587-5cb3f846af5f
+                      name:
+                        type: string
+                        example: 'test update'
+                      email:
+                        type: string
+                        example: hassanshahriar18@gmail.com
+                      user_type:
+                        type: string
+                        example: User
+                      login_type:
+                        type: string
+                        example: default
+                      dob:
+                        type: string
+                        example: '2022-01-01'
+                      phone:
+                        type: string
+                        example: '11111111111'
+                      created_at:
+                        type: string
+                        example: '2023-05-11T07:16:47.000000Z'
+                      updated_at:
+                        type: string
+                        example: '2023-05-15T11:05:59.000000Z'
+                      deleted_at:
+                        type: string
+                        example: null
       tags:
         - Profile
   /api/profile/update:
@@ -187,18 +239,42 @@ paths:
           schema:
             type: string
       responses:
-        401:
+        422:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  status: false
+                  status_code: 400
+                  message: 'The selected id is invalid.'
+                  errors:
+                    id:
+                      - 'The selected id is invalid.'
+                  data: []
                 properties:
+                  status:
+                    type: boolean
+                    example: false
+                  status_code:
+                    type: integer
+                    example: 400
                   message:
                     type: string
-                    example: Unauthenticated.
+                    example: 'The selected id is invalid.'
+                  errors:
+                    type: object
+                    properties:
+                      id:
+                        type: array
+                        example:
+                          - 'The selected id is invalid.'
+                        items:
+                          type: string
+                  data:
+                    type: array
+                    example: []
       tags:
         - Profile
       requestBody:
@@ -211,19 +287,19 @@ paths:
                 id:
                   type: string
                   description: ''
-                  example: voluptatem
+                  example: incidunt
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: ezqtxtsntkptwxrhsbuxhiyel
+                  example: cxaiohioywaevtc
                 dob:
                   type: string
                   description: 'Must be a valid date in the format <code>Y-m-d</code>.'
-                  example: '2023-05-14'
+                  example: '2023-05-15'
                 phone:
                   type: string
                   description: 'Must be 11 characters.'
-                  example: umeybfuvsrh
+                  example: lizihxdbpjt
               required:
                 - id
                 - name
@@ -282,7 +358,7 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: myles35@example.com
+                  example: torrey04@example.net
               required:
                 - email
       security: []
@@ -341,15 +417,15 @@ paths:
                 token:
                   type: string
                   description: ''
-                  example: tempora
+                  example: a
                 password:
                   type: string
                   description: 'Must be at least 6 characters.'
-                  example: '0Yt<5G,"M~1Z!9'
+                  example: '=,bqm5<C:'
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: jmclaughlin@example.net
+                  example: violet78@example.org
               required:
                 - token
                 - password
@@ -369,18 +445,42 @@ paths:
           schema:
             type: string
       responses:
-        401:
+        422:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  status: false
+                  status_code: 400
+                  message: 'The selected id is invalid.'
+                  errors:
+                    id:
+                      - 'The selected id is invalid.'
+                  data: []
                 properties:
+                  status:
+                    type: boolean
+                    example: false
+                  status_code:
+                    type: integer
+                    example: 400
                   message:
                     type: string
-                    example: Unauthenticated.
+                    example: 'The selected id is invalid.'
+                  errors:
+                    type: object
+                    properties:
+                      id:
+                        type: array
+                        example:
+                          - 'The selected id is invalid.'
+                        items:
+                          type: string
+                  data:
+                    type: array
+                    example: []
       tags:
         - Resume
       requestBody:
@@ -393,47 +493,47 @@ paths:
                 id:
                   type: string
                   description: ''
-                  example: error
+                  example: porro
                 first_name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: lijiapkqvmep
+                  example: gkvebulcianopmljbhg
                 last_name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: neqi
+                  example: dkhewf
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: maymie26@example.com
+                  example: hirthe.rosario@example.net
                 job_title:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: zfpbdeffnc
+                  example: slpyhemvgfw
                 phone:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: syecs
+                  example: je
                 location:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: fastfld
+                  example: yc
                 linkedin_link:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: pcfitnpbee
+                  example: msdagtxo
                 facebook_link:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: dezultkpqeyazcopm
+                  example: yhawepcqpxgj
                 twitter_link:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: hokktjkdevmfejaleo
+                  example: rpcohiwcxtwraqbbjirbb
                 website:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: kdmedoxkoxvehjh
+                  example: cfsnteydfkxriog
               required:
                 - id
                 - first_name
@@ -456,18 +556,74 @@ paths:
           schema:
             type: string
       responses:
-        401:
+        201:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  status: true
+                  status_code: 200
+                  message: ''
+                  data:
+                    name: xuscavemcqwlomprefp
+                    school_name: iyhxcpuvpkxswompah
+                    location: spzligclpxjjlvwtilb
+                    feild_of_study: dexuszxleuezopzh
+                    start_date: '2023-05-15'
+                    active: true
+                    end_date: '2023-05-15'
+                    user_id: ac49ffdc-8568-481c-8587-5cb3f846af5f
+                    id: 24326f57-68c7-40c6-a092-88b5cbb39ee2
+                    updated_at: '2023-05-15T11:31:07.000000Z'
+                    created_at: '2023-05-15T11:31:07.000000Z'
                 properties:
+                  status:
+                    type: boolean
+                    example: true
+                  status_code:
+                    type: integer
+                    example: 200
                   message:
                     type: string
-                    example: Unauthenticated.
+                    example: ''
+                  data:
+                    type: object
+                    properties:
+                      name:
+                        type: string
+                        example: xuscavemcqwlomprefp
+                      school_name:
+                        type: string
+                        example: iyhxcpuvpkxswompah
+                      location:
+                        type: string
+                        example: spzligclpxjjlvwtilb
+                      feild_of_study:
+                        type: string
+                        example: dexuszxleuezopzh
+                      start_date:
+                        type: string
+                        example: '2023-05-15'
+                      active:
+                        type: boolean
+                        example: true
+                      end_date:
+                        type: string
+                        example: '2023-05-15'
+                      user_id:
+                        type: string
+                        example: ac49ffdc-8568-481c-8587-5cb3f846af5f
+                      id:
+                        type: string
+                        example: 24326f57-68c7-40c6-a092-88b5cbb39ee2
+                      updated_at:
+                        type: string
+                        example: '2023-05-15T11:31:07.000000Z'
+                      created_at:
+                        type: string
+                        example: '2023-05-15T11:31:07.000000Z'
       tags:
         - Resume
       requestBody:
@@ -484,23 +640,23 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: kmjzjtozddcjndeeucooqn
+                  example: xuscavemcqwlomprefp
                 school_name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: db
+                  example: iyhxcpuvpkxswompah
                 location:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: eghpuykysszjle
+                  example: spzligclpxjjlvwtilb
                 feild_of_study:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: zwvtbtf
+                  example: dexuszxleuezopzh
                 start_date:
                   type: string
                   description: 'Must be a valid date in the format <code>Y-m-d</code>.'
-                  example: '2023-05-14'
+                  example: '2023-05-15'
                 active:
                   type: boolean
                   description: ''
@@ -508,7 +664,7 @@ paths:
                 end_date:
                   type: string
                   description: 'Must be a valid date in the format <code>Y-m-d</code>. This field is required when <code>active</code> is <code>true</code>.'
-                  example: '2023-05-14'
+                  example: '2023-05-15'
               required:
                 - name
                 - school_name
@@ -528,18 +684,42 @@ paths:
           schema:
             type: string
       responses:
-        401:
+        422:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  message: Unauthenticated.
+                  status: false
+                  status_code: 400
+                  message: 'The skills.0.name field is required.'
+                  errors:
+                    skills.0.name:
+                      - 'The skills.0.name field is required.'
+                  data: []
                 properties:
+                  status:
+                    type: boolean
+                    example: false
+                  status_code:
+                    type: integer
+                    example: 400
                   message:
                     type: string
-                    example: Unauthenticated.
+                    example: 'The skills.0.name field is required.'
+                  errors:
+                    type: object
+                    properties:
+                      skills.0.name:
+                        type: array
+                        example:
+                          - 'The skills.0.name field is required.'
+                        items:
+                          type: string
+                  data:
+                    type: array
+                    example: []
       tags:
         - Resume
       requestBody:
@@ -553,9 +733,10 @@ paths:
                   type: array
                   description: ''
                   example:
-                    - enim
+                    - maxime
                   items:
                     type: string
+  '/api/resume/skill/{skill_id}':
     delete:
       summary: 'Delete skill'
       operationId: deleteSkill
@@ -571,6 +752,72 @@ paths:
       responses: {  }
       tags:
         - Resume
+    parameters:
+      -
+        in: path
+        name: skill_id
+        description: 'The ID of the skill.'
+        example: itaque
+        required: true
+        schema:
+          type: string
+  /api/resume/objective:
+    post:
+      summary: 'create or update objective'
+      operationId: createOrUpdateObjective
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {YOUR_AUTH_KEY}'
+          schema:
+            type: string
+      responses:
+        400:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  status: false
+                  status_code: 400
+                  message: 'Already created data please update your data, if you want any modification'
+                  data: []
+                properties:
+                  status:
+                    type: boolean
+                    example: false
+                  status_code:
+                    type: integer
+                    example: 400
+                  message:
+                    type: string
+                    example: 'Already created data please update your data, if you want any modification'
+                  data:
+                    type: array
+                    example: []
+      tags:
+        - Resume
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: string
+                  description: ''
+                  example: null
+                details:
+                  type: string
+                  description: 'Must be at least 20 characters.'
+                  example: ywiufqgvkzwukkmgitlftlatztyrdbmldguihdnpbdyfctpgtjtikcklcnocdworrczqynrughbehgmloym
+              required:
+                - details
 tags:
   -
     name: 'Auth routes'

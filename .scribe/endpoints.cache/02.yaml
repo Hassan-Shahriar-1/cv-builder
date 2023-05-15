@@ -29,11 +29,13 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 200
+        content: '{"status":true,"status_code":200,"message":"","data":{"id":"ac49ffdc-8568-481c-8587-5cb3f846af5f","name":"test update","email":"hassanshahriar18@gmail.com","user_type":"User","login_type":"default","dob":"2022-01-01","phone":"11111111111","created_at":"2023-05-11T07:16:47.000000Z","updated_at":"2023-05-15T11:05:59.000000Z","deleted_at":null}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '59'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -41,7 +43,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5OTIzYzcyZi1jOTIyLTRkOGUtOGY0ZC01MjUwYjRhYjI0MTQiLCJqdGkiOiJhM2QwOWUxZjk1OTEzNDhhNzI5YmEyZTI2MDg1ZjYxODk2ZGQxMTY4NWRlY2Q3YTY3NmQ0MWU5ODI4YzA3OGQwYjlkYTc2YmFlYWYzODIyOCIsImlhdCI6MTY4Mzc4OTQ4Mi4zNzEzOTYsIm5iZiI6MTY4Mzc4OTQ4Mi4zNzE0MDEsImV4cCI6MTcxNTQxMTg4Mi4wODM4OSwic3ViIjoiYWM0OWZmZGMtODU2OC00ODFjLTg1ODctNWNiM2Y4NDZhZjVmIiwic2NvcGVzIjpbXX0.fLeQldzAss2VSr9swcyslE4IygpmSux30G-OI_qPbrWkLWgsQF2j5pgchL7IyPTyuxV4teARnGYXEcpksXAn9idP5toIjKmQToLlJpMSGuChvYZnniCk-h4K4F_V3-S73C0e_a_Pbkba9i3ylLjZvhJY5Vkm_XedDIU3eAVyaOxNLOi1Y6FYCSY5I-eWk4R_Ll7Fd4ituBVv99UO2FTOcSeAlY8sMIH-5ub8poaZcVPtabkGFDi1cue6YSDId9gkrhBLSrtz4HLE8AoZYaF7Ar8IHUN9bE92MJON33LtpVo5ufQgxWawI6Nc9QGbCAZOROk4FK__H80WSQA-tdAeJc8QbY3MUYKYjgIDuscdQRA9TcV3tMfgzB8MSzeG9S26B6WD9gEjZf_O3COq6osA6XZe69tVR4axRPIDR7Fjzwxv3OJM3zIrGy428I1h6aPrWNTfBQnx18vckTOi3qt_SdlHUfd9qZpj_cbeUY3lBVnnH6r4HR-9WZnVrvo__bVHbYXG8jjsZTTk3NnWainpTJ6AKAV5DGpr_AWkGv6DV4wuWMpuyy8UE_lcmuoErqHVvSExloHoTu-I4SMRksGdExwR7lK3csT8kvqjlg4k6RvutbNFgmIQkCcUKMFNd2-ELmbn-UoCLAOvnZ-hww42YIpmWjihcQRZCABvI4Kl7Ak'
+      - 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5OTI4ODgxNi0xYmI1LTQwMDgtOTc0NC0xMGE4MDQ4NWRlNDQiLCJqdGkiOiI5NTRiMTE2ZjA5YmMzZTg3ZDA4MmY2ZDMyMjdkNWIxM2ZiMmUzNmU1NDEwOWJhMzQyMzVhY2MwMDM0NGE4YzNhNmVhOGQ5OGU3ZDQ4MTcyMyIsImlhdCI6MTY4NDE0ODczOC4wMzk0NTEsIm5iZiI6MTY4NDE0ODczOC4wMzk0NTgsImV4cCI6MTcxNTc3MTEzNy44MTEwMDEsInN1YiI6ImFjNDlmZmRjLTg1NjgtNDgxYy04NTg3LTVjYjNmODQ2YWY1ZiIsInNjb3BlcyI6W119.Q0jHUhuIQALckcLz9HG6nufezcKNuH9aPA9U1y95rYUzXjwBuJGpAvUUPayoN8D6fEDMzFkaOrrbjtruKZbj1DV-eg_xamzZPVkbIG-4GAbFTRlmYJOkrpTYo0-QZf8XGxkycRP8Q3EJXmdbtYkml6jqBHrKJ0gR4pouLlZrOF5fmK5_nAIjK0b2LoyRni6HKmGJINnP5eqp5RriiaxO8TKXnBFiCRl_XmmgN8131mWOiXY0-iefTS7TFnVi_6BOIRbzzdIhl1VnJOp6snw-6tMhxEcCPLxjjgaxXpSNLFLAtH9GFMVYwqgT7k64PTtfwsrgKcKlSeu5T8y8ch5_cOTJE3p0GRSvPErxOU0bKMZousnrirTC-wHD6uzKssgQri7t6x6LD6xQ-cau5IAhn8N2RqOvmWE8CpLRai-WjfsJse1Qzq6lVExMmC1HYHro1rR_oYAF6VEL-BkwLwxXB4TpKJ6Cb4gwqAbX0jC_339iNJdaBMvRW6sqjrkpZWvCgnA5eT2RU4cL2IeOHbFHlKrIbSTx1ePyvH436IfSrJQogFUFvBSd1thb1UFaCTeDD7G6YaucoSZeoS9fWbS9G9phlAXFqp5oPFgSVRT7G_4hwcLMv4Z5atbgCdJkp7AyfPLR9E9e2l_BqCCJWmlIgJ4x9p9XQAdW--HE0E4POwk'
     controller: null
     method: null
     route: null
@@ -72,43 +74,45 @@ endpoints:
         name: id
         description: ''
         required: true
-        example: voluptatem
+        example: incidunt
         type: string
         custom: []
       name:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: ezqtxtsntkptwxrhsbuxhiyel
+        example: cxaiohioywaevtc
         type: string
         custom: []
       dob:
         name: dob
         description: 'Must be a valid date in the format <code>Y-m-d</code>.'
         required: false
-        example: '2023-05-14'
+        example: '2023-05-15'
         type: string
         custom: []
       phone:
         name: phone
         description: 'Must be 11 characters.'
         required: false
-        example: umeybfuvsrh
+        example: lizihxdbpjt
         type: string
         custom: []
     cleanBodyParameters:
-      id: voluptatem
-      name: ezqtxtsntkptwxrhsbuxhiyel
-      dob: '2023-05-14'
-      phone: umeybfuvsrh
+      id: incidunt
+      name: cxaiohioywaevtc
+      dob: '2023-05-15'
+      phone: lizihxdbpjt
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 422
+        content: '{"status":false,"status_code":400,"message":"The selected id is invalid.","errors":{"id":["The selected id is invalid."]},"data":[]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '58'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -116,7 +120,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5OTIzYzcyZi1jOTIyLTRkOGUtOGY0ZC01MjUwYjRhYjI0MTQiLCJqdGkiOiJhM2QwOWUxZjk1OTEzNDhhNzI5YmEyZTI2MDg1ZjYxODk2ZGQxMTY4NWRlY2Q3YTY3NmQ0MWU5ODI4YzA3OGQwYjlkYTc2YmFlYWYzODIyOCIsImlhdCI6MTY4Mzc4OTQ4Mi4zNzEzOTYsIm5iZiI6MTY4Mzc4OTQ4Mi4zNzE0MDEsImV4cCI6MTcxNTQxMTg4Mi4wODM4OSwic3ViIjoiYWM0OWZmZGMtODU2OC00ODFjLTg1ODctNWNiM2Y4NDZhZjVmIiwic2NvcGVzIjpbXX0.fLeQldzAss2VSr9swcyslE4IygpmSux30G-OI_qPbrWkLWgsQF2j5pgchL7IyPTyuxV4teARnGYXEcpksXAn9idP5toIjKmQToLlJpMSGuChvYZnniCk-h4K4F_V3-S73C0e_a_Pbkba9i3ylLjZvhJY5Vkm_XedDIU3eAVyaOxNLOi1Y6FYCSY5I-eWk4R_Ll7Fd4ituBVv99UO2FTOcSeAlY8sMIH-5ub8poaZcVPtabkGFDi1cue6YSDId9gkrhBLSrtz4HLE8AoZYaF7Ar8IHUN9bE92MJON33LtpVo5ufQgxWawI6Nc9QGbCAZOROk4FK__H80WSQA-tdAeJc8QbY3MUYKYjgIDuscdQRA9TcV3tMfgzB8MSzeG9S26B6WD9gEjZf_O3COq6osA6XZe69tVR4axRPIDR7Fjzwxv3OJM3zIrGy428I1h6aPrWNTfBQnx18vckTOi3qt_SdlHUfd9qZpj_cbeUY3lBVnnH6r4HR-9WZnVrvo__bVHbYXG8jjsZTTk3NnWainpTJ6AKAV5DGpr_AWkGv6DV4wuWMpuyy8UE_lcmuoErqHVvSExloHoTu-I4SMRksGdExwR7lK3csT8kvqjlg4k6RvutbNFgmIQkCcUKMFNd2-ELmbn-UoCLAOvnZ-hww42YIpmWjihcQRZCABvI4Kl7Ak'
+      - 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5OTI4ODgxNi0xYmI1LTQwMDgtOTc0NC0xMGE4MDQ4NWRlNDQiLCJqdGkiOiI5NTRiMTE2ZjA5YmMzZTg3ZDA4MmY2ZDMyMjdkNWIxM2ZiMmUzNmU1NDEwOWJhMzQyMzVhY2MwMDM0NGE4YzNhNmVhOGQ5OGU3ZDQ4MTcyMyIsImlhdCI6MTY4NDE0ODczOC4wMzk0NTEsIm5iZiI6MTY4NDE0ODczOC4wMzk0NTgsImV4cCI6MTcxNTc3MTEzNy44MTEwMDEsInN1YiI6ImFjNDlmZmRjLTg1NjgtNDgxYy04NTg3LTVjYjNmODQ2YWY1ZiIsInNjb3BlcyI6W119.Q0jHUhuIQALckcLz9HG6nufezcKNuH9aPA9U1y95rYUzXjwBuJGpAvUUPayoN8D6fEDMzFkaOrrbjtruKZbj1DV-eg_xamzZPVkbIG-4GAbFTRlmYJOkrpTYo0-QZf8XGxkycRP8Q3EJXmdbtYkml6jqBHrKJ0gR4pouLlZrOF5fmK5_nAIjK0b2LoyRni6HKmGJINnP5eqp5RriiaxO8TKXnBFiCRl_XmmgN8131mWOiXY0-iefTS7TFnVi_6BOIRbzzdIhl1VnJOp6snw-6tMhxEcCPLxjjgaxXpSNLFLAtH9GFMVYwqgT7k64PTtfwsrgKcKlSeu5T8y8ch5_cOTJE3p0GRSvPErxOU0bKMZousnrirTC-wHD6uzKssgQri7t6x6LD6xQ-cau5IAhn8N2RqOvmWE8CpLRai-WjfsJse1Qzq6lVExMmC1HYHro1rR_oYAF6VEL-BkwLwxXB4TpKJ6Cb4gwqAbX0jC_339iNJdaBMvRW6sqjrkpZWvCgnA5eT2RU4cL2IeOHbFHlKrIbSTx1ePyvH436IfSrJQogFUFvBSd1thb1UFaCTeDD7G6YaucoSZeoS9fWbS9G9phlAXFqp5oPFgSVRT7G_4hwcLMv4Z5atbgCdJkp7AyfPLR9E9e2l_BqCCJWmlIgJ4x9p9XQAdW--HE0E4POwk'
     controller: null
     method: null
     route: null
