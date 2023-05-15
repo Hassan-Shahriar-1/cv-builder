@@ -74,14 +74,14 @@ endpoints:
         name: id
         description: ''
         required: true
-        example: accusamus
+        example: incidunt
         type: string
         custom: []
       name:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: yyunqlrbrvsqwonawkhvnilw
+        example: cxaiohioywaevtc
         type: string
         custom: []
       dob:
@@ -95,14 +95,14 @@ endpoints:
         name: phone
         description: 'Must be 11 characters.'
         required: false
-        example: sqkfzterzhl
+        example: lizihxdbpjt
         type: string
         custom: []
     cleanBodyParameters:
-      id: accusamus
-      name: yyunqlrbrvsqwonawkhvnilw
+      id: incidunt
+      name: cxaiohioywaevtc
       dob: '2023-05-15'
-      phone: sqkfzterzhl
+      phone: lizihxdbpjt
     fileParameters: []
     responses:
       -

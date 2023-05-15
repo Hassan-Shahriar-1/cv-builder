@@ -27,91 +27,91 @@ endpoints:
         name: id
         description: ''
         required: true
-        example: voluptates
+        example: porro
         type: string
         custom: []
       first_name:
         name: first_name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: nfhihdpzcpuqvh
+        example: gkvebulcianopmljbhg
         type: string
         custom: []
       last_name:
         name: last_name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: cse
+        example: dkhewf
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: rhiannon.gusikowski@example.net
+        example: hirthe.rosario@example.net
         type: string
         custom: []
       job_title:
         name: job_title
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: f
+        example: slpyhemvgfw
         type: string
         custom: []
       phone:
         name: phone
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: rjflbjkbvlckx
+        example: je
         type: string
         custom: []
       location:
         name: location
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: ggp
+        example: yc
         type: string
         custom: []
       linkedin_link:
         name: linkedin_link
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: xcxuqmwrykxny
+        example: msdagtxo
         type: string
         custom: []
       facebook_link:
         name: facebook_link
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: jjxoaixcif
+        example: yhawepcqpxgj
         type: string
         custom: []
       twitter_link:
         name: twitter_link
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: unvmpinutwciylkxxxflo
+        example: rpcohiwcxtwraqbbjirbb
         type: string
         custom: []
       website:
         name: website
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: qisygjlvpvpklvcekho
+        example: cfsnteydfkxriog
         type: string
         custom: []
     cleanBodyParameters:
-      id: voluptates
-      first_name: nfhihdpzcpuqvh
-      last_name: cse
-      email: rhiannon.gusikowski@example.net
-      job_title: f
-      phone: rjflbjkbvlckx
-      location: ggp
-      linkedin_link: xcxuqmwrykxny
-      facebook_link: jjxoaixcif
-      twitter_link: unvmpinutwciylkxxxflo
-      website: qisygjlvpvpklvcekho
+      id: porro
+      first_name: gkvebulcianopmljbhg
+      last_name: dkhewf
+      email: hirthe.rosario@example.net
+      job_title: slpyhemvgfw
+      phone: je
+      location: yc
+      linkedin_link: msdagtxo
+      facebook_link: yhawepcqpxgj
+      twitter_link: rpcohiwcxtwraqbbjirbb
+      website: cfsnteydfkxriog
     fileParameters: []
     responses:
       -
@@ -167,28 +167,28 @@ endpoints:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: igblnftkipmkkluidcgxfikjn
+        example: xuscavemcqwlomprefp
         type: string
         custom: []
       school_name:
         name: school_name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: hqsqqmjdydhqwrcenblcjxn
+        example: iyhxcpuvpkxswompah
         type: string
         custom: []
       location:
         name: location
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: qwfpbgpaousq
+        example: spzligclpxjjlvwtilb
         type: string
         custom: []
       feild_of_study:
         name: feild_of_study
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: gzyqjqjazbdypesaploc
+        example: dexuszxleuezopzh
         type: string
         custom: []
       start_date:
@@ -213,18 +213,18 @@ endpoints:
         type: string
         custom: []
     cleanBodyParameters:
-      name: igblnftkipmkkluidcgxfikjn
-      school_name: hqsqqmjdydhqwrcenblcjxn
-      location: qwfpbgpaousq
-      feild_of_study: gzyqjqjazbdypesaploc
+      name: xuscavemcqwlomprefp
+      school_name: iyhxcpuvpkxswompah
+      location: spzligclpxjjlvwtilb
+      feild_of_study: dexuszxleuezopzh
       start_date: '2023-05-15'
       active: true
       end_date: '2023-05-15'
     fileParameters: []
     responses:
       -
-        status: 500
-        content: '{"status":false,"status_code":500,"message":"Server Error","error_message":"SQLSTATE[42S02]: Base table or view not found: 1146 Table ''cv-builder.education'' doesn''t exist (Connection: mysql, SQL: insert into `education` (`name`, `school_name`, `location`, `feild_of_study`, `start_date`, `active`, `end_date`, `user_id`, `id`, `updated_at`, `created_at`) values (igblnftkipmkkluidcgxfikjn, hqsqqmjdydhqwrcenblcjxn, qwfpbgpaousq, gzyqjqjazbdypesaploc, 2023-05-15, 1, 2023-05-15, ac49ffdc-8568-481c-8587-5cb3f846af5f, 7af8d558-1afe-4393-9877-3e748150c4ee, 2023-05-15 11:28:07, 2023-05-15 11:28:07))","error_line":793,"error_file":"K:\\installed-us\\cv-builder\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php"}'
+        status: 201
+        content: '{"status":true,"status_code":200,"message":"","data":{"name":"xuscavemcqwlomprefp","school_name":"iyhxcpuvpkxswompah","location":"spzligclpxjjlvwtilb","feild_of_study":"dexuszxleuezopzh","start_date":"2023-05-15","active":true,"end_date":"2023-05-15","user_id":"ac49ffdc-8568-481c-8587-5cb3f846af5f","id":"24326f57-68c7-40c6-a092-88b5cbb39ee2","updated_at":"2023-05-15T11:31:07.000000Z","created_at":"2023-05-15T11:31:07.000000Z"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -269,7 +269,7 @@ endpoints:
         description: ''
         required: false
         example:
-          - veritatis
+          - maxime
         type: 'string[]'
         custom: []
       'skills[].id':
@@ -283,12 +283,12 @@ endpoints:
         name: 'skills[].name'
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: bqksmzoahdgvvmdme
+        example: drnexzltvnx
         type: string
         custom: []
     cleanBodyParameters:
       skills:
-        - veritatis
+        - maxime
     fileParameters: []
     responses:
       -
@@ -333,11 +333,11 @@ endpoints:
         name: skill_id
         description: 'The ID of the skill.'
         required: true
-        example: mollitia
+        example: itaque
         type: string
         custom: []
     cleanUrlParameters:
-      skill_id: mollitia
+      skill_id: itaque
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -386,11 +386,11 @@ endpoints:
         name: details
         description: 'Must be at least 20 characters.'
         required: true
-        example: rlauclvsejkedyoobynkcjqduflfclsomqbnnmlennkqrhwmhckarlezalyykftmbsxoeqtryvynglc
+        example: ywiufqgvkzwukkmgitlftlatztyrdbmldguihdnpbdyfctpgtjtikcklcnocdworrczqynrughbehgmloym
         type: string
         custom: []
     cleanBodyParameters:
-      details: rlauclvsejkedyoobynkcjqduflfclsomqbnnmlennkqrhwmhckarlezalyykftmbsxoeqtryvynglc
+      details: ywiufqgvkzwukkmgitlftlatztyrdbmldguihdnpbdyfctpgtjtikcklcnocdworrczqynrughbehgmloym
     fileParameters: []
     responses:
       -

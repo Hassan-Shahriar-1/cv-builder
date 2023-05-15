@@ -62,19 +62,19 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: pnoynb
+                  example: g
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: zstehr@example.org
+                  example: bernhard.destiny@example.net
                 password:
                   type: string
                   description: 'Must be at least 6 characters. Must not be greater than 255 characters.'
-                  example: Oyu@rjGM+xEj`t
+                  example: '07dM<b''au&~"2vZR'
                 confirm_password:
                   type: string
                   description: 'The value and <code>password</code> must match.'
-                  example: id
+                  example: rem
               required:
                 - name
                 - email
@@ -136,11 +136,11 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: koss.candace@example.com
+                  example: westley12@example.org
                 password:
                   type: string
                   description: 'Must be at least 6 characters.'
-                  example: '#MpYs3ADjhEh'
+                  example: 'zQENLC{'
               required:
                 - email
                 - password
@@ -287,11 +287,11 @@ paths:
                 id:
                   type: string
                   description: ''
-                  example: accusamus
+                  example: incidunt
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: yyunqlrbrvsqwonawkhvnilw
+                  example: cxaiohioywaevtc
                 dob:
                   type: string
                   description: 'Must be a valid date in the format <code>Y-m-d</code>.'
@@ -299,7 +299,7 @@ paths:
                 phone:
                   type: string
                   description: 'Must be 11 characters.'
-                  example: sqkfzterzhl
+                  example: lizihxdbpjt
               required:
                 - id
                 - name
@@ -358,7 +358,7 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: swift.shea@example.com
+                  example: torrey04@example.net
               required:
                 - email
       security: []
@@ -417,15 +417,15 @@ paths:
                 token:
                   type: string
                   description: ''
-                  example: fuga
+                  example: a
                 password:
                   type: string
                   description: 'Must be at least 6 characters.'
-                  example: "X'=s#I3WxC@"
+                  example: '=,bqm5<C:'
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: lubowitz.savanna@example.com
+                  example: violet78@example.org
               required:
                 - token
                 - password
@@ -493,47 +493,47 @@ paths:
                 id:
                   type: string
                   description: ''
-                  example: voluptates
+                  example: porro
                 first_name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: nfhihdpzcpuqvh
+                  example: gkvebulcianopmljbhg
                 last_name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: cse
+                  example: dkhewf
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: rhiannon.gusikowski@example.net
+                  example: hirthe.rosario@example.net
                 job_title:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: f
+                  example: slpyhemvgfw
                 phone:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: rjflbjkbvlckx
+                  example: je
                 location:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: ggp
+                  example: yc
                 linkedin_link:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: xcxuqmwrykxny
+                  example: msdagtxo
                 facebook_link:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: jjxoaixcif
+                  example: yhawepcqpxgj
                 twitter_link:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: unvmpinutwciylkxxxflo
+                  example: rpcohiwcxtwraqbbjirbb
                 website:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: qisygjlvpvpklvcekho
+                  example: cfsnteydfkxriog
               required:
                 - id
                 - first_name
@@ -556,38 +556,74 @@ paths:
           schema:
             type: string
       responses:
-        500:
+        201:
           description: ''
           content:
             application/json:
               schema:
                 type: object
                 example:
-                  status: false
-                  status_code: 500
-                  message: 'Server Error'
-                  error_message: "SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cv-builder.education' doesn't exist (Connection: mysql, SQL: insert into `education` (`name`, `school_name`, `location`, `feild_of_study`, `start_date`, `active`, `end_date`, `user_id`, `id`, `updated_at`, `created_at`) values (igblnftkipmkkluidcgxfikjn, hqsqqmjdydhqwrcenblcjxn, qwfpbgpaousq, gzyqjqjazbdypesaploc, 2023-05-15, 1, 2023-05-15, ac49ffdc-8568-481c-8587-5cb3f846af5f, 7af8d558-1afe-4393-9877-3e748150c4ee, 2023-05-15 11:28:07, 2023-05-15 11:28:07))"
-                  error_line: 793
-                  error_file: 'K:\installed-us\cv-builder\vendor\laravel\framework\src\Illuminate\Database\Connection.php'
+                  status: true
+                  status_code: 200
+                  message: ''
+                  data:
+                    name: xuscavemcqwlomprefp
+                    school_name: iyhxcpuvpkxswompah
+                    location: spzligclpxjjlvwtilb
+                    feild_of_study: dexuszxleuezopzh
+                    start_date: '2023-05-15'
+                    active: true
+                    end_date: '2023-05-15'
+                    user_id: ac49ffdc-8568-481c-8587-5cb3f846af5f
+                    id: 24326f57-68c7-40c6-a092-88b5cbb39ee2
+                    updated_at: '2023-05-15T11:31:07.000000Z'
+                    created_at: '2023-05-15T11:31:07.000000Z'
                 properties:
                   status:
                     type: boolean
-                    example: false
+                    example: true
                   status_code:
                     type: integer
-                    example: 500
+                    example: 200
                   message:
                     type: string
-                    example: 'Server Error'
-                  error_message:
-                    type: string
-                    example: "SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cv-builder.education' doesn't exist (Connection: mysql, SQL: insert into `education` (`name`, `school_name`, `location`, `feild_of_study`, `start_date`, `active`, `end_date`, `user_id`, `id`, `updated_at`, `created_at`) values (igblnftkipmkkluidcgxfikjn, hqsqqmjdydhqwrcenblcjxn, qwfpbgpaousq, gzyqjqjazbdypesaploc, 2023-05-15, 1, 2023-05-15, ac49ffdc-8568-481c-8587-5cb3f846af5f, 7af8d558-1afe-4393-9877-3e748150c4ee, 2023-05-15 11:28:07, 2023-05-15 11:28:07))"
-                  error_line:
-                    type: integer
-                    example: 793
-                  error_file:
-                    type: string
-                    example: 'K:\installed-us\cv-builder\vendor\laravel\framework\src\Illuminate\Database\Connection.php'
+                    example: ''
+                  data:
+                    type: object
+                    properties:
+                      name:
+                        type: string
+                        example: xuscavemcqwlomprefp
+                      school_name:
+                        type: string
+                        example: iyhxcpuvpkxswompah
+                      location:
+                        type: string
+                        example: spzligclpxjjlvwtilb
+                      feild_of_study:
+                        type: string
+                        example: dexuszxleuezopzh
+                      start_date:
+                        type: string
+                        example: '2023-05-15'
+                      active:
+                        type: boolean
+                        example: true
+                      end_date:
+                        type: string
+                        example: '2023-05-15'
+                      user_id:
+                        type: string
+                        example: ac49ffdc-8568-481c-8587-5cb3f846af5f
+                      id:
+                        type: string
+                        example: 24326f57-68c7-40c6-a092-88b5cbb39ee2
+                      updated_at:
+                        type: string
+                        example: '2023-05-15T11:31:07.000000Z'
+                      created_at:
+                        type: string
+                        example: '2023-05-15T11:31:07.000000Z'
       tags:
         - Resume
       requestBody:
@@ -604,19 +640,19 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: igblnftkipmkkluidcgxfikjn
+                  example: xuscavemcqwlomprefp
                 school_name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: hqsqqmjdydhqwrcenblcjxn
+                  example: iyhxcpuvpkxswompah
                 location:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: qwfpbgpaousq
+                  example: spzligclpxjjlvwtilb
                 feild_of_study:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: gzyqjqjazbdypesaploc
+                  example: dexuszxleuezopzh
                 start_date:
                   type: string
                   description: 'Must be a valid date in the format <code>Y-m-d</code>.'
@@ -697,7 +733,7 @@ paths:
                   type: array
                   description: ''
                   example:
-                    - veritatis
+                    - maxime
                   items:
                     type: string
   '/api/resume/skill/{skill_id}':
@@ -721,7 +757,7 @@ paths:
         in: path
         name: skill_id
         description: 'The ID of the skill.'
-        example: mollitia
+        example: itaque
         required: true
         schema:
           type: string
@@ -779,7 +815,7 @@ paths:
                 details:
                   type: string
                   description: 'Must be at least 20 characters.'
-                  example: rlauclvsejkedyoobynkcjqduflfclsomqbnnmlennkqrhwmhckarlezalyykftmbsxoeqtryvynglc
+                  example: ywiufqgvkzwukkmgitlftlatztyrdbmldguihdnpbdyfctpgtjtikcklcnocdworrczqynrughbehgmloym
               required:
                 - details
 tags:
