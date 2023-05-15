@@ -12,6 +12,7 @@ return [
     'created' => 'Successfully stored',
     'delete' => 'Successfully Deleted',
     '404' => 'requested data not found',
+    'url_not_found' => 'Requested url Not found',
 
     //profile 
     'profile-update' => 'profile updated successfully',

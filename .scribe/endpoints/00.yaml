@@ -26,35 +26,35 @@ endpoints:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: pxftcndcmfjvsfytfmy
+        example: cnogyat
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: jacquelyn.crist@example.net
+        example: eduardo.mann@example.com
         type: string
         custom: []
       password:
         name: password
         description: 'Must be at least 6 characters. Must not be greater than 255 characters.'
         required: true
-        example: "'t|z*{>nk<;{d.>1b~5"
+        example: '5fGZId1?e61nk|KQ@A>'
         type: string
         custom: []
       confirm_password:
         name: confirm_password
         description: 'The value and <code>password</code> must match.'
         required: true
-        example: sint
+        example: ut
         type: string
         custom: []
     cleanBodyParameters:
-      name: pxftcndcmfjvsfytfmy
-      email: jacquelyn.crist@example.net
-      password: "'t|z*{>nk<;{d.>1b~5"
-      confirm_password: sint
+      name: cnogyat
+      email: eduardo.mann@example.com
+      password: '5fGZId1?e61nk|KQ@A>'
+      confirm_password: ut
     fileParameters: []
     responses:
       -
@@ -99,19 +99,19 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: viviane.vandervort@example.org
+        example: kohler.cole@example.org
         type: string
         custom: []
       password:
         name: password
         description: 'Must be at least 6 characters.'
         required: true
-        example: 'y3ozM$6[lEO{0hN,'
+        example: DNDL;K
         type: string
         custom: []
     cleanBodyParameters:
-      email: viviane.vandervort@example.org
-      password: 'y3ozM$6[lEO{0hN,'
+      email: kohler.cole@example.org
+      password: DNDL;K
     fileParameters: []
     responses:
       -

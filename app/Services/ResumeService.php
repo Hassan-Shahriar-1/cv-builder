@@ -7,6 +7,7 @@ use App\Models\Contact;
 use App\Models\Education;
 use App\Models\Project;
 use App\Models\Skill;
+use App\Models\WorkExperience;
 use Illuminate\Support\Facades\Auth;
 
 class ResumeService 
@@ -130,6 +131,24 @@ class ResumeService
         }else {
             $projectData['user_id'] = $this->getUserId();
             return Project::create($projectData);
+        }
+    }
+
+    /**
+     * Create & update or experiece
+     * @param array $experienceData
+     * @return object
+     */
+    public function createOrUpdateExperience(array $experienceData) :object
+    {
+        if($this->idChecker($experienceData)) {
+            $experience = WorkExperience::where('id', $experienceData['id'])->first();
+            unset($experienceData['id']);
+            $experience->update($experienceData);
+            return $experience;
+        } else {
+            $experienceData['user_id'] = $this->getUserId();
+            return WorkExperience::create($experienceData);
         }
     }
 }

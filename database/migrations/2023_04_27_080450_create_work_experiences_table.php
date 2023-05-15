@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('location')->nullable();
             $table->dateTime('start_date');
             $table->dateTime('end_date')->nullable();
+            $table->text('responsibilities')->nullable();
             $table->boolean('active')->default(false);
             $table->timestamps();
         });

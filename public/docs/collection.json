@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "ebfc70db-291b-48a0-bafa-4d311236e313",
+        "_postman_id": "3bea78a5-3f8e-4515-851e-dd820cf96d91",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -41,7 +41,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"pxftcndcmfjvsfytfmy\",\"email\":\"jacquelyn.crist@example.net\",\"password\":\"'t|z*{>nk<;{d.>1b~5\",\"confirm_password\":\"sint\"}"
+                            "raw": "{\"name\":\"cnogyat\",\"email\":\"eduardo.mann@example.com\",\"password\":\"5fGZId1?e61nk|KQ@A>\",\"confirm_password\":\"ut\"}"
                         },
                         "description": "",
                         "auth": {
@@ -100,7 +100,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"viviane.vandervort@example.org\",\"password\":\"y3ozM$6[lEO{0hN,\"}"
+                            "raw": "{\"email\":\"kohler.cole@example.org\",\"password\":\"DNDL;K\"}"
                         },
                         "description": "",
                         "auth": {
@@ -183,7 +183,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "59"
+                                    "value": "57"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -218,7 +218,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"id\":\"ab\",\"name\":\"aemx\",\"dob\":\"2023-05-15\",\"phone\":\"fwngtymxyyp\"}"
+                            "raw": "{\"id\":\"explicabo\",\"name\":\"ivswp\",\"dob\":\"2023-05-15\",\"phone\":\"eqgsmwmkwoe\"}"
                         },
                         "description": ""
                     },
@@ -239,7 +239,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "58"
+                                    "value": "56"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -280,7 +280,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"tanner76@example.org\"}"
+                            "raw": "{\"email\":\"lavern.reinger@example.net\"}"
                         },
                         "description": "",
                         "auth": {
@@ -339,7 +339,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"token\":\"architecto\",\"password\":\"r2\\\/'w>\\\\[IE\",\"email\":\"taylor.yundt@example.net\"}"
+                            "raw": "{\"token\":\"est\",\"password\":\"~bx'\\\"R=3#\",\"email\":\"bhowe@example.com\"}"
                         },
                         "description": "",
                         "auth": {
@@ -404,7 +404,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"id\":\"quis\",\"first_name\":\"xvqwpkqkmtc\",\"last_name\":\"adcmzniyqjdvudrrmeuzoenl\",\"email\":\"tad69@example.com\",\"job_title\":\"ywwmeiczfvcwfvecoszplr\",\"phone\":\"xluk\",\"location\":\"oxjsswvlvcyz\",\"linkedin_link\":\"iakiewygrvevx\",\"facebook_link\":\"zls\",\"twitter_link\":\"eeqxufneitxdplwfgqdqrkf\",\"website\":\"spacjzoehnibwgm\"}"
+                            "raw": "{\"id\":\"magni\",\"first_name\":\"kt\",\"last_name\":\"gebqqqsrsjspwqngqvinkp\",\"email\":\"abby55@example.net\",\"job_title\":\"kxtu\",\"phone\":\"xwsgf\",\"location\":\"ujdwgkmxaknacxbxazfxiy\",\"linkedin_link\":\"fgeyqiiciimnqcxrzaqjnu\",\"facebook_link\":\"hiitjnxrvl\",\"twitter_link\":\"zokblb\",\"website\":\"lguftmhygmjzkpnahcrllha\"}"
                         },
                         "description": ""
                     },
@@ -425,7 +425,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "57"
+                                    "value": "55"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -460,7 +460,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"xyulimtsneqqxgrldl\",\"school_name\":\"puelwxzjtberosedwtvycue\",\"location\":\"xfdmhiglivsh\",\"feild_of_study\":\"fg\",\"start_date\":\"2023-05-15\",\"active\":true,\"end_date\":\"2023-05-15\"}"
+                            "raw": "{\"name\":\"qypzsxohnxj\",\"school_name\":\"zsm\",\"location\":\"zhieivhaksc\",\"feild_of_study\":\"f\",\"start_date\":\"2023-05-15\",\"active\":false,\"end_date\":\"2023-05-15\"}"
                         },
                         "description": ""
                     },
@@ -481,7 +481,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "56"
+                                    "value": "54"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -489,7 +489,7 @@
                                 }
                             ],
                             "code": 201,
-                            "body": "{\"status\":true,\"status_code\":200,\"message\":\"\",\"data\":{\"name\":\"xyulimtsneqqxgrldl\",\"school_name\":\"puelwxzjtberosedwtvycue\",\"location\":\"xfdmhiglivsh\",\"feild_of_study\":\"fg\",\"start_date\":\"2023-05-15\",\"active\":true,\"end_date\":\"2023-05-15\",\"user_id\":\"ac49ffdc-8568-481c-8587-5cb3f846af5f\",\"id\":\"97aafdf4-7f89-4318-9ad9-24cedfaeb2fe\",\"updated_at\":\"2023-05-15T16:32:40.000000Z\",\"created_at\":\"2023-05-15T16:32:40.000000Z\"}}",
+                            "body": "{\"status\":true,\"status_code\":200,\"message\":\"\",\"data\":{\"name\":\"qypzsxohnxj\",\"school_name\":\"zsm\",\"location\":\"zhieivhaksc\",\"feild_of_study\":\"f\",\"start_date\":\"2023-05-15\",\"active\":false,\"end_date\":\"2023-05-15\",\"user_id\":\"ac49ffdc-8568-481c-8587-5cb3f846af5f\",\"id\":\"e5fb94f7-271c-48c1-b5f9-b8c8e5a02895\",\"updated_at\":\"2023-05-15T19:05:56.000000Z\",\"created_at\":\"2023-05-15T19:05:56.000000Z\"}}",
                             "name": ""
                         }
                     ]
@@ -516,7 +516,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"skills\":[\"voluptatibus\"]}"
+                            "raw": "{\"skills\":[\"ducimus\"]}"
                         },
                         "description": ""
                     },
@@ -537,7 +537,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "55"
+                                    "value": "53"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -562,7 +562,7 @@
                                 {
                                     "id": "skill_id",
                                     "key": "skill_id",
-                                    "value": "voluptatum",
+                                    "value": "nihil",
                                     "description": "The ID of the skill."
                                 }
                             ]
@@ -605,7 +605,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"details\":\"zrtrajzxkydyvwrlzkysinhvgzydascffuzrosnkncwzeugdfrktuxyusmxfczevlrvquxkdeynldhzanjnvkymuc\"}"
+                            "raw": "{\"details\":\"gokuuxtrdfybwmaxdiwjbjepaiklnexmvqpbvodpgnnwrsepqynqhioisixhoyfzmqshhdfpqlgrwjt\"}"
                         },
                         "description": ""
                     },
@@ -626,15 +626,15 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "54"
+                                    "value": "52"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 400,
-                            "body": "{\"status\":false,\"status_code\":400,\"message\":\"Already created data please update your data, if you want any modification\",\"data\":[]}",
+                            "code": 201,
+                            "body": "{\"status\":true,\"status_code\":200,\"message\":\"\",\"data\":{\"id\":\"b99ce44b-b65c-41b4-b062-b0cc5fbf85f5\",\"details\":\"gokuuxtrdfybwmaxdiwjbjepaiklnexmvqpbvodpgnnwrsepqynqhioisixhoyfzmqshhdfpqlgrwjt\"}}",
                             "name": ""
                         }
                     ]
@@ -661,7 +661,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"title\":\"skpsrimlz\",\"role\":\"nmdw\",\"start_date\":\"2023-05-15\",\"end_date\":\"2023-05-15\",\"details\":\"vvoesyygrbuhjgdxwksnofmdkaqyywainnorbwhaykujgboteoonqbtebjegfvddzchgdiumvkzhofmvx\"}"
+                            "raw": "{\"title\":\"nmpciuicrbbdxosul\",\"role\":\"m\",\"start_date\":\"2023-05-15\",\"end_date\":\"2023-05-15\",\"details\":\"imguktmdherpmjqpsuvfgkqwjyosqessacqqzkktsqs\"}"
                         },
                         "description": ""
                     },
@@ -682,7 +682,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "53"
+                                    "value": "51"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -690,7 +690,7 @@
                                 }
                             ],
                             "code": 201,
-                            "body": "{\"status\":true,\"status_code\":200,\"message\":\"\",\"data\":{\"id\":\"3f04fe59-5d5d-4dac-aeaa-43814a41e2cc\",\"title\":\"skpsrimlz\",\"role\":\"nmdw\",\"start_date\":\"2023-05-15\",\"end_date\":\"2023-05-15\",\"details\":\"vvoesyygrbuhjgdxwksnofmdkaqyywainnorbwhaykujgboteoonqbtebjegfvddzchgdiumvkzhofmvx\"}}",
+                            "body": "{\"status\":true,\"status_code\":200,\"message\":\"\",\"data\":{\"id\":\"864d4358-959a-4627-bb4e-61923f6ea32a\",\"title\":\"nmpciuicrbbdxosul\",\"role\":\"m\",\"start_date\":\"2023-05-15\",\"end_date\":\"2023-05-15\",\"details\":\"imguktmdherpmjqpsuvfgkqwjyosqessacqqzkktsqs\"}}",
                             "name": ""
                         }
                     ]
@@ -707,8 +707,97 @@
                                 {
                                     "id": "project_id",
                                     "key": "project_id",
-                                    "value": "sequi",
+                                    "value": "recusandae",
                                     "description": "The ID of the project."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "create & update experience",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/resume\/experience",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/resume\/experience"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"company_name\":\"ot\",\"job_title\":\"szstgvich\",\"location\":\"mookgnzsgudwlnrlinmqfa\",\"start_date\":\"2023-05-15\",\"active\":false,\"responsibilities\":\"occaecati\",\"end_date\":\"2023-05-15\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "50"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 201,
+                            "body": "{\"status\":true,\"status_code\":200,\"message\":\"Successfully stored\",\"data\":{\"id\":\"4652afbb-6fdb-41a3-825f-c9f7990db28b\",\"company_name\":\"ot\",\"start_date\":\"2023-05-15\",\"title\":\"szstgvich\",\"location\":\"mookgnzsgudwlnrlinmqfa\",\"responsibilities\":\"occaecati\",\"end_date\":\"2023-05-15\",\"active\":false}}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Delete Experience",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/resume\/experience\/:experience_id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/resume\/experience\/:experience_id",
+                            "variable": [
+                                {
+                                    "id": "experience_id",
+                                    "key": "experience_id",
+                                    "value": "voluptatem",
+                                    "description": "The ID of the experience."
                                 }
                             ]
                         },
@@ -736,7 +825,7 @@
         "bearer": [
             {
                 "key": "key",
-                "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5OTI4ODgxNi0xYmI1LTQwMDgtOTc0NC0xMGE4MDQ4NWRlNDQiLCJqdGkiOiI5NTRiMTE2ZjA5YmMzZTg3ZDA4MmY2ZDMyMjdkNWIxM2ZiMmUzNmU1NDEwOWJhMzQyMzVhY2MwMDM0NGE4YzNhNmVhOGQ5OGU3ZDQ4MTcyMyIsImlhdCI6MTY4NDE0ODczOC4wMzk0NTEsIm5iZiI6MTY4NDE0ODczOC4wMzk0NTgsImV4cCI6MTcxNTc3MTEzNy44MTEwMDEsInN1YiI6ImFjNDlmZmRjLTg1NjgtNDgxYy04NTg3LTVjYjNmODQ2YWY1ZiIsInNjb3BlcyI6W119.Q0jHUhuIQALckcLz9HG6nufezcKNuH9aPA9U1y95rYUzXjwBuJGpAvUUPayoN8D6fEDMzFkaOrrbjtruKZbj1DV-eg_xamzZPVkbIG-4GAbFTRlmYJOkrpTYo0-QZf8XGxkycRP8Q3EJXmdbtYkml6jqBHrKJ0gR4pouLlZrOF5fmK5_nAIjK0b2LoyRni6HKmGJINnP5eqp5RriiaxO8TKXnBFiCRl_XmmgN8131mWOiXY0-iefTS7TFnVi_6BOIRbzzdIhl1VnJOp6snw-6tMhxEcCPLxjjgaxXpSNLFLAtH9GFMVYwqgT7k64PTtfwsrgKcKlSeu5T8y8ch5_cOTJE3p0GRSvPErxOU0bKMZousnrirTC-wHD6uzKssgQri7t6x6LD6xQ-cau5IAhn8N2RqOvmWE8CpLRai-WjfsJse1Qzq6lVExMmC1HYHro1rR_oYAF6VEL-BkwLwxXB4TpKJ6Cb4gwqAbX0jC_339iNJdaBMvRW6sqjrkpZWvCgnA5eT2RU4cL2IeOHbFHlKrIbSTx1ePyvH436IfSrJQogFUFvBSd1thb1UFaCTeDD7G6YaucoSZeoS9fWbS9G9phlAXFqp5oPFgSVRT7G_4hwcLMv4Z5atbgCdJkp7AyfPLR9E9e2l_BqCCJWmlIgJ4x9p9XQAdW--HE0E4POwk",
+                "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5OTJjYmNlOS1iNzcwLTQzYzItYTU4ZS0zMjZmNDExMjBjYmEiLCJqdGkiOiIyY2Q1ZmIwNzgwMDE4OTY3ZjE1YmYwYjk4MjBlY2Q4YWViMDQ4NzZhMTRmNGUyZThmZmZkMDE1ZmQ5ZTQ3YjUwZDBjZjI5NDJiNGJmNzI0NiIsImlhdCI6MTY4NDE3NDM1Ni45NzY4ODEsIm5iZiI6MTY4NDE3NDM1Ni45NzY4ODQsImV4cCI6MTcxNTc5Njc1Ni45MDM5NTcsInN1YiI6ImFjNDlmZmRjLTg1NjgtNDgxYy04NTg3LTVjYjNmODQ2YWY1ZiIsInNjb3BlcyI6W119.lkwFF50H_sjrbU3OCBVkQmeBuv-o-6_wZ37aNQS1-3zSpPXO4ie0rV3sGdWbT1K4m6UjZNb-nHysLIZLRe49KwOO_EZ2SYqQwdyP60CTYXwlBmpPwHheknmN1OicmW20Id6Zew-ZU_wz_i3lYw9z0dWamMftWOAVxiIiwTwsKEcedPlLxWJ8COO7RymvYhXFpDdIJxzDzp8PgIH1YoeDVUEa0euhHqHkdQ0es3UHsO70zMg7OgTQbeYEhFMsobhXLQs3TuHoEji54Vfj2DkLyVm0PCIf8k2h0y1A2j8Ed-mdR9uq7JYQCSsD-0k208SbFSjjJvXL7SE-c-V2jIfBqTaFUwOb7mdIibP_l-m5vStmYJ8yL_7jLeIYt_qaiytLWYTGsHhZtaOArN-zvzV5BNFqA4i1FojMTU9aXtpZUtRUtsReYh07RvLZt62tL8JRPKy2OHPkQjj4H0rJ9H4ARASOHUPs-66JgwxSmXd0CpvPbcWRgGtIzJgCYz3sKd9ZHI2ApLWvZtDn_lIjZkIP5YgjgZv1vwQN7h7C7eJKsHL1Loal8QR_cahYVoguPw4SJae-pL_lOY2LPiqFFHn5R6rUgDxqWZ4KyfNe-9PuTJUSFKJ6QbooovHKhW8AXNsoDLRk2tYZna7z8gns9VZbGHX864vFqg970czp__PZOfc",
                 "type": "string"
             }
         ]

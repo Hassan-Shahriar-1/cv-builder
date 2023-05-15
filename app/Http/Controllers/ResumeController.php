@@ -5,16 +5,19 @@ namespace App\Http\Controllers;
 use App\Helpers\ApiResponseHelper;
 use App\Http\Requests\ContactRequest;
 use App\Http\Requests\EducationRequest;
+use App\Http\Requests\ExperienceRequest;
 use App\Http\Requests\ObjectiveRequest;
 use App\Http\Requests\ProjectRequest;
 use App\Http\Requests\SkillRequest;
 use App\Http\Resources\EducationResouce;
+use App\Http\Resources\ExperienceResource;
 use App\Http\Resources\ObjectiveResource;
 use App\Http\Resources\ProjectResource;
 use App\Http\Resources\SkillResource;
 use App\Models\CareerObjective;
 use App\Models\Project;
 use App\Models\Skill;
+use App\Models\WorkExperience;
 use App\Services\ResumeService;
 use Exception;
 use Illuminate\Http\JsonResponse;
@@ -164,6 +167,37 @@ class ResumeController extends Controller
             }else{
                 return ApiResponseHelper::errorResponse(trans('messages.404'));
             }
+        } catch (Exception $e) {
+            return ApiResponseHelper::serverError($e);
+        }
+    }
+
+    /**
+     * create & update experience
+     * @param ExperienceRequest $request
+     * @return JsonResponse
+     */
+    public function experience(ExperienceRequest $request) :JsonResponse
+    {
+        $experienceRequestData = $request->validated();
+        try{
+            $experienceData = $this->resumeService->createOrUpdateExperience($experienceRequestData);
+            return ApiResponseHelper::otherResponse(true, 200, trans('messages.created'), new ExperienceResource($experienceData), 201);
+        } catch (Exception $e) {
+            return ApiResponseHelper::serverError($e);
+        }
+    }
+
+    /**
+     * Delete Experience
+     * @param WorkExperience $experience
+     * @return JsonResponse
+     */
+    public function deleteExperiece(WorkExperience $experience) :JsonResponse
+    {
+        try{
+            $experience->delete();            
+            return ApiResponseHelper::otherResponse(true, 200, trans('messages.delete'), [], 201);
         } catch (Exception $e) {
             return ApiResponseHelper::serverError($e);
         }
