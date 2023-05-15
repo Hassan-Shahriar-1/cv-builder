@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Helpers\ApiResponseHelper;
 use App\Http\Requests\ContactRequest;
 use App\Http\Requests\EducationRequest;
+use App\Http\Requests\ExperienceRequest;
 use App\Http\Requests\ObjectiveRequest;
 use App\Http\Requests\ProjectRequest;
 use App\Http\Requests\SkillRequest;
@@ -167,5 +168,13 @@ class ResumeController extends Controller
         } catch (Exception $e) {
             return ApiResponseHelper::serverError($e);
         }
+    }
+
+    /**
+     * create & update experience
+     */
+    public function experience(ExperienceRequest $request) :JsonResponse
+    {
+
     }
 }
