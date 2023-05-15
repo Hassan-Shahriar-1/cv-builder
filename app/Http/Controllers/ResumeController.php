@@ -6,9 +6,11 @@ use App\Helpers\ApiResponseHelper;
 use App\Http\Requests\ContactRequest;
 use App\Http\Requests\EducationRequest;
 use App\Http\Requests\ObjectiveRequest;
+use App\Http\Requests\ProjectRequest;
 use App\Http\Requests\SkillRequest;
 use App\Http\Resources\EducationResouce;
 use App\Http\Resources\ObjectiveResource;
+use App\Http\Resources\ProjectResource;
 use App\Http\Resources\SkillResource;
 use App\Models\CareerObjective;
 use App\Models\Skill;
@@ -128,5 +130,21 @@ class ResumeController extends Controller
             return ApiResponseHelper::serverError($e);
         }
 
+    }
+
+    /**
+     * create or update project
+     * @param ProjectRequest $request
+     * @return JsonResponse
+     */
+    public function project(ProjectRequest $request) :JsonResponse
+    {
+        $projectRequestData = $request->validated();
+        try{
+            $projectData = $this->resumeService->createOrUpdateProject($projectRequestData);
+            return ApiResponseHelper::otherResponse(true, 200, '', new ProjectResource($projectData), 201);
+        } catch (Exception $e) {
+            return ApiResponseHelper::serverError($e);
+        }
     }
 }
