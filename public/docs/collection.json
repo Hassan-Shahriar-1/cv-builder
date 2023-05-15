@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "e37a8ff1-4fca-46f0-9226-7798cf5a463e",
+        "_postman_id": "0b9c59bb-518c-461e-bfef-285885aebc62",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -41,7 +41,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"ztzplusaieiskwvhimjmwbkvj\",\"email\":\"jadon.rosenbaum@example.com\",\"password\":\"D]P\\\\oiJ;?p\",\"confirm_password\":\"voluptatem\"}"
+                            "raw": "{\"name\":\"pnoynb\",\"email\":\"zstehr@example.org\",\"password\":\"Oyu@rjGM+xEj`t\",\"confirm_password\":\"id\"}"
                         },
                         "description": "",
                         "auth": {
@@ -100,7 +100,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"ratke.crawford@example.com\",\"password\":\"8]c.$=\"}"
+                            "raw": "{\"email\":\"koss.candace@example.com\",\"password\":\"#MpYs3ADjhEh\"}"
                         },
                         "description": "",
                         "auth": {
@@ -178,12 +178,20 @@
                                     "value": "application\/json"
                                 },
                                 {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "59"
+                                },
+                                {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "code": 200,
+                            "body": "{\"status\":true,\"status_code\":200,\"message\":\"\",\"data\":{\"id\":\"ac49ffdc-8568-481c-8587-5cb3f846af5f\",\"name\":\"test update\",\"email\":\"hassanshahriar18@gmail.com\",\"user_type\":\"User\",\"login_type\":\"default\",\"dob\":\"2022-01-01\",\"phone\":\"11111111111\",\"created_at\":\"2023-05-11T07:16:47.000000Z\",\"updated_at\":\"2023-05-15T11:05:59.000000Z\",\"deleted_at\":null}}",
                             "name": ""
                         }
                     ]
@@ -210,7 +218,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"id\":\"voluptatem\",\"name\":\"ezqtxtsntkptwxrhsbuxhiyel\",\"dob\":\"2023-05-14\",\"phone\":\"umeybfuvsrh\"}"
+                            "raw": "{\"id\":\"accusamus\",\"name\":\"yyunqlrbrvsqwonawkhvnilw\",\"dob\":\"2023-05-15\",\"phone\":\"sqkfzterzhl\"}"
                         },
                         "description": ""
                     },
@@ -226,12 +234,20 @@
                                     "value": "application\/json"
                                 },
                                 {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "58"
+                                },
+                                {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "code": 422,
+                            "body": "{\"status\":false,\"status_code\":400,\"message\":\"The selected id is invalid.\",\"errors\":{\"id\":[\"The selected id is invalid.\"]},\"data\":[]}",
                             "name": ""
                         }
                     ]
@@ -264,7 +280,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"myles35@example.com\"}"
+                            "raw": "{\"email\":\"swift.shea@example.com\"}"
                         },
                         "description": "",
                         "auth": {
@@ -323,7 +339,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"token\":\"tempora\",\"password\":\"0Yt<5G,\\\"M~1Z!9\",\"email\":\"jmclaughlin@example.net\"}"
+                            "raw": "{\"token\":\"fuga\",\"password\":\"X'=s#I3WxC@\",\"email\":\"lubowitz.savanna@example.com\"}"
                         },
                         "description": "",
                         "auth": {
@@ -388,7 +404,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"id\":\"error\",\"first_name\":\"lijiapkqvmep\",\"last_name\":\"neqi\",\"email\":\"maymie26@example.com\",\"job_title\":\"zfpbdeffnc\",\"phone\":\"syecs\",\"location\":\"fastfld\",\"linkedin_link\":\"pcfitnpbee\",\"facebook_link\":\"dezultkpqeyazcopm\",\"twitter_link\":\"hokktjkdevmfejaleo\",\"website\":\"kdmedoxkoxvehjh\"}"
+                            "raw": "{\"id\":\"voluptates\",\"first_name\":\"nfhihdpzcpuqvh\",\"last_name\":\"cse\",\"email\":\"rhiannon.gusikowski@example.net\",\"job_title\":\"f\",\"phone\":\"rjflbjkbvlckx\",\"location\":\"ggp\",\"linkedin_link\":\"xcxuqmwrykxny\",\"facebook_link\":\"jjxoaixcif\",\"twitter_link\":\"unvmpinutwciylkxxxflo\",\"website\":\"qisygjlvpvpklvcekho\"}"
                         },
                         "description": ""
                     },
@@ -404,12 +420,20 @@
                                     "value": "application\/json"
                                 },
                                 {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "57"
+                                },
+                                {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "code": 422,
+                            "body": "{\"status\":false,\"status_code\":400,\"message\":\"The selected id is invalid.\",\"errors\":{\"id\":[\"The selected id is invalid.\"]},\"data\":[]}",
                             "name": ""
                         }
                     ]
@@ -436,7 +460,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"kmjzjtozddcjndeeucooqn\",\"school_name\":\"db\",\"location\":\"eghpuykysszjle\",\"feild_of_study\":\"zwvtbtf\",\"start_date\":\"2023-05-14\",\"active\":true,\"end_date\":\"2023-05-14\"}"
+                            "raw": "{\"name\":\"igblnftkipmkkluidcgxfikjn\",\"school_name\":\"hqsqqmjdydhqwrcenblcjxn\",\"location\":\"qwfpbgpaousq\",\"feild_of_study\":\"gzyqjqjazbdypesaploc\",\"start_date\":\"2023-05-15\",\"active\":true,\"end_date\":\"2023-05-15\"}"
                         },
                         "description": ""
                     },
@@ -452,12 +476,20 @@
                                     "value": "application\/json"
                                 },
                                 {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "56"
+                                },
+                                {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "code": 500,
+                            "body": "{\"status\":false,\"status_code\":500,\"message\":\"Server Error\",\"error_message\":\"SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cv-builder.education' doesn't exist (Connection: mysql, SQL: insert into `education` (`name`, `school_name`, `location`, `feild_of_study`, `start_date`, `active`, `end_date`, `user_id`, `id`, `updated_at`, `created_at`) values (igblnftkipmkkluidcgxfikjn, hqsqqmjdydhqwrcenblcjxn, qwfpbgpaousq, gzyqjqjazbdypesaploc, 2023-05-15, 1, 2023-05-15, ac49ffdc-8568-481c-8587-5cb3f846af5f, 7af8d558-1afe-4393-9877-3e748150c4ee, 2023-05-15 11:28:07, 2023-05-15 11:28:07))\",\"error_line\":793,\"error_file\":\"K:\\\\installed-us\\\\cv-builder\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Database\\\\Connection.php\"}",
                             "name": ""
                         }
                     ]
@@ -484,7 +516,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"skills\":[\"enim\"]}"
+                            "raw": "{\"skills\":[\"veritatis\"]}"
                         },
                         "description": ""
                     },
@@ -500,12 +532,20 @@
                                     "value": "application\/json"
                                 },
                                 {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "55"
+                                },
+                                {
                                     "key": "access-control-allow-origin",
                                     "value": "*"
                                 }
                             ],
-                            "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "code": 422,
+                            "body": "{\"status\":false,\"status_code\":400,\"message\":\"The skills.0.name field is required.\",\"errors\":{\"skills.0.name\":[\"The skills.0.name field is required.\"]},\"data\":[]}",
                             "name": ""
                         }
                     ]
@@ -515,9 +555,17 @@
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
-                            "path": "api\/resume\/skill",
+                            "path": "api\/resume\/skill\/:skill_id",
                             "query": [],
-                            "raw": "{{baseUrl}}\/api\/resume\/skill"
+                            "raw": "{{baseUrl}}\/api\/resume\/skill\/:skill_id",
+                            "variable": [
+                                {
+                                    "id": "skill_id",
+                                    "key": "skill_id",
+                                    "value": "mollitia",
+                                    "description": "The ID of the skill."
+                                }
+                            ]
                         },
                         "method": "DELETE",
                         "header": [
@@ -534,6 +582,62 @@
                         "description": ""
                     },
                     "response": []
+                },
+                {
+                    "name": "create or update objective",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/resume\/objective",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/resume\/objective"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"details\":\"rlauclvsejkedyoobynkcjqduflfclsomqbnnmlennkqrhwmhckarlezalyykftmbsxoeqtryvynglc\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "54"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 400,
+                            "body": "{\"status\":false,\"status_code\":400,\"message\":\"Already created data please update your data, if you want any modification\",\"data\":[]}",
+                            "name": ""
+                        }
+                    ]
                 }
             ]
         }
@@ -543,7 +647,7 @@
         "bearer": [
             {
                 "key": "key",
-                "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5OTIzYzcyZi1jOTIyLTRkOGUtOGY0ZC01MjUwYjRhYjI0MTQiLCJqdGkiOiJhM2QwOWUxZjk1OTEzNDhhNzI5YmEyZTI2MDg1ZjYxODk2ZGQxMTY4NWRlY2Q3YTY3NmQ0MWU5ODI4YzA3OGQwYjlkYTc2YmFlYWYzODIyOCIsImlhdCI6MTY4Mzc4OTQ4Mi4zNzEzOTYsIm5iZiI6MTY4Mzc4OTQ4Mi4zNzE0MDEsImV4cCI6MTcxNTQxMTg4Mi4wODM4OSwic3ViIjoiYWM0OWZmZGMtODU2OC00ODFjLTg1ODctNWNiM2Y4NDZhZjVmIiwic2NvcGVzIjpbXX0.fLeQldzAss2VSr9swcyslE4IygpmSux30G-OI_qPbrWkLWgsQF2j5pgchL7IyPTyuxV4teARnGYXEcpksXAn9idP5toIjKmQToLlJpMSGuChvYZnniCk-h4K4F_V3-S73C0e_a_Pbkba9i3ylLjZvhJY5Vkm_XedDIU3eAVyaOxNLOi1Y6FYCSY5I-eWk4R_Ll7Fd4ituBVv99UO2FTOcSeAlY8sMIH-5ub8poaZcVPtabkGFDi1cue6YSDId9gkrhBLSrtz4HLE8AoZYaF7Ar8IHUN9bE92MJON33LtpVo5ufQgxWawI6Nc9QGbCAZOROk4FK__H80WSQA-tdAeJc8QbY3MUYKYjgIDuscdQRA9TcV3tMfgzB8MSzeG9S26B6WD9gEjZf_O3COq6osA6XZe69tVR4axRPIDR7Fjzwxv3OJM3zIrGy428I1h6aPrWNTfBQnx18vckTOi3qt_SdlHUfd9qZpj_cbeUY3lBVnnH6r4HR-9WZnVrvo__bVHbYXG8jjsZTTk3NnWainpTJ6AKAV5DGpr_AWkGv6DV4wuWMpuyy8UE_lcmuoErqHVvSExloHoTu-I4SMRksGdExwR7lK3csT8kvqjlg4k6RvutbNFgmIQkCcUKMFNd2-ELmbn-UoCLAOvnZ-hww42YIpmWjihcQRZCABvI4Kl7Ak",
+                "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5OTI4ODgxNi0xYmI1LTQwMDgtOTc0NC0xMGE4MDQ4NWRlNDQiLCJqdGkiOiI5NTRiMTE2ZjA5YmMzZTg3ZDA4MmY2ZDMyMjdkNWIxM2ZiMmUzNmU1NDEwOWJhMzQyMzVhY2MwMDM0NGE4YzNhNmVhOGQ5OGU3ZDQ4MTcyMyIsImlhdCI6MTY4NDE0ODczOC4wMzk0NTEsIm5iZiI6MTY4NDE0ODczOC4wMzk0NTgsImV4cCI6MTcxNTc3MTEzNy44MTEwMDEsInN1YiI6ImFjNDlmZmRjLTg1NjgtNDgxYy04NTg3LTVjYjNmODQ2YWY1ZiIsInNjb3BlcyI6W119.Q0jHUhuIQALckcLz9HG6nufezcKNuH9aPA9U1y95rYUzXjwBuJGpAvUUPayoN8D6fEDMzFkaOrrbjtruKZbj1DV-eg_xamzZPVkbIG-4GAbFTRlmYJOkrpTYo0-QZf8XGxkycRP8Q3EJXmdbtYkml6jqBHrKJ0gR4pouLlZrOF5fmK5_nAIjK0b2LoyRni6HKmGJINnP5eqp5RriiaxO8TKXnBFiCRl_XmmgN8131mWOiXY0-iefTS7TFnVi_6BOIRbzzdIhl1VnJOp6snw-6tMhxEcCPLxjjgaxXpSNLFLAtH9GFMVYwqgT7k64PTtfwsrgKcKlSeu5T8y8ch5_cOTJE3p0GRSvPErxOU0bKMZousnrirTC-wHD6uzKssgQri7t6x6LD6xQ-cau5IAhn8N2RqOvmWE8CpLRai-WjfsJse1Qzq6lVExMmC1HYHro1rR_oYAF6VEL-BkwLwxXB4TpKJ6Cb4gwqAbX0jC_339iNJdaBMvRW6sqjrkpZWvCgnA5eT2RU4cL2IeOHbFHlKrIbSTx1ePyvH436IfSrJQogFUFvBSd1thb1UFaCTeDD7G6YaucoSZeoS9fWbS9G9phlAXFqp5oPFgSVRT7G_4hwcLMv4Z5atbgCdJkp7AyfPLR9E9e2l_BqCCJWmlIgJ4x9p9XQAdW--HE0E4POwk",
                 "type": "string"
             }
         ]

@@ -27,99 +27,101 @@ endpoints:
         name: id
         description: ''
         required: true
-        example: error
+        example: voluptates
         type: string
         custom: []
       first_name:
         name: first_name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: lijiapkqvmep
+        example: nfhihdpzcpuqvh
         type: string
         custom: []
       last_name:
         name: last_name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: neqi
+        example: cse
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: maymie26@example.com
+        example: rhiannon.gusikowski@example.net
         type: string
         custom: []
       job_title:
         name: job_title
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: zfpbdeffnc
+        example: f
         type: string
         custom: []
       phone:
         name: phone
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: syecs
+        example: rjflbjkbvlckx
         type: string
         custom: []
       location:
         name: location
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: fastfld
+        example: ggp
         type: string
         custom: []
       linkedin_link:
         name: linkedin_link
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: pcfitnpbee
+        example: xcxuqmwrykxny
         type: string
         custom: []
       facebook_link:
         name: facebook_link
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: dezultkpqeyazcopm
+        example: jjxoaixcif
         type: string
         custom: []
       twitter_link:
         name: twitter_link
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: hokktjkdevmfejaleo
+        example: unvmpinutwciylkxxxflo
         type: string
         custom: []
       website:
         name: website
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: kdmedoxkoxvehjh
+        example: qisygjlvpvpklvcekho
         type: string
         custom: []
     cleanBodyParameters:
-      id: error
-      first_name: lijiapkqvmep
-      last_name: neqi
-      email: maymie26@example.com
-      job_title: zfpbdeffnc
-      phone: syecs
-      location: fastfld
-      linkedin_link: pcfitnpbee
-      facebook_link: dezultkpqeyazcopm
-      twitter_link: hokktjkdevmfejaleo
-      website: kdmedoxkoxvehjh
+      id: voluptates
+      first_name: nfhihdpzcpuqvh
+      last_name: cse
+      email: rhiannon.gusikowski@example.net
+      job_title: f
+      phone: rjflbjkbvlckx
+      location: ggp
+      linkedin_link: xcxuqmwrykxny
+      facebook_link: jjxoaixcif
+      twitter_link: unvmpinutwciylkxxxflo
+      website: qisygjlvpvpklvcekho
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 422
+        content: '{"status":false,"status_code":400,"message":"The selected id is invalid.","errors":{"id":["The selected id is invalid."]},"data":[]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '57'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -127,7 +129,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5OTIzYzcyZi1jOTIyLTRkOGUtOGY0ZC01MjUwYjRhYjI0MTQiLCJqdGkiOiJhM2QwOWUxZjk1OTEzNDhhNzI5YmEyZTI2MDg1ZjYxODk2ZGQxMTY4NWRlY2Q3YTY3NmQ0MWU5ODI4YzA3OGQwYjlkYTc2YmFlYWYzODIyOCIsImlhdCI6MTY4Mzc4OTQ4Mi4zNzEzOTYsIm5iZiI6MTY4Mzc4OTQ4Mi4zNzE0MDEsImV4cCI6MTcxNTQxMTg4Mi4wODM4OSwic3ViIjoiYWM0OWZmZGMtODU2OC00ODFjLTg1ODctNWNiM2Y4NDZhZjVmIiwic2NvcGVzIjpbXX0.fLeQldzAss2VSr9swcyslE4IygpmSux30G-OI_qPbrWkLWgsQF2j5pgchL7IyPTyuxV4teARnGYXEcpksXAn9idP5toIjKmQToLlJpMSGuChvYZnniCk-h4K4F_V3-S73C0e_a_Pbkba9i3ylLjZvhJY5Vkm_XedDIU3eAVyaOxNLOi1Y6FYCSY5I-eWk4R_Ll7Fd4ituBVv99UO2FTOcSeAlY8sMIH-5ub8poaZcVPtabkGFDi1cue6YSDId9gkrhBLSrtz4HLE8AoZYaF7Ar8IHUN9bE92MJON33LtpVo5ufQgxWawI6Nc9QGbCAZOROk4FK__H80WSQA-tdAeJc8QbY3MUYKYjgIDuscdQRA9TcV3tMfgzB8MSzeG9S26B6WD9gEjZf_O3COq6osA6XZe69tVR4axRPIDR7Fjzwxv3OJM3zIrGy428I1h6aPrWNTfBQnx18vckTOi3qt_SdlHUfd9qZpj_cbeUY3lBVnnH6r4HR-9WZnVrvo__bVHbYXG8jjsZTTk3NnWainpTJ6AKAV5DGpr_AWkGv6DV4wuWMpuyy8UE_lcmuoErqHVvSExloHoTu-I4SMRksGdExwR7lK3csT8kvqjlg4k6RvutbNFgmIQkCcUKMFNd2-ELmbn-UoCLAOvnZ-hww42YIpmWjihcQRZCABvI4Kl7Ak'
+      - 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5OTI4ODgxNi0xYmI1LTQwMDgtOTc0NC0xMGE4MDQ4NWRlNDQiLCJqdGkiOiI5NTRiMTE2ZjA5YmMzZTg3ZDA4MmY2ZDMyMjdkNWIxM2ZiMmUzNmU1NDEwOWJhMzQyMzVhY2MwMDM0NGE4YzNhNmVhOGQ5OGU3ZDQ4MTcyMyIsImlhdCI6MTY4NDE0ODczOC4wMzk0NTEsIm5iZiI6MTY4NDE0ODczOC4wMzk0NTgsImV4cCI6MTcxNTc3MTEzNy44MTEwMDEsInN1YiI6ImFjNDlmZmRjLTg1NjgtNDgxYy04NTg3LTVjYjNmODQ2YWY1ZiIsInNjb3BlcyI6W119.Q0jHUhuIQALckcLz9HG6nufezcKNuH9aPA9U1y95rYUzXjwBuJGpAvUUPayoN8D6fEDMzFkaOrrbjtruKZbj1DV-eg_xamzZPVkbIG-4GAbFTRlmYJOkrpTYo0-QZf8XGxkycRP8Q3EJXmdbtYkml6jqBHrKJ0gR4pouLlZrOF5fmK5_nAIjK0b2LoyRni6HKmGJINnP5eqp5RriiaxO8TKXnBFiCRl_XmmgN8131mWOiXY0-iefTS7TFnVi_6BOIRbzzdIhl1VnJOp6snw-6tMhxEcCPLxjjgaxXpSNLFLAtH9GFMVYwqgT7k64PTtfwsrgKcKlSeu5T8y8ch5_cOTJE3p0GRSvPErxOU0bKMZousnrirTC-wHD6uzKssgQri7t6x6LD6xQ-cau5IAhn8N2RqOvmWE8CpLRai-WjfsJse1Qzq6lVExMmC1HYHro1rR_oYAF6VEL-BkwLwxXB4TpKJ6Cb4gwqAbX0jC_339iNJdaBMvRW6sqjrkpZWvCgnA5eT2RU4cL2IeOHbFHlKrIbSTx1ePyvH436IfSrJQogFUFvBSd1thb1UFaCTeDD7G6YaucoSZeoS9fWbS9G9phlAXFqp5oPFgSVRT7G_4hwcLMv4Z5atbgCdJkp7AyfPLR9E9e2l_BqCCJWmlIgJ4x9p9XQAdW--HE0E4POwk'
     controller: null
     method: null
     route: null
@@ -165,35 +167,35 @@ endpoints:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: kmjzjtozddcjndeeucooqn
+        example: igblnftkipmkkluidcgxfikjn
         type: string
         custom: []
       school_name:
         name: school_name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: db
+        example: hqsqqmjdydhqwrcenblcjxn
         type: string
         custom: []
       location:
         name: location
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: eghpuykysszjle
+        example: qwfpbgpaousq
         type: string
         custom: []
       feild_of_study:
         name: feild_of_study
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: zwvtbtf
+        example: gzyqjqjazbdypesaploc
         type: string
         custom: []
       start_date:
         name: start_date
         description: 'Must be a valid date in the format <code>Y-m-d</code>.'
         required: true
-        example: '2023-05-14'
+        example: '2023-05-15'
         type: string
         custom: []
       active:
@@ -207,25 +209,27 @@ endpoints:
         name: end_date
         description: 'Must be a valid date in the format <code>Y-m-d</code>. This field is required when <code>active</code> is <code>true</code>.'
         required: false
-        example: '2023-05-14'
+        example: '2023-05-15'
         type: string
         custom: []
     cleanBodyParameters:
-      name: kmjzjtozddcjndeeucooqn
-      school_name: db
-      location: eghpuykysszjle
-      feild_of_study: zwvtbtf
-      start_date: '2023-05-14'
+      name: igblnftkipmkkluidcgxfikjn
+      school_name: hqsqqmjdydhqwrcenblcjxn
+      location: qwfpbgpaousq
+      feild_of_study: gzyqjqjazbdypesaploc
+      start_date: '2023-05-15'
       active: true
-      end_date: '2023-05-14'
+      end_date: '2023-05-15'
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 500
+        content: '{"status":false,"status_code":500,"message":"Server Error","error_message":"SQLSTATE[42S02]: Base table or view not found: 1146 Table ''cv-builder.education'' doesn''t exist (Connection: mysql, SQL: insert into `education` (`name`, `school_name`, `location`, `feild_of_study`, `start_date`, `active`, `end_date`, `user_id`, `id`, `updated_at`, `created_at`) values (igblnftkipmkkluidcgxfikjn, hqsqqmjdydhqwrcenblcjxn, qwfpbgpaousq, gzyqjqjazbdypesaploc, 2023-05-15, 1, 2023-05-15, ac49ffdc-8568-481c-8587-5cb3f846af5f, 7af8d558-1afe-4393-9877-3e748150c4ee, 2023-05-15 11:28:07, 2023-05-15 11:28:07))","error_line":793,"error_file":"K:\\installed-us\\cv-builder\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php"}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '56'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -233,7 +237,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5OTIzYzcyZi1jOTIyLTRkOGUtOGY0ZC01MjUwYjRhYjI0MTQiLCJqdGkiOiJhM2QwOWUxZjk1OTEzNDhhNzI5YmEyZTI2MDg1ZjYxODk2ZGQxMTY4NWRlY2Q3YTY3NmQ0MWU5ODI4YzA3OGQwYjlkYTc2YmFlYWYzODIyOCIsImlhdCI6MTY4Mzc4OTQ4Mi4zNzEzOTYsIm5iZiI6MTY4Mzc4OTQ4Mi4zNzE0MDEsImV4cCI6MTcxNTQxMTg4Mi4wODM4OSwic3ViIjoiYWM0OWZmZGMtODU2OC00ODFjLTg1ODctNWNiM2Y4NDZhZjVmIiwic2NvcGVzIjpbXX0.fLeQldzAss2VSr9swcyslE4IygpmSux30G-OI_qPbrWkLWgsQF2j5pgchL7IyPTyuxV4teARnGYXEcpksXAn9idP5toIjKmQToLlJpMSGuChvYZnniCk-h4K4F_V3-S73C0e_a_Pbkba9i3ylLjZvhJY5Vkm_XedDIU3eAVyaOxNLOi1Y6FYCSY5I-eWk4R_Ll7Fd4ituBVv99UO2FTOcSeAlY8sMIH-5ub8poaZcVPtabkGFDi1cue6YSDId9gkrhBLSrtz4HLE8AoZYaF7Ar8IHUN9bE92MJON33LtpVo5ufQgxWawI6Nc9QGbCAZOROk4FK__H80WSQA-tdAeJc8QbY3MUYKYjgIDuscdQRA9TcV3tMfgzB8MSzeG9S26B6WD9gEjZf_O3COq6osA6XZe69tVR4axRPIDR7Fjzwxv3OJM3zIrGy428I1h6aPrWNTfBQnx18vckTOi3qt_SdlHUfd9qZpj_cbeUY3lBVnnH6r4HR-9WZnVrvo__bVHbYXG8jjsZTTk3NnWainpTJ6AKAV5DGpr_AWkGv6DV4wuWMpuyy8UE_lcmuoErqHVvSExloHoTu-I4SMRksGdExwR7lK3csT8kvqjlg4k6RvutbNFgmIQkCcUKMFNd2-ELmbn-UoCLAOvnZ-hww42YIpmWjihcQRZCABvI4Kl7Ak'
+      - 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5OTI4ODgxNi0xYmI1LTQwMDgtOTc0NC0xMGE4MDQ4NWRlNDQiLCJqdGkiOiI5NTRiMTE2ZjA5YmMzZTg3ZDA4MmY2ZDMyMjdkNWIxM2ZiMmUzNmU1NDEwOWJhMzQyMzVhY2MwMDM0NGE4YzNhNmVhOGQ5OGU3ZDQ4MTcyMyIsImlhdCI6MTY4NDE0ODczOC4wMzk0NTEsIm5iZiI6MTY4NDE0ODczOC4wMzk0NTgsImV4cCI6MTcxNTc3MTEzNy44MTEwMDEsInN1YiI6ImFjNDlmZmRjLTg1NjgtNDgxYy04NTg3LTVjYjNmODQ2YWY1ZiIsInNjb3BlcyI6W119.Q0jHUhuIQALckcLz9HG6nufezcKNuH9aPA9U1y95rYUzXjwBuJGpAvUUPayoN8D6fEDMzFkaOrrbjtruKZbj1DV-eg_xamzZPVkbIG-4GAbFTRlmYJOkrpTYo0-QZf8XGxkycRP8Q3EJXmdbtYkml6jqBHrKJ0gR4pouLlZrOF5fmK5_nAIjK0b2LoyRni6HKmGJINnP5eqp5RriiaxO8TKXnBFiCRl_XmmgN8131mWOiXY0-iefTS7TFnVi_6BOIRbzzdIhl1VnJOp6snw-6tMhxEcCPLxjjgaxXpSNLFLAtH9GFMVYwqgT7k64PTtfwsrgKcKlSeu5T8y8ch5_cOTJE3p0GRSvPErxOU0bKMZousnrirTC-wHD6uzKssgQri7t6x6LD6xQ-cau5IAhn8N2RqOvmWE8CpLRai-WjfsJse1Qzq6lVExMmC1HYHro1rR_oYAF6VEL-BkwLwxXB4TpKJ6Cb4gwqAbX0jC_339iNJdaBMvRW6sqjrkpZWvCgnA5eT2RU4cL2IeOHbFHlKrIbSTx1ePyvH436IfSrJQogFUFvBSd1thb1UFaCTeDD7G6YaucoSZeoS9fWbS9G9phlAXFqp5oPFgSVRT7G_4hwcLMv4Z5atbgCdJkp7AyfPLR9E9e2l_BqCCJWmlIgJ4x9p9XQAdW--HE0E4POwk'
     controller: null
     method: null
     route: null
@@ -265,7 +269,7 @@ endpoints:
         description: ''
         required: false
         example:
-          - enim
+          - veritatis
         type: 'string[]'
         custom: []
       'skills[].id':
@@ -279,20 +283,22 @@ endpoints:
         name: 'skills[].name'
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: azoiewajszgitwg
+        example: bqksmzoahdgvvmdme
         type: string
         custom: []
     cleanBodyParameters:
       skills:
-        - enim
+        - veritatis
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 422
+        content: '{"status":false,"status_code":400,"message":"The skills.0.name field is required.","errors":{"skills.0.name":["The skills.0.name field is required."]},"data":[]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '55'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -300,7 +306,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5OTIzYzcyZi1jOTIyLTRkOGUtOGY0ZC01MjUwYjRhYjI0MTQiLCJqdGkiOiJhM2QwOWUxZjk1OTEzNDhhNzI5YmEyZTI2MDg1ZjYxODk2ZGQxMTY4NWRlY2Q3YTY3NmQ0MWU5ODI4YzA3OGQwYjlkYTc2YmFlYWYzODIyOCIsImlhdCI6MTY4Mzc4OTQ4Mi4zNzEzOTYsIm5iZiI6MTY4Mzc4OTQ4Mi4zNzE0MDEsImV4cCI6MTcxNTQxMTg4Mi4wODM4OSwic3ViIjoiYWM0OWZmZGMtODU2OC00ODFjLTg1ODctNWNiM2Y4NDZhZjVmIiwic2NvcGVzIjpbXX0.fLeQldzAss2VSr9swcyslE4IygpmSux30G-OI_qPbrWkLWgsQF2j5pgchL7IyPTyuxV4teARnGYXEcpksXAn9idP5toIjKmQToLlJpMSGuChvYZnniCk-h4K4F_V3-S73C0e_a_Pbkba9i3ylLjZvhJY5Vkm_XedDIU3eAVyaOxNLOi1Y6FYCSY5I-eWk4R_Ll7Fd4ituBVv99UO2FTOcSeAlY8sMIH-5ub8poaZcVPtabkGFDi1cue6YSDId9gkrhBLSrtz4HLE8AoZYaF7Ar8IHUN9bE92MJON33LtpVo5ufQgxWawI6Nc9QGbCAZOROk4FK__H80WSQA-tdAeJc8QbY3MUYKYjgIDuscdQRA9TcV3tMfgzB8MSzeG9S26B6WD9gEjZf_O3COq6osA6XZe69tVR4axRPIDR7Fjzwxv3OJM3zIrGy428I1h6aPrWNTfBQnx18vckTOi3qt_SdlHUfd9qZpj_cbeUY3lBVnnH6r4HR-9WZnVrvo__bVHbYXG8jjsZTTk3NnWainpTJ6AKAV5DGpr_AWkGv6DV4wuWMpuyy8UE_lcmuoErqHVvSExloHoTu-I4SMRksGdExwR7lK3csT8kvqjlg4k6RvutbNFgmIQkCcUKMFNd2-ELmbn-UoCLAOvnZ-hww42YIpmWjihcQRZCABvI4Kl7Ak'
+      - 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5OTI4ODgxNi0xYmI1LTQwMDgtOTc0NC0xMGE4MDQ4NWRlNDQiLCJqdGkiOiI5NTRiMTE2ZjA5YmMzZTg3ZDA4MmY2ZDMyMjdkNWIxM2ZiMmUzNmU1NDEwOWJhMzQyMzVhY2MwMDM0NGE4YzNhNmVhOGQ5OGU3ZDQ4MTcyMyIsImlhdCI6MTY4NDE0ODczOC4wMzk0NTEsIm5iZiI6MTY4NDE0ODczOC4wMzk0NTgsImV4cCI6MTcxNTc3MTEzNy44MTEwMDEsInN1YiI6ImFjNDlmZmRjLTg1NjgtNDgxYy04NTg3LTVjYjNmODQ2YWY1ZiIsInNjb3BlcyI6W119.Q0jHUhuIQALckcLz9HG6nufezcKNuH9aPA9U1y95rYUzXjwBuJGpAvUUPayoN8D6fEDMzFkaOrrbjtruKZbj1DV-eg_xamzZPVkbIG-4GAbFTRlmYJOkrpTYo0-QZf8XGxkycRP8Q3EJXmdbtYkml6jqBHrKJ0gR4pouLlZrOF5fmK5_nAIjK0b2LoyRni6HKmGJINnP5eqp5RriiaxO8TKXnBFiCRl_XmmgN8131mWOiXY0-iefTS7TFnVi_6BOIRbzzdIhl1VnJOp6snw-6tMhxEcCPLxjjgaxXpSNLFLAtH9GFMVYwqgT7k64PTtfwsrgKcKlSeu5T8y8ch5_cOTJE3p0GRSvPErxOU0bKMZousnrirTC-wHD6uzKssgQri7t6x6LD6xQ-cau5IAhn8N2RqOvmWE8CpLRai-WjfsJse1Qzq6lVExMmC1HYHro1rR_oYAF6VEL-BkwLwxXB4TpKJ6Cb4gwqAbX0jC_339iNJdaBMvRW6sqjrkpZWvCgnA5eT2RU4cL2IeOHbFHlKrIbSTx1ePyvH436IfSrJQogFUFvBSd1thb1UFaCTeDD7G6YaucoSZeoS9fWbS9G9phlAXFqp5oPFgSVRT7G_4hwcLMv4Z5atbgCdJkp7AyfPLR9E9e2l_BqCCJWmlIgJ4x9p9XQAdW--HE0E4POwk'
     controller: null
     method: null
     route: null
@@ -308,7 +314,7 @@ endpoints:
   -
     httpMethods:
       - DELETE
-    uri: api/resume/skill
+    uri: 'api/resume/skill/{skill_id}'
     metadata:
       groupName: Resume
       groupDescription: ''
@@ -322,8 +328,16 @@ endpoints:
       Authorization: 'Bearer {YOUR_AUTH_KEY}'
       Content-Type: application/json
       Accept: application/json
-    urlParameters: []
-    cleanUrlParameters: []
+    urlParameters:
+      skill_id:
+        name: skill_id
+        description: 'The ID of the skill.'
+        required: true
+        example: mollitia
+        type: string
+        custom: []
+    cleanUrlParameters:
+      skill_id: mollitia
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -334,7 +348,67 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5OTIzYzcyZi1jOTIyLTRkOGUtOGY0ZC01MjUwYjRhYjI0MTQiLCJqdGkiOiJhM2QwOWUxZjk1OTEzNDhhNzI5YmEyZTI2MDg1ZjYxODk2ZGQxMTY4NWRlY2Q3YTY3NmQ0MWU5ODI4YzA3OGQwYjlkYTc2YmFlYWYzODIyOCIsImlhdCI6MTY4Mzc4OTQ4Mi4zNzEzOTYsIm5iZiI6MTY4Mzc4OTQ4Mi4zNzE0MDEsImV4cCI6MTcxNTQxMTg4Mi4wODM4OSwic3ViIjoiYWM0OWZmZGMtODU2OC00ODFjLTg1ODctNWNiM2Y4NDZhZjVmIiwic2NvcGVzIjpbXX0.fLeQldzAss2VSr9swcyslE4IygpmSux30G-OI_qPbrWkLWgsQF2j5pgchL7IyPTyuxV4teARnGYXEcpksXAn9idP5toIjKmQToLlJpMSGuChvYZnniCk-h4K4F_V3-S73C0e_a_Pbkba9i3ylLjZvhJY5Vkm_XedDIU3eAVyaOxNLOi1Y6FYCSY5I-eWk4R_Ll7Fd4ituBVv99UO2FTOcSeAlY8sMIH-5ub8poaZcVPtabkGFDi1cue6YSDId9gkrhBLSrtz4HLE8AoZYaF7Ar8IHUN9bE92MJON33LtpVo5ufQgxWawI6Nc9QGbCAZOROk4FK__H80WSQA-tdAeJc8QbY3MUYKYjgIDuscdQRA9TcV3tMfgzB8MSzeG9S26B6WD9gEjZf_O3COq6osA6XZe69tVR4axRPIDR7Fjzwxv3OJM3zIrGy428I1h6aPrWNTfBQnx18vckTOi3qt_SdlHUfd9qZpj_cbeUY3lBVnnH6r4HR-9WZnVrvo__bVHbYXG8jjsZTTk3NnWainpTJ6AKAV5DGpr_AWkGv6DV4wuWMpuyy8UE_lcmuoErqHVvSExloHoTu-I4SMRksGdExwR7lK3csT8kvqjlg4k6RvutbNFgmIQkCcUKMFNd2-ELmbn-UoCLAOvnZ-hww42YIpmWjihcQRZCABvI4Kl7Ak'
+      - 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5OTI4ODgxNi0xYmI1LTQwMDgtOTc0NC0xMGE4MDQ4NWRlNDQiLCJqdGkiOiI5NTRiMTE2ZjA5YmMzZTg3ZDA4MmY2ZDMyMjdkNWIxM2ZiMmUzNmU1NDEwOWJhMzQyMzVhY2MwMDM0NGE4YzNhNmVhOGQ5OGU3ZDQ4MTcyMyIsImlhdCI6MTY4NDE0ODczOC4wMzk0NTEsIm5iZiI6MTY4NDE0ODczOC4wMzk0NTgsImV4cCI6MTcxNTc3MTEzNy44MTEwMDEsInN1YiI6ImFjNDlmZmRjLTg1NjgtNDgxYy04NTg3LTVjYjNmODQ2YWY1ZiIsInNjb3BlcyI6W119.Q0jHUhuIQALckcLz9HG6nufezcKNuH9aPA9U1y95rYUzXjwBuJGpAvUUPayoN8D6fEDMzFkaOrrbjtruKZbj1DV-eg_xamzZPVkbIG-4GAbFTRlmYJOkrpTYo0-QZf8XGxkycRP8Q3EJXmdbtYkml6jqBHrKJ0gR4pouLlZrOF5fmK5_nAIjK0b2LoyRni6HKmGJINnP5eqp5RriiaxO8TKXnBFiCRl_XmmgN8131mWOiXY0-iefTS7TFnVi_6BOIRbzzdIhl1VnJOp6snw-6tMhxEcCPLxjjgaxXpSNLFLAtH9GFMVYwqgT7k64PTtfwsrgKcKlSeu5T8y8ch5_cOTJE3p0GRSvPErxOU0bKMZousnrirTC-wHD6uzKssgQri7t6x6LD6xQ-cau5IAhn8N2RqOvmWE8CpLRai-WjfsJse1Qzq6lVExMmC1HYHro1rR_oYAF6VEL-BkwLwxXB4TpKJ6Cb4gwqAbX0jC_339iNJdaBMvRW6sqjrkpZWvCgnA5eT2RU4cL2IeOHbFHlKrIbSTx1ePyvH436IfSrJQogFUFvBSd1thb1UFaCTeDD7G6YaucoSZeoS9fWbS9G9phlAXFqp5oPFgSVRT7G_4hwcLMv4Z5atbgCdJkp7AyfPLR9E9e2l_BqCCJWmlIgJ4x9p9XQAdW--HE0E4POwk'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/resume/objective
+    metadata:
+      groupName: Resume
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'create or update objective'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      id:
+        name: id
+        description: ''
+        required: false
+        example: null
+        type: string
+        custom: []
+      details:
+        name: details
+        description: 'Must be at least 20 characters.'
+        required: true
+        example: rlauclvsejkedyoobynkcjqduflfclsomqbnnmlennkqrhwmhckarlezalyykftmbsxoeqtryvynglc
+        type: string
+        custom: []
+    cleanBodyParameters:
+      details: rlauclvsejkedyoobynkcjqduflfclsomqbnnmlennkqrhwmhckarlezalyykftmbsxoeqtryvynglc
+    fileParameters: []
+    responses:
+      -
+        status: 400
+        content: '{"status":false,"status_code":400,"message":"Already created data please update your data, if you want any modification","data":[]}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '54'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5OTI4ODgxNi0xYmI1LTQwMDgtOTc0NC0xMGE4MDQ4NWRlNDQiLCJqdGkiOiI5NTRiMTE2ZjA5YmMzZTg3ZDA4MmY2ZDMyMjdkNWIxM2ZiMmUzNmU1NDEwOWJhMzQyMzVhY2MwMDM0NGE4YzNhNmVhOGQ5OGU3ZDQ4MTcyMyIsImlhdCI6MTY4NDE0ODczOC4wMzk0NTEsIm5iZiI6MTY4NDE0ODczOC4wMzk0NTgsImV4cCI6MTcxNTc3MTEzNy44MTEwMDEsInN1YiI6ImFjNDlmZmRjLTg1NjgtNDgxYy04NTg3LTVjYjNmODQ2YWY1ZiIsInNjb3BlcyI6W119.Q0jHUhuIQALckcLz9HG6nufezcKNuH9aPA9U1y95rYUzXjwBuJGpAvUUPayoN8D6fEDMzFkaOrrbjtruKZbj1DV-eg_xamzZPVkbIG-4GAbFTRlmYJOkrpTYo0-QZf8XGxkycRP8Q3EJXmdbtYkml6jqBHrKJ0gR4pouLlZrOF5fmK5_nAIjK0b2LoyRni6HKmGJINnP5eqp5RriiaxO8TKXnBFiCRl_XmmgN8131mWOiXY0-iefTS7TFnVi_6BOIRbzzdIhl1VnJOp6snw-6tMhxEcCPLxjjgaxXpSNLFLAtH9GFMVYwqgT7k64PTtfwsrgKcKlSeu5T8y8ch5_cOTJE3p0GRSvPErxOU0bKMZousnrirTC-wHD6uzKssgQri7t6x6LD6xQ-cau5IAhn8N2RqOvmWE8CpLRai-WjfsJse1Qzq6lVExMmC1HYHro1rR_oYAF6VEL-BkwLwxXB4TpKJ6Cb4gwqAbX0jC_339iNJdaBMvRW6sqjrkpZWvCgnA5eT2RU4cL2IeOHbFHlKrIbSTx1ePyvH436IfSrJQogFUFvBSd1thb1UFaCTeDD7G6YaucoSZeoS9fWbS9G9phlAXFqp5oPFgSVRT7G_4hwcLMv4Z5atbgCdJkp7AyfPLR9E9e2l_BqCCJWmlIgJ4x9p9XQAdW--HE0E4POwk'
     controller: null
     method: null
     route: null

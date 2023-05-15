@@ -26,35 +26,35 @@ endpoints:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: ztzplusaieiskwvhimjmwbkvj
+        example: pnoynb
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: jadon.rosenbaum@example.com
+        example: zstehr@example.org
         type: string
         custom: []
       password:
         name: password
         description: 'Must be at least 6 characters. Must not be greater than 255 characters.'
         required: true
-        example: 'D]P\oiJ;?p'
+        example: Oyu@rjGM+xEj`t
         type: string
         custom: []
       confirm_password:
         name: confirm_password
         description: 'The value and <code>password</code> must match.'
         required: true
-        example: voluptatem
+        example: id
         type: string
         custom: []
     cleanBodyParameters:
-      name: ztzplusaieiskwvhimjmwbkvj
-      email: jadon.rosenbaum@example.com
-      password: 'D]P\oiJ;?p'
-      confirm_password: voluptatem
+      name: pnoynb
+      email: zstehr@example.org
+      password: Oyu@rjGM+xEj`t
+      confirm_password: id
     fileParameters: []
     responses:
       -
@@ -99,19 +99,19 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: ratke.crawford@example.com
+        example: koss.candace@example.com
         type: string
         custom: []
       password:
         name: password
         description: 'Must be at least 6 characters.'
         required: true
-        example: '8]c.$='
+        example: '#MpYs3ADjhEh'
         type: string
         custom: []
     cleanBodyParameters:
-      email: ratke.crawford@example.com
-      password: '8]c.$='
+      email: koss.candace@example.com
+      password: '#MpYs3ADjhEh'
     fileParameters: []
     responses:
       -

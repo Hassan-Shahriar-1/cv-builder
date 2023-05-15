@@ -26,11 +26,11 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: myles35@example.com
+        example: swift.shea@example.com
         type: string
         custom: []
     cleanBodyParameters:
-      email: myles35@example.com
+      email: swift.shea@example.com
     fileParameters: []
     responses:
       -
@@ -75,27 +75,27 @@ endpoints:
         name: token
         description: ''
         required: true
-        example: tempora
+        example: fuga
         type: string
         custom: []
       password:
         name: password
         description: 'Must be at least 6 characters.'
         required: true
-        example: '0Yt<5G,"M~1Z!9'
+        example: "X'=s#I3WxC@"
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: jmclaughlin@example.net
+        example: lubowitz.savanna@example.com
         type: string
         custom: []
     cleanBodyParameters:
-      token: tempora
-      password: '0Yt<5G,"M~1Z!9'
-      email: jmclaughlin@example.net
+      token: fuga
+      password: "X'=s#I3WxC@"
+      email: lubowitz.savanna@example.com
     fileParameters: []
     responses:
       -
