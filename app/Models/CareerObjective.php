@@ -9,4 +9,9 @@ use Illuminate\Database\Eloquent\Model;
 class CareerObjective extends Model
 {
     use HasFactory, UsesUuid;
+
+    protected $fillable = [
+        'user_id',
+        'details',
+    ];
 }

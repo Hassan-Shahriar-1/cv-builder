@@ -15,7 +15,7 @@ class ObjectiveRequest extends BaseRequest
     {
         return [
             'id' => 'sometimes|nullable|exists:career_objectives,id',
-            'details' => 'required|string|min:50',
+            'details' => 'required|string|min:20',
         ];
     }
 }
