@@ -10,6 +10,7 @@ use App\Http\Requests\ObjectiveRequest;
 use App\Http\Requests\ProjectRequest;
 use App\Http\Requests\SkillRequest;
 use App\Http\Resources\EducationResouce;
+use App\Http\Resources\ExperienceResource;
 use App\Http\Resources\ObjectiveResource;
 use App\Http\Resources\ProjectResource;
 use App\Http\Resources\SkillResource;
@@ -172,9 +173,17 @@ class ResumeController extends Controller
 
     /**
      * create & update experience
+     * @param ExperienceRequest $request
+     * @return JsonResponse
      */
     public function experience(ExperienceRequest $request) :JsonResponse
     {
-
+        $experienceRequestData = $request->validated();
+        try{
+            $experienceData = $this->resumeService->createOrUpdateExperience($experienceRequestData);
+            return ApiResponseHelper::otherResponse(true, 200, trans('messages.created'), new ExperienceResource($experienceData), 201);
+        } catch (Exception $e) {
+            return ApiResponseHelper::serverError($e);
+        }
     }
 }
