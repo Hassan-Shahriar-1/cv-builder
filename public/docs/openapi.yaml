@@ -62,19 +62,19 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: g
+                  example: pxftcndcmfjvsfytfmy
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: bernhard.destiny@example.net
+                  example: jacquelyn.crist@example.net
                 password:
                   type: string
                   description: 'Must be at least 6 characters. Must not be greater than 255 characters.'
-                  example: '07dM<b''au&~"2vZR'
+                  example: "'t|z*{>nk<;{d.>1b~5"
                 confirm_password:
                   type: string
                   description: 'The value and <code>password</code> must match.'
-                  example: rem
+                  example: sint
               required:
                 - name
                 - email
@@ -136,11 +136,11 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: westley12@example.org
+                  example: viviane.vandervort@example.org
                 password:
                   type: string
                   description: 'Must be at least 6 characters.'
-                  example: 'zQENLC{'
+                  example: 'y3ozM$6[lEO{0hN,'
               required:
                 - email
                 - password
@@ -287,11 +287,11 @@ paths:
                 id:
                   type: string
                   description: ''
-                  example: incidunt
+                  example: ab
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: cxaiohioywaevtc
+                  example: aemx
                 dob:
                   type: string
                   description: 'Must be a valid date in the format <code>Y-m-d</code>.'
@@ -299,7 +299,7 @@ paths:
                 phone:
                   type: string
                   description: 'Must be 11 characters.'
-                  example: lizihxdbpjt
+                  example: fwngtymxyyp
               required:
                 - id
                 - name
@@ -358,7 +358,7 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: torrey04@example.net
+                  example: tanner76@example.org
               required:
                 - email
       security: []
@@ -417,15 +417,15 @@ paths:
                 token:
                   type: string
                   description: ''
-                  example: a
+                  example: architecto
                 password:
                   type: string
                   description: 'Must be at least 6 characters.'
-                  example: '=,bqm5<C:'
+                  example: 'r2/''w>\[IE'
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: violet78@example.org
+                  example: taylor.yundt@example.net
               required:
                 - token
                 - password
@@ -493,47 +493,47 @@ paths:
                 id:
                   type: string
                   description: ''
-                  example: porro
+                  example: quis
                 first_name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: gkvebulcianopmljbhg
+                  example: xvqwpkqkmtc
                 last_name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: dkhewf
+                  example: adcmzniyqjdvudrrmeuzoenl
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: hirthe.rosario@example.net
+                  example: tad69@example.com
                 job_title:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: slpyhemvgfw
+                  example: ywwmeiczfvcwfvecoszplr
                 phone:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: je
+                  example: xluk
                 location:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: yc
+                  example: oxjsswvlvcyz
                 linkedin_link:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: msdagtxo
+                  example: iakiewygrvevx
                 facebook_link:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: yhawepcqpxgj
+                  example: zls
                 twitter_link:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: rpcohiwcxtwraqbbjirbb
+                  example: eeqxufneitxdplwfgqdqrkf
                 website:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: cfsnteydfkxriog
+                  example: spacjzoehnibwgm
               required:
                 - id
                 - first_name
@@ -567,17 +567,17 @@ paths:
                   status_code: 200
                   message: ''
                   data:
-                    name: xuscavemcqwlomprefp
-                    school_name: iyhxcpuvpkxswompah
-                    location: spzligclpxjjlvwtilb
-                    feild_of_study: dexuszxleuezopzh
+                    name: xyulimtsneqqxgrldl
+                    school_name: puelwxzjtberosedwtvycue
+                    location: xfdmhiglivsh
+                    feild_of_study: fg
                     start_date: '2023-05-15'
                     active: true
                     end_date: '2023-05-15'
                     user_id: ac49ffdc-8568-481c-8587-5cb3f846af5f
-                    id: 24326f57-68c7-40c6-a092-88b5cbb39ee2
-                    updated_at: '2023-05-15T11:31:07.000000Z'
-                    created_at: '2023-05-15T11:31:07.000000Z'
+                    id: 97aafdf4-7f89-4318-9ad9-24cedfaeb2fe
+                    updated_at: '2023-05-15T16:32:40.000000Z'
+                    created_at: '2023-05-15T16:32:40.000000Z'
                 properties:
                   status:
                     type: boolean
@@ -593,16 +593,16 @@ paths:
                     properties:
                       name:
                         type: string
-                        example: xuscavemcqwlomprefp
+                        example: xyulimtsneqqxgrldl
                       school_name:
                         type: string
-                        example: iyhxcpuvpkxswompah
+                        example: puelwxzjtberosedwtvycue
                       location:
                         type: string
-                        example: spzligclpxjjlvwtilb
+                        example: xfdmhiglivsh
                       feild_of_study:
                         type: string
-                        example: dexuszxleuezopzh
+                        example: fg
                       start_date:
                         type: string
                         example: '2023-05-15'
@@ -617,13 +617,13 @@ paths:
                         example: ac49ffdc-8568-481c-8587-5cb3f846af5f
                       id:
                         type: string
-                        example: 24326f57-68c7-40c6-a092-88b5cbb39ee2
+                        example: 97aafdf4-7f89-4318-9ad9-24cedfaeb2fe
                       updated_at:
                         type: string
-                        example: '2023-05-15T11:31:07.000000Z'
+                        example: '2023-05-15T16:32:40.000000Z'
                       created_at:
                         type: string
-                        example: '2023-05-15T11:31:07.000000Z'
+                        example: '2023-05-15T16:32:40.000000Z'
       tags:
         - Resume
       requestBody:
@@ -640,19 +640,19 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: xuscavemcqwlomprefp
+                  example: xyulimtsneqqxgrldl
                 school_name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: iyhxcpuvpkxswompah
+                  example: puelwxzjtberosedwtvycue
                 location:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: spzligclpxjjlvwtilb
+                  example: xfdmhiglivsh
                 feild_of_study:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: dexuszxleuezopzh
+                  example: fg
                 start_date:
                   type: string
                   description: 'Must be a valid date in the format <code>Y-m-d</code>.'
@@ -733,7 +733,7 @@ paths:
                   type: array
                   description: ''
                   example:
-                    - maxime
+                    - voluptatibus
                   items:
                     type: string
   '/api/resume/skill/{skill_id}':
@@ -757,7 +757,7 @@ paths:
         in: path
         name: skill_id
         description: 'The ID of the skill.'
-        example: itaque
+        example: voluptatum
         required: true
         schema:
           type: string
@@ -815,9 +815,132 @@ paths:
                 details:
                   type: string
                   description: 'Must be at least 20 characters.'
-                  example: ywiufqgvkzwukkmgitlftlatztyrdbmldguihdnpbdyfctpgtjtikcklcnocdworrczqynrughbehgmloym
+                  example: zrtrajzxkydyvwrlzkysinhvgzydascffuzrosnkncwzeugdfrktuxyusmxfczevlrvquxkdeynldhzanjnvkymuc
               required:
                 - details
+  /api/resume/project:
+    post:
+      summary: 'create or update project'
+      operationId: createOrUpdateProject
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {YOUR_AUTH_KEY}'
+          schema:
+            type: string
+      responses:
+        201:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  status: true
+                  status_code: 200
+                  message: ''
+                  data:
+                    id: 3f04fe59-5d5d-4dac-aeaa-43814a41e2cc
+                    title: skpsrimlz
+                    role: nmdw
+                    start_date: '2023-05-15'
+                    end_date: '2023-05-15'
+                    details: vvoesyygrbuhjgdxwksnofmdkaqyywainnorbwhaykujgboteoonqbtebjegfvddzchgdiumvkzhofmvx
+                properties:
+                  status:
+                    type: boolean
+                    example: true
+                  status_code:
+                    type: integer
+                    example: 200
+                  message:
+                    type: string
+                    example: ''
+                  data:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                        example: 3f04fe59-5d5d-4dac-aeaa-43814a41e2cc
+                      title:
+                        type: string
+                        example: skpsrimlz
+                      role:
+                        type: string
+                        example: nmdw
+                      start_date:
+                        type: string
+                        example: '2023-05-15'
+                      end_date:
+                        type: string
+                        example: '2023-05-15'
+                      details:
+                        type: string
+                        example: vvoesyygrbuhjgdxwksnofmdkaqyywainnorbwhaykujgboteoonqbtebjegfvddzchgdiumvkzhofmvx
+      tags:
+        - Resume
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: string
+                  description: ''
+                  example: null
+                title:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: skpsrimlz
+                role:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: nmdw
+                start_date:
+                  type: string
+                  description: 'Must be a valid date in the format <code>Y-m-d</code>.'
+                  example: '2023-05-15'
+                end_date:
+                  type: string
+                  description: 'Must be a valid date in the format <code>Y-m-d</code>.'
+                  example: '2023-05-15'
+                details:
+                  type: string
+                  description: 'Must be at least 10 characters.'
+                  example: vvoesyygrbuhjgdxwksnofmdkaqyywainnorbwhaykujgboteoonqbtebjegfvddzchgdiumvkzhofmvx
+              required:
+                - title
+                - details
+  '/api/resume/project/{project_id}':
+    delete:
+      summary: 'Delete project'
+      operationId: deleteProject
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {YOUR_AUTH_KEY}'
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Resume
+    parameters:
+      -
+        in: path
+        name: project_id
+        description: 'The ID of the project.'
+        example: sequi
+        required: true
+        schema:
+          type: string
 tags:
   -
     name: 'Auth routes'

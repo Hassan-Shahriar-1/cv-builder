@@ -5,6 +5,7 @@ namespace App\Services;
 use App\Models\CareerObjective;
 use App\Models\Contact;
 use App\Models\Education;
+use App\Models\Project;
 use App\Models\Skill;
 use Illuminate\Support\Facades\Auth;
 
@@ -112,5 +113,23 @@ class ResumeService
     public function getUserId() :string
     {
         return Auth::user()->id;
+    }
+
+    /**
+     * create & update of Project data
+     * @param array $projectData
+     * @return object
+     */
+    public function createOrUpdateProject(array $projectData) :object
+    {
+        if($this->idChecker($projectData)) {
+            $project = Project::where('id', $projectData['id'])->first();
+            unset($projectData['id']);
+            $project->update($projectData); 
+            return $project;
+        }else {
+            $projectData['user_id'] = $this->getUserId();
+            return Project::create($projectData);
+        }
     }
 }

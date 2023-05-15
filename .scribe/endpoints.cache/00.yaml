@@ -28,35 +28,35 @@ endpoints:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: g
+        example: pxftcndcmfjvsfytfmy
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: bernhard.destiny@example.net
+        example: jacquelyn.crist@example.net
         type: string
         custom: []
       password:
         name: password
         description: 'Must be at least 6 characters. Must not be greater than 255 characters.'
         required: true
-        example: '07dM<b''au&~"2vZR'
+        example: "'t|z*{>nk<;{d.>1b~5"
         type: string
         custom: []
       confirm_password:
         name: confirm_password
         description: 'The value and <code>password</code> must match.'
         required: true
-        example: rem
+        example: sint
         type: string
         custom: []
     cleanBodyParameters:
-      name: g
-      email: bernhard.destiny@example.net
-      password: '07dM<b''au&~"2vZR'
-      confirm_password: rem
+      name: pxftcndcmfjvsfytfmy
+      email: jacquelyn.crist@example.net
+      password: "'t|z*{>nk<;{d.>1b~5"
+      confirm_password: sint
     fileParameters: []
     responses:
       -
@@ -101,19 +101,19 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: westley12@example.org
+        example: viviane.vandervort@example.org
         type: string
         custom: []
       password:
         name: password
         description: 'Must be at least 6 characters.'
         required: true
-        example: 'zQENLC{'
+        example: 'y3ozM$6[lEO{0hN,'
         type: string
         custom: []
     cleanBodyParameters:
-      email: westley12@example.org
-      password: 'zQENLC{'
+      email: viviane.vandervort@example.org
+      password: 'y3ozM$6[lEO{0hN,'
     fileParameters: []
     responses:
       -

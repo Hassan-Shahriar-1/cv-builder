@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "fd42e507-aabf-4123-94db-fe4a4901a39a",
+        "_postman_id": "ebfc70db-291b-48a0-bafa-4d311236e313",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -41,7 +41,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"g\",\"email\":\"bernhard.destiny@example.net\",\"password\":\"07dM<b'au&~\\\"2vZR\",\"confirm_password\":\"rem\"}"
+                            "raw": "{\"name\":\"pxftcndcmfjvsfytfmy\",\"email\":\"jacquelyn.crist@example.net\",\"password\":\"'t|z*{>nk<;{d.>1b~5\",\"confirm_password\":\"sint\"}"
                         },
                         "description": "",
                         "auth": {
@@ -100,7 +100,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"westley12@example.org\",\"password\":\"zQENLC{\"}"
+                            "raw": "{\"email\":\"viviane.vandervort@example.org\",\"password\":\"y3ozM$6[lEO{0hN,\"}"
                         },
                         "description": "",
                         "auth": {
@@ -218,7 +218,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"id\":\"incidunt\",\"name\":\"cxaiohioywaevtc\",\"dob\":\"2023-05-15\",\"phone\":\"lizihxdbpjt\"}"
+                            "raw": "{\"id\":\"ab\",\"name\":\"aemx\",\"dob\":\"2023-05-15\",\"phone\":\"fwngtymxyyp\"}"
                         },
                         "description": ""
                     },
@@ -280,7 +280,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"torrey04@example.net\"}"
+                            "raw": "{\"email\":\"tanner76@example.org\"}"
                         },
                         "description": "",
                         "auth": {
@@ -339,7 +339,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"token\":\"a\",\"password\":\"=,bqm5<C:\",\"email\":\"violet78@example.org\"}"
+                            "raw": "{\"token\":\"architecto\",\"password\":\"r2\\\/'w>\\\\[IE\",\"email\":\"taylor.yundt@example.net\"}"
                         },
                         "description": "",
                         "auth": {
@@ -404,7 +404,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"id\":\"porro\",\"first_name\":\"gkvebulcianopmljbhg\",\"last_name\":\"dkhewf\",\"email\":\"hirthe.rosario@example.net\",\"job_title\":\"slpyhemvgfw\",\"phone\":\"je\",\"location\":\"yc\",\"linkedin_link\":\"msdagtxo\",\"facebook_link\":\"yhawepcqpxgj\",\"twitter_link\":\"rpcohiwcxtwraqbbjirbb\",\"website\":\"cfsnteydfkxriog\"}"
+                            "raw": "{\"id\":\"quis\",\"first_name\":\"xvqwpkqkmtc\",\"last_name\":\"adcmzniyqjdvudrrmeuzoenl\",\"email\":\"tad69@example.com\",\"job_title\":\"ywwmeiczfvcwfvecoszplr\",\"phone\":\"xluk\",\"location\":\"oxjsswvlvcyz\",\"linkedin_link\":\"iakiewygrvevx\",\"facebook_link\":\"zls\",\"twitter_link\":\"eeqxufneitxdplwfgqdqrkf\",\"website\":\"spacjzoehnibwgm\"}"
                         },
                         "description": ""
                     },
@@ -460,7 +460,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"xuscavemcqwlomprefp\",\"school_name\":\"iyhxcpuvpkxswompah\",\"location\":\"spzligclpxjjlvwtilb\",\"feild_of_study\":\"dexuszxleuezopzh\",\"start_date\":\"2023-05-15\",\"active\":true,\"end_date\":\"2023-05-15\"}"
+                            "raw": "{\"name\":\"xyulimtsneqqxgrldl\",\"school_name\":\"puelwxzjtberosedwtvycue\",\"location\":\"xfdmhiglivsh\",\"feild_of_study\":\"fg\",\"start_date\":\"2023-05-15\",\"active\":true,\"end_date\":\"2023-05-15\"}"
                         },
                         "description": ""
                     },
@@ -489,7 +489,7 @@
                                 }
                             ],
                             "code": 201,
-                            "body": "{\"status\":true,\"status_code\":200,\"message\":\"\",\"data\":{\"name\":\"xuscavemcqwlomprefp\",\"school_name\":\"iyhxcpuvpkxswompah\",\"location\":\"spzligclpxjjlvwtilb\",\"feild_of_study\":\"dexuszxleuezopzh\",\"start_date\":\"2023-05-15\",\"active\":true,\"end_date\":\"2023-05-15\",\"user_id\":\"ac49ffdc-8568-481c-8587-5cb3f846af5f\",\"id\":\"24326f57-68c7-40c6-a092-88b5cbb39ee2\",\"updated_at\":\"2023-05-15T11:31:07.000000Z\",\"created_at\":\"2023-05-15T11:31:07.000000Z\"}}",
+                            "body": "{\"status\":true,\"status_code\":200,\"message\":\"\",\"data\":{\"name\":\"xyulimtsneqqxgrldl\",\"school_name\":\"puelwxzjtberosedwtvycue\",\"location\":\"xfdmhiglivsh\",\"feild_of_study\":\"fg\",\"start_date\":\"2023-05-15\",\"active\":true,\"end_date\":\"2023-05-15\",\"user_id\":\"ac49ffdc-8568-481c-8587-5cb3f846af5f\",\"id\":\"97aafdf4-7f89-4318-9ad9-24cedfaeb2fe\",\"updated_at\":\"2023-05-15T16:32:40.000000Z\",\"created_at\":\"2023-05-15T16:32:40.000000Z\"}}",
                             "name": ""
                         }
                     ]
@@ -516,7 +516,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"skills\":[\"maxime\"]}"
+                            "raw": "{\"skills\":[\"voluptatibus\"]}"
                         },
                         "description": ""
                     },
@@ -562,7 +562,7 @@
                                 {
                                     "id": "skill_id",
                                     "key": "skill_id",
-                                    "value": "itaque",
+                                    "value": "voluptatum",
                                     "description": "The ID of the skill."
                                 }
                             ]
@@ -605,7 +605,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"details\":\"ywiufqgvkzwukkmgitlftlatztyrdbmldguihdnpbdyfctpgtjtikcklcnocdworrczqynrughbehgmloym\"}"
+                            "raw": "{\"details\":\"zrtrajzxkydyvwrlzkysinhvgzydascffuzrosnkncwzeugdfrktuxyusmxfczevlrvquxkdeynldhzanjnvkymuc\"}"
                         },
                         "description": ""
                     },
@@ -638,6 +638,95 @@
                             "name": ""
                         }
                     ]
+                },
+                {
+                    "name": "create or update project",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/resume\/project",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/resume\/project"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"title\":\"skpsrimlz\",\"role\":\"nmdw\",\"start_date\":\"2023-05-15\",\"end_date\":\"2023-05-15\",\"details\":\"vvoesyygrbuhjgdxwksnofmdkaqyywainnorbwhaykujgboteoonqbtebjegfvddzchgdiumvkzhofmvx\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "53"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 201,
+                            "body": "{\"status\":true,\"status_code\":200,\"message\":\"\",\"data\":{\"id\":\"3f04fe59-5d5d-4dac-aeaa-43814a41e2cc\",\"title\":\"skpsrimlz\",\"role\":\"nmdw\",\"start_date\":\"2023-05-15\",\"end_date\":\"2023-05-15\",\"details\":\"vvoesyygrbuhjgdxwksnofmdkaqyywainnorbwhaykujgboteoonqbtebjegfvddzchgdiumvkzhofmvx\"}}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Delete project",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/resume\/project\/:project_id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/resume\/project\/:project_id",
+                            "variable": [
+                                {
+                                    "id": "project_id",
+                                    "key": "project_id",
+                                    "value": "sequi",
+                                    "description": "The ID of the project."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": []
                 }
             ]
         }
