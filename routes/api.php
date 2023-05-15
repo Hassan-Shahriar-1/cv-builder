@@ -39,5 +39,5 @@ Route::group(['prefix' => 'resume', 'middleware' => 'auth:api'], function(){
     Route::post('objective', [ResumeController::class, 'crareerObjective'])->name('objective');
     Route::delete('objective/{objective_id}', [ResumeController::class, 'deleteObjective'])->name('delete.objective');
     Route::post('project', [ResumeController::class, 'project'])->name('project');
-    Route::delete('project', [ResumeController::class, 'deleteProject'])->name('project.delete');
+    Route::delete('project/{project_id}', [ResumeController::class, 'deleteProject'])->name('project.delete');
 });

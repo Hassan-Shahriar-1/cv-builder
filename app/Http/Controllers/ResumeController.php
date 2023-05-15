@@ -13,6 +13,7 @@ use App\Http\Resources\ObjectiveResource;
 use App\Http\Resources\ProjectResource;
 use App\Http\Resources\SkillResource;
 use App\Models\CareerObjective;
+use App\Models\Project;
 use App\Models\Skill;
 use App\Services\ResumeService;
 use Exception;
@@ -143,6 +144,26 @@ class ResumeController extends Controller
         try{
             $projectData = $this->resumeService->createOrUpdateProject($projectRequestData);
             return ApiResponseHelper::otherResponse(true, 200, '', new ProjectResource($projectData), 201);
+        } catch (Exception $e) {
+            return ApiResponseHelper::serverError($e);
+        }
+    }
+
+    /**
+     * Delete project
+     * @param string $projectId
+     * @return JsonResponse
+     */
+    public function deleteProject(string $projectId) :JsonResponse
+    {
+        try{
+            $project = Project::where('id', $projectId)->first();
+            if($project) {
+                $project->delete();
+                return ApiResponseHelper::otherResponse(true, 200, trans('messages.delete'), [], 204);
+            }else{
+                return ApiResponseHelper::errorResponse(trans('messages.404'));
+            }
         } catch (Exception $e) {
             return ApiResponseHelper::serverError($e);
         }

@@ -26,11 +26,11 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: johnathon.stark@example.net
+        example: tanner76@example.org
         type: string
         custom: []
     cleanBodyParameters:
-      email: johnathon.stark@example.net
+      email: tanner76@example.org
     fileParameters: []
     responses:
       -
@@ -40,7 +40,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '53'
+          x-ratelimit-remaining: '57'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -75,27 +75,27 @@ endpoints:
         name: token
         description: ''
         required: true
-        example: consequatur
+        example: architecto
         type: string
         custom: []
       password:
         name: password
         description: 'Must be at least 6 characters.'
         required: true
-        example: 'GO#vAU'
+        example: 'r2/''w>\[IE'
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: ckuhn@example.com
+        example: taylor.yundt@example.net
         type: string
         custom: []
     cleanBodyParameters:
-      token: consequatur
-      password: 'GO#vAU'
-      email: ckuhn@example.com
+      token: architecto
+      password: 'r2/''w>\[IE'
+      email: taylor.yundt@example.net
     fileParameters: []
     responses:
       -
@@ -105,7 +105,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '52'
+          x-ratelimit-remaining: '56'
           access-control-allow-origin: '*'
         description: null
         custom: []

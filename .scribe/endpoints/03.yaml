@@ -27,91 +27,91 @@ endpoints:
         name: id
         description: ''
         required: true
-        example: non
+        example: quis
         type: string
         custom: []
       first_name:
         name: first_name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: nhsa
+        example: xvqwpkqkmtc
         type: string
         custom: []
       last_name:
         name: last_name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: lqnmgmdiyalvytwu
+        example: adcmzniyqjdvudrrmeuzoenl
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: guy38@example.com
+        example: tad69@example.com
         type: string
         custom: []
       job_title:
         name: job_title
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: tbnvoiajsofgpxmfthmth
+        example: ywwmeiczfvcwfvecoszplr
         type: string
         custom: []
       phone:
         name: phone
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: chrtlgvchcapzzplrodqxxmly
+        example: xluk
         type: string
         custom: []
       location:
         name: location
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: stlnzqspqpwizkmqsuyqxpdii
+        example: oxjsswvlvcyz
         type: string
         custom: []
       linkedin_link:
         name: linkedin_link
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: sjelwrctpdodsgyiv
+        example: iakiewygrvevx
         type: string
         custom: []
       facebook_link:
         name: facebook_link
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: nnhonpcefwjbqet
+        example: zls
         type: string
         custom: []
       twitter_link:
         name: twitter_link
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: ihv
+        example: eeqxufneitxdplwfgqdqrkf
         type: string
         custom: []
       website:
         name: website
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: gpvfuvfcos
+        example: spacjzoehnibwgm
         type: string
         custom: []
     cleanBodyParameters:
-      id: non
-      first_name: nhsa
-      last_name: lqnmgmdiyalvytwu
-      email: guy38@example.com
-      job_title: tbnvoiajsofgpxmfthmth
-      phone: chrtlgvchcapzzplrodqxxmly
-      location: stlnzqspqpwizkmqsuyqxpdii
-      linkedin_link: sjelwrctpdodsgyiv
-      facebook_link: nnhonpcefwjbqet
-      twitter_link: ihv
-      website: gpvfuvfcos
+      id: quis
+      first_name: xvqwpkqkmtc
+      last_name: adcmzniyqjdvudrrmeuzoenl
+      email: tad69@example.com
+      job_title: ywwmeiczfvcwfvecoszplr
+      phone: xluk
+      location: oxjsswvlvcyz
+      linkedin_link: iakiewygrvevx
+      facebook_link: zls
+      twitter_link: eeqxufneitxdplwfgqdqrkf
+      website: spacjzoehnibwgm
     fileParameters: []
     responses:
       -
@@ -121,7 +121,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '50'
+          x-ratelimit-remaining: '57'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -167,28 +167,28 @@ endpoints:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: pyuatoliqfcpfou
+        example: xyulimtsneqqxgrldl
         type: string
         custom: []
       school_name:
         name: school_name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: casgesymuzxgcvpyr
+        example: puelwxzjtberosedwtvycue
         type: string
         custom: []
       location:
         name: location
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: r
+        example: xfdmhiglivsh
         type: string
         custom: []
       feild_of_study:
         name: feild_of_study
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: swcvnjwjbdxcxga
+        example: fg
         type: string
         custom: []
       start_date:
@@ -213,10 +213,10 @@ endpoints:
         type: string
         custom: []
     cleanBodyParameters:
-      name: pyuatoliqfcpfou
-      school_name: casgesymuzxgcvpyr
-      location: r
-      feild_of_study: swcvnjwjbdxcxga
+      name: xyulimtsneqqxgrldl
+      school_name: puelwxzjtberosedwtvycue
+      location: xfdmhiglivsh
+      feild_of_study: fg
       start_date: '2023-05-15'
       active: true
       end_date: '2023-05-15'
@@ -224,12 +224,12 @@ endpoints:
     responses:
       -
         status: 201
-        content: '{"status":true,"status_code":200,"message":"","data":{"name":"pyuatoliqfcpfou","school_name":"casgesymuzxgcvpyr","location":"r","feild_of_study":"swcvnjwjbdxcxga","start_date":"2023-05-15","active":true,"end_date":"2023-05-15","user_id":"ac49ffdc-8568-481c-8587-5cb3f846af5f","id":"bc4ed000-5d10-4598-9427-4e3b5331e658","updated_at":"2023-05-15T16:26:55.000000Z","created_at":"2023-05-15T16:26:55.000000Z"}}'
+        content: '{"status":true,"status_code":200,"message":"","data":{"name":"xyulimtsneqqxgrldl","school_name":"puelwxzjtberosedwtvycue","location":"xfdmhiglivsh","feild_of_study":"fg","start_date":"2023-05-15","active":true,"end_date":"2023-05-15","user_id":"ac49ffdc-8568-481c-8587-5cb3f846af5f","id":"97aafdf4-7f89-4318-9ad9-24cedfaeb2fe","updated_at":"2023-05-15T16:32:40.000000Z","created_at":"2023-05-15T16:32:40.000000Z"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '49'
+          x-ratelimit-remaining: '56'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -269,7 +269,7 @@ endpoints:
         description: ''
         required: false
         example:
-          - officiis
+          - voluptatibus
         type: 'string[]'
         custom: []
       'skills[].id':
@@ -283,12 +283,12 @@ endpoints:
         name: 'skills[].name'
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: viwhpqzqokyqtkwbfyo
+        example: lpbgevdbhcolfhfh
         type: string
         custom: []
     cleanBodyParameters:
       skills:
-        - officiis
+        - voluptatibus
     fileParameters: []
     responses:
       -
@@ -298,7 +298,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '48'
+          x-ratelimit-remaining: '55'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -333,11 +333,11 @@ endpoints:
         name: skill_id
         description: 'The ID of the skill.'
         required: true
-        example: magnam
+        example: voluptatum
         type: string
         custom: []
     cleanUrlParameters:
-      skill_id: magnam
+      skill_id: voluptatum
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -386,11 +386,11 @@ endpoints:
         name: details
         description: 'Must be at least 20 characters.'
         required: true
-        example: vukihmpjzrdwdirkewjudfiwhwmtnytxdfvwlgmhqtlfijycckfpkzfx
+        example: zrtrajzxkydyvwrlzkysinhvgzydascffuzrosnkncwzeugdfrktuxyusmxfczevlrvquxkdeynldhzanjnvkymuc
         type: string
         custom: []
     cleanBodyParameters:
-      details: vukihmpjzrdwdirkewjudfiwhwmtnytxdfvwlgmhqtlfijycckfpkzfx
+      details: zrtrajzxkydyvwrlzkysinhvgzydascffuzrosnkncwzeugdfrktuxyusmxfczevlrvquxkdeynldhzanjnvkymuc
     fileParameters: []
     responses:
       -
@@ -400,7 +400,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '47'
+          x-ratelimit-remaining: '54'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -446,14 +446,14 @@ endpoints:
         name: title
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: ehyupixqnugjighubcw
+        example: skpsrimlz
         type: string
         custom: []
       role:
         name: role
         description: 'Must not be greater than 255 characters.'
         required: false
-        example: cumjxuatg
+        example: nmdw
         type: string
         custom: []
       start_date:
@@ -474,28 +474,70 @@ endpoints:
         name: details
         description: 'Must be at least 10 characters.'
         required: true
-        example: tmhwaxqnxykvafvmuievxxkvxzvxgsxyoumgpiqirpbdxpugbigssripfjmaeurneawvzfenijvkfhamc
+        example: vvoesyygrbuhjgdxwksnofmdkaqyywainnorbwhaykujgboteoonqbtebjegfvddzchgdiumvkzhofmvx
         type: string
         custom: []
     cleanBodyParameters:
-      title: ehyupixqnugjighubcw
-      role: cumjxuatg
+      title: skpsrimlz
+      role: nmdw
       start_date: '2023-05-15'
       end_date: '2023-05-15'
-      details: tmhwaxqnxykvafvmuievxxkvxzvxgsxyoumgpiqirpbdxpugbigssripfjmaeurneawvzfenijvkfhamc
+      details: vvoesyygrbuhjgdxwksnofmdkaqyywainnorbwhaykujgboteoonqbtebjegfvddzchgdiumvkzhofmvx
     fileParameters: []
     responses:
       -
         status: 201
-        content: '{"status":true,"status_code":200,"message":"","data":{"id":"c9088795-fbc0-4223-89be-9fe021647306","title":"ehyupixqnugjighubcw","role":"cumjxuatg","start_date":"2023-05-15","end_date":"2023-05-15","details":"tmhwaxqnxykvafvmuievxxkvxzvxgsxyoumgpiqirpbdxpugbigssripfjmaeurneawvzfenijvkfhamc"}}'
+        content: '{"status":true,"status_code":200,"message":"","data":{"id":"3f04fe59-5d5d-4dac-aeaa-43814a41e2cc","title":"skpsrimlz","role":"nmdw","start_date":"2023-05-15","end_date":"2023-05-15","details":"vvoesyygrbuhjgdxwksnofmdkaqyywainnorbwhaykujgboteoonqbtebjegfvddzchgdiumvkzhofmvx"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '46'
+          x-ratelimit-remaining: '53'
           access-control-allow-origin: '*'
         description: null
         custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5OTI4ODgxNi0xYmI1LTQwMDgtOTc0NC0xMGE4MDQ4NWRlNDQiLCJqdGkiOiI5NTRiMTE2ZjA5YmMzZTg3ZDA4MmY2ZDMyMjdkNWIxM2ZiMmUzNmU1NDEwOWJhMzQyMzVhY2MwMDM0NGE4YzNhNmVhOGQ5OGU3ZDQ4MTcyMyIsImlhdCI6MTY4NDE0ODczOC4wMzk0NTEsIm5iZiI6MTY4NDE0ODczOC4wMzk0NTgsImV4cCI6MTcxNTc3MTEzNy44MTEwMDEsInN1YiI6ImFjNDlmZmRjLTg1NjgtNDgxYy04NTg3LTVjYjNmODQ2YWY1ZiIsInNjb3BlcyI6W119.Q0jHUhuIQALckcLz9HG6nufezcKNuH9aPA9U1y95rYUzXjwBuJGpAvUUPayoN8D6fEDMzFkaOrrbjtruKZbj1DV-eg_xamzZPVkbIG-4GAbFTRlmYJOkrpTYo0-QZf8XGxkycRP8Q3EJXmdbtYkml6jqBHrKJ0gR4pouLlZrOF5fmK5_nAIjK0b2LoyRni6HKmGJINnP5eqp5RriiaxO8TKXnBFiCRl_XmmgN8131mWOiXY0-iefTS7TFnVi_6BOIRbzzdIhl1VnJOp6snw-6tMhxEcCPLxjjgaxXpSNLFLAtH9GFMVYwqgT7k64PTtfwsrgKcKlSeu5T8y8ch5_cOTJE3p0GRSvPErxOU0bKMZousnrirTC-wHD6uzKssgQri7t6x6LD6xQ-cau5IAhn8N2RqOvmWE8CpLRai-WjfsJse1Qzq6lVExMmC1HYHro1rR_oYAF6VEL-BkwLwxXB4TpKJ6Cb4gwqAbX0jC_339iNJdaBMvRW6sqjrkpZWvCgnA5eT2RU4cL2IeOHbFHlKrIbSTx1ePyvH436IfSrJQogFUFvBSd1thb1UFaCTeDD7G6YaucoSZeoS9fWbS9G9phlAXFqp5oPFgSVRT7G_4hwcLMv4Z5atbgCdJkp7AyfPLR9E9e2l_BqCCJWmlIgJ4x9p9XQAdW--HE0E4POwk'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/resume/project/{project_id}'
+    metadata:
+      groupName: Resume
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Delete project'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      project_id:
+        name: project_id
+        description: 'The ID of the project.'
+        required: true
+        example: sequi
+        type: string
+        custom: []
+    cleanUrlParameters:
+      project_id: sequi
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
     responseFields: []
     auth:
       - headers

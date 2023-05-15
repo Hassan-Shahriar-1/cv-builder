@@ -130,6 +130,9 @@
                                                                                 <li class="tocify-item level-2" data-unique="resume-POSTapi-resume-project">
                                 <a href="#resume-POSTapi-resume-project">create or update project</a>
                             </li>
+                                                                                <li class="tocify-item level-2" data-unique="resume-DELETEapi-resume-project--project_id-">
+                                <a href="#resume-DELETEapi-resume-project--project_id-">Delete project</a>
+                            </li>
                                                                         </ul>
                             </ul>
             </div>
@@ -182,10 +185,10 @@ You can switch the language used with the tabs at the top right (or from the nav
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"ar\",
-    \"email\": \"robin.waters@example.net\",
-    \"password\": \"^[O$cK&gt;f_E$Ii:g0N\",
-    \"confirm_password\": \"facilis\"
+    \"name\": \"pxftcndcmfjvsfytfmy\",
+    \"email\": \"jacquelyn.crist@example.net\",
+    \"password\": \"\'t|z*{&gt;nk&lt;;{d.&gt;1b~5\",
+    \"confirm_password\": \"sint\"
 }"
 </code></pre></div>
 
@@ -201,10 +204,10 @@ const headers = {
 };
 
 let body = {
-    "name": "ar",
-    "email": "robin.waters@example.net",
-    "password": "^[O$cK&gt;f_E$Ii:g0N",
-    "confirm_password": "facilis"
+    "name": "pxftcndcmfjvsfytfmy",
+    "email": "jacquelyn.crist@example.net",
+    "password": "'t|z*{&gt;nk&lt;;{d.&gt;1b~5",
+    "confirm_password": "sint"
 };
 
 fetch(url, {
@@ -224,10 +227,10 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'name' =&gt; 'ar',
-            'email' =&gt; 'robin.waters@example.net',
-            'password' =&gt; '^[O$cK&gt;f_E$Ii:g0N',
-            'confirm_password' =&gt; 'facilis',
+            'name' =&gt; 'pxftcndcmfjvsfytfmy',
+            'email' =&gt; 'jacquelyn.crist@example.net',
+            'password' =&gt; '\'t|z*{&gt;nk&lt;;{d.&gt;1b~5',
+            'confirm_password' =&gt; 'sint',
         ],
     ]
 );
@@ -247,7 +250,7 @@ print_r(json_decode((string) $body));</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 55
+x-ratelimit-remaining: 59
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -340,10 +343,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="name"                data-endpoint="POSTapi-signup"
-               value="ar"
+               value="pxftcndcmfjvsfytfmy"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>ar</code></p>
+<p>Must not be greater than 255 characters. Example: <code>pxftcndcmfjvsfytfmy</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -351,10 +354,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-signup"
-               value="robin.waters@example.net"
+               value="jacquelyn.crist@example.net"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>robin.waters@example.net</code></p>
+<p>Must be a valid email address. Example: <code>jacquelyn.crist@example.net</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -362,10 +365,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="password"                data-endpoint="POSTapi-signup"
-               value="^[O$cK>f_E$Ii:g0N"
+               value="'t|z*{>nk<;{d.>1b~5"
                data-component="body">
     <br>
-<p>Must be at least 6 characters. Must not be greater than 255 characters. Example: <code>^[O$cK&gt;f_E$Ii:g0N</code></p>
+<p>Must be at least 6 characters. Must not be greater than 255 characters. Example: <code>'t|z*{&gt;nk&lt;;{d.&gt;1b~5</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>confirm_password</code></b>&nbsp;&nbsp;
@@ -373,10 +376,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="confirm_password"                data-endpoint="POSTapi-signup"
-               value="facilis"
+               value="sint"
                data-component="body">
     <br>
-<p>The value and <code>password</code> must match. Example: <code>facilis</code></p>
+<p>The value and <code>password</code> must match. Example: <code>sint</code></p>
         </div>
         </form>
 
@@ -397,8 +400,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"okeefe.geraldine@example.com\",
-    \"password\": \"o5cVo7;OQl\"
+    \"email\": \"viviane.vandervort@example.org\",
+    \"password\": \"y3ozM$6[lEO{0hN,\"
 }"
 </code></pre></div>
 
@@ -414,8 +417,8 @@ const headers = {
 };
 
 let body = {
-    "email": "okeefe.geraldine@example.com",
-    "password": "o5cVo7;OQl"
+    "email": "viviane.vandervort@example.org",
+    "password": "y3ozM$6[lEO{0hN,"
 };
 
 fetch(url, {
@@ -435,8 +438,8 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'email' =&gt; 'okeefe.geraldine@example.com',
-            'password' =&gt; 'o5cVo7;OQl',
+            'email' =&gt; 'viviane.vandervort@example.org',
+            'password' =&gt; 'y3ozM$6[lEO{0hN,',
         ],
     ]
 );
@@ -456,7 +459,7 @@ print_r(json_decode((string) $body));</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 54
+x-ratelimit-remaining: 58
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -549,10 +552,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-login"
-               value="okeefe.geraldine@example.com"
+               value="viviane.vandervort@example.org"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>okeefe.geraldine@example.com</code></p>
+<p>Must be a valid email address. Example: <code>viviane.vandervort@example.org</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -560,10 +563,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="password"                data-endpoint="POSTapi-login"
-               value="o5cVo7;OQl"
+               value="y3ozM$6[lEO{0hN,"
                data-component="body">
     <br>
-<p>Must be at least 6 characters. Example: <code>o5cVo7;OQl</code></p>
+<p>Must be at least 6 characters. Example: <code>y3ozM$6[lEO{0hN,</code></p>
         </div>
         </form>
 
@@ -636,7 +639,7 @@ print_r(json_decode((string) $body));</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 52
+x-ratelimit-remaining: 59
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -761,9 +764,9 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --data "{
     \"id\": \"ab\",
-    \"name\": \"zlkahostzkzkntmarz\",
+    \"name\": \"aemx\",
     \"dob\": \"2023-05-15\",
-    \"phone\": \"unfbedjngcn\"
+    \"phone\": \"fwngtymxyyp\"
 }"
 </code></pre></div>
 
@@ -781,9 +784,9 @@ const headers = {
 
 let body = {
     "id": "ab",
-    "name": "zlkahostzkzkntmarz",
+    "name": "aemx",
     "dob": "2023-05-15",
-    "phone": "unfbedjngcn"
+    "phone": "fwngtymxyyp"
 };
 
 fetch(url, {
@@ -805,9 +808,9 @@ $response = $client-&gt;post(
         ],
         'json' =&gt; [
             'id' =&gt; 'ab',
-            'name' =&gt; 'zlkahostzkzkntmarz',
+            'name' =&gt; 'aemx',
             'dob' =&gt; '2023-05-15',
-            'phone' =&gt; 'unfbedjngcn',
+            'phone' =&gt; 'fwngtymxyyp',
         ],
     ]
 );
@@ -827,7 +830,7 @@ print_r(json_decode((string) $body));</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 51
+x-ratelimit-remaining: 58
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -942,10 +945,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="name"                data-endpoint="POSTapi-profile-update"
-               value="zlkahostzkzkntmarz"
+               value="aemx"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>zlkahostzkzkntmarz</code></p>
+<p>Must not be greater than 255 characters. Example: <code>aemx</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>dob</code></b>&nbsp;&nbsp;
@@ -964,10 +967,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                name="phone"                data-endpoint="POSTapi-profile-update"
-               value="unfbedjngcn"
+               value="fwngtymxyyp"
                data-component="body">
     <br>
-<p>Must be 11 characters. Example: <code>unfbedjngcn</code></p>
+<p>Must be 11 characters. Example: <code>fwngtymxyyp</code></p>
         </div>
         </form>
 
@@ -992,7 +995,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"johnathon.stark@example.net\"
+    \"email\": \"tanner76@example.org\"
 }"
 </code></pre></div>
 
@@ -1008,7 +1011,7 @@ const headers = {
 };
 
 let body = {
-    "email": "johnathon.stark@example.net"
+    "email": "tanner76@example.org"
 };
 
 fetch(url, {
@@ -1028,7 +1031,7 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'email' =&gt; 'johnathon.stark@example.net',
+            'email' =&gt; 'tanner76@example.org',
         ],
     ]
 );
@@ -1048,7 +1051,7 @@ print_r(json_decode((string) $body));</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 53
+x-ratelimit-remaining: 57
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -1141,10 +1144,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-reset-password-link"
-               value="johnathon.stark@example.net"
+               value="tanner76@example.org"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>johnathon.stark@example.net</code></p>
+<p>Must be a valid email address. Example: <code>tanner76@example.org</code></p>
         </div>
         </form>
 
@@ -1165,9 +1168,9 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"token\": \"consequatur\",
-    \"password\": \"GO#vAU\",
-    \"email\": \"ckuhn@example.com\"
+    \"token\": \"architecto\",
+    \"password\": \"r2\\/\'w&gt;\\\\[IE\",
+    \"email\": \"taylor.yundt@example.net\"
 }"
 </code></pre></div>
 
@@ -1183,9 +1186,9 @@ const headers = {
 };
 
 let body = {
-    "token": "consequatur",
-    "password": "GO#vAU",
-    "email": "ckuhn@example.com"
+    "token": "architecto",
+    "password": "r2\/'w&gt;\\[IE",
+    "email": "taylor.yundt@example.net"
 };
 
 fetch(url, {
@@ -1205,9 +1208,9 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'token' =&gt; 'consequatur',
-            'password' =&gt; 'GO#vAU',
-            'email' =&gt; 'ckuhn@example.com',
+            'token' =&gt; 'architecto',
+            'password' =&gt; 'r2/\'w&gt;\\[IE',
+            'email' =&gt; 'taylor.yundt@example.net',
         ],
     ]
 );
@@ -1227,7 +1230,7 @@ print_r(json_decode((string) $body));</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 52
+x-ratelimit-remaining: 56
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -1320,10 +1323,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="token"                data-endpoint="POSTapi-reset-password"
-               value="consequatur"
+               value="architecto"
                data-component="body">
     <br>
-<p>Example: <code>consequatur</code></p>
+<p>Example: <code>architecto</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -1331,10 +1334,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="password"                data-endpoint="POSTapi-reset-password"
-               value="GO#vAU"
+               value="r2/'w>\[IE"
                data-component="body">
     <br>
-<p>Must be at least 6 characters. Example: <code>GO#vAU</code></p>
+<p>Must be at least 6 characters. Example: <code>r2/'w&gt;\[IE</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -1342,10 +1345,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-reset-password"
-               value="ckuhn@example.com"
+               value="taylor.yundt@example.net"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>ckuhn@example.com</code></p>
+<p>Must be a valid email address. Example: <code>taylor.yundt@example.net</code></p>
         </div>
         </form>
 
@@ -1372,17 +1375,17 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"id\": \"non\",
-    \"first_name\": \"nhsa\",
-    \"last_name\": \"lqnmgmdiyalvytwu\",
-    \"email\": \"guy38@example.com\",
-    \"job_title\": \"tbnvoiajsofgpxmfthmth\",
-    \"phone\": \"chrtlgvchcapzzplrodqxxmly\",
-    \"location\": \"stlnzqspqpwizkmqsuyqxpdii\",
-    \"linkedin_link\": \"sjelwrctpdodsgyiv\",
-    \"facebook_link\": \"nnhonpcefwjbqet\",
-    \"twitter_link\": \"ihv\",
-    \"website\": \"gpvfuvfcos\"
+    \"id\": \"quis\",
+    \"first_name\": \"xvqwpkqkmtc\",
+    \"last_name\": \"adcmzniyqjdvudrrmeuzoenl\",
+    \"email\": \"tad69@example.com\",
+    \"job_title\": \"ywwmeiczfvcwfvecoszplr\",
+    \"phone\": \"xluk\",
+    \"location\": \"oxjsswvlvcyz\",
+    \"linkedin_link\": \"iakiewygrvevx\",
+    \"facebook_link\": \"zls\",
+    \"twitter_link\": \"eeqxufneitxdplwfgqdqrkf\",
+    \"website\": \"spacjzoehnibwgm\"
 }"
 </code></pre></div>
 
@@ -1399,17 +1402,17 @@ const headers = {
 };
 
 let body = {
-    "id": "non",
-    "first_name": "nhsa",
-    "last_name": "lqnmgmdiyalvytwu",
-    "email": "guy38@example.com",
-    "job_title": "tbnvoiajsofgpxmfthmth",
-    "phone": "chrtlgvchcapzzplrodqxxmly",
-    "location": "stlnzqspqpwizkmqsuyqxpdii",
-    "linkedin_link": "sjelwrctpdodsgyiv",
-    "facebook_link": "nnhonpcefwjbqet",
-    "twitter_link": "ihv",
-    "website": "gpvfuvfcos"
+    "id": "quis",
+    "first_name": "xvqwpkqkmtc",
+    "last_name": "adcmzniyqjdvudrrmeuzoenl",
+    "email": "tad69@example.com",
+    "job_title": "ywwmeiczfvcwfvecoszplr",
+    "phone": "xluk",
+    "location": "oxjsswvlvcyz",
+    "linkedin_link": "iakiewygrvevx",
+    "facebook_link": "zls",
+    "twitter_link": "eeqxufneitxdplwfgqdqrkf",
+    "website": "spacjzoehnibwgm"
 };
 
 fetch(url, {
@@ -1430,17 +1433,17 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'id' =&gt; 'non',
-            'first_name' =&gt; 'nhsa',
-            'last_name' =&gt; 'lqnmgmdiyalvytwu',
-            'email' =&gt; 'guy38@example.com',
-            'job_title' =&gt; 'tbnvoiajsofgpxmfthmth',
-            'phone' =&gt; 'chrtlgvchcapzzplrodqxxmly',
-            'location' =&gt; 'stlnzqspqpwizkmqsuyqxpdii',
-            'linkedin_link' =&gt; 'sjelwrctpdodsgyiv',
-            'facebook_link' =&gt; 'nnhonpcefwjbqet',
-            'twitter_link' =&gt; 'ihv',
-            'website' =&gt; 'gpvfuvfcos',
+            'id' =&gt; 'quis',
+            'first_name' =&gt; 'xvqwpkqkmtc',
+            'last_name' =&gt; 'adcmzniyqjdvudrrmeuzoenl',
+            'email' =&gt; 'tad69@example.com',
+            'job_title' =&gt; 'ywwmeiczfvcwfvecoszplr',
+            'phone' =&gt; 'xluk',
+            'location' =&gt; 'oxjsswvlvcyz',
+            'linkedin_link' =&gt; 'iakiewygrvevx',
+            'facebook_link' =&gt; 'zls',
+            'twitter_link' =&gt; 'eeqxufneitxdplwfgqdqrkf',
+            'website' =&gt; 'spacjzoehnibwgm',
         ],
     ]
 );
@@ -1460,7 +1463,7 @@ print_r(json_decode((string) $body));</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 50
+x-ratelimit-remaining: 57
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -1564,10 +1567,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="id"                data-endpoint="POSTapi-resume-contact"
-               value="non"
+               value="quis"
                data-component="body">
     <br>
-<p>Example: <code>non</code></p>
+<p>Example: <code>quis</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>first_name</code></b>&nbsp;&nbsp;
@@ -1575,10 +1578,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="first_name"                data-endpoint="POSTapi-resume-contact"
-               value="nhsa"
+               value="xvqwpkqkmtc"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>nhsa</code></p>
+<p>Must not be greater than 255 characters. Example: <code>xvqwpkqkmtc</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>last_name</code></b>&nbsp;&nbsp;
@@ -1586,10 +1589,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="last_name"                data-endpoint="POSTapi-resume-contact"
-               value="lqnmgmdiyalvytwu"
+               value="adcmzniyqjdvudrrmeuzoenl"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>lqnmgmdiyalvytwu</code></p>
+<p>Must not be greater than 255 characters. Example: <code>adcmzniyqjdvudrrmeuzoenl</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -1597,10 +1600,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-resume-contact"
-               value="guy38@example.com"
+               value="tad69@example.com"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>guy38@example.com</code></p>
+<p>Must be a valid email address. Example: <code>tad69@example.com</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>job_title</code></b>&nbsp;&nbsp;
@@ -1608,10 +1611,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="job_title"                data-endpoint="POSTapi-resume-contact"
-               value="tbnvoiajsofgpxmfthmth"
+               value="ywwmeiczfvcwfvecoszplr"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>tbnvoiajsofgpxmfthmth</code></p>
+<p>Must not be greater than 255 characters. Example: <code>ywwmeiczfvcwfvecoszplr</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>phone</code></b>&nbsp;&nbsp;
@@ -1619,10 +1622,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="phone"                data-endpoint="POSTapi-resume-contact"
-               value="chrtlgvchcapzzplrodqxxmly"
+               value="xluk"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>chrtlgvchcapzzplrodqxxmly</code></p>
+<p>Must not be greater than 255 characters. Example: <code>xluk</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>location</code></b>&nbsp;&nbsp;
@@ -1630,10 +1633,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="location"                data-endpoint="POSTapi-resume-contact"
-               value="stlnzqspqpwizkmqsuyqxpdii"
+               value="oxjsswvlvcyz"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>stlnzqspqpwizkmqsuyqxpdii</code></p>
+<p>Must not be greater than 255 characters. Example: <code>oxjsswvlvcyz</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>linkedin_link</code></b>&nbsp;&nbsp;
@@ -1641,10 +1644,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                name="linkedin_link"                data-endpoint="POSTapi-resume-contact"
-               value="sjelwrctpdodsgyiv"
+               value="iakiewygrvevx"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>sjelwrctpdodsgyiv</code></p>
+<p>Must not be greater than 255 characters. Example: <code>iakiewygrvevx</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>facebook_link</code></b>&nbsp;&nbsp;
@@ -1652,10 +1655,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                name="facebook_link"                data-endpoint="POSTapi-resume-contact"
-               value="nnhonpcefwjbqet"
+               value="zls"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>nnhonpcefwjbqet</code></p>
+<p>Must not be greater than 255 characters. Example: <code>zls</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>twitter_link</code></b>&nbsp;&nbsp;
@@ -1663,10 +1666,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                name="twitter_link"                data-endpoint="POSTapi-resume-contact"
-               value="ihv"
+               value="eeqxufneitxdplwfgqdqrkf"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>ihv</code></p>
+<p>Must not be greater than 255 characters. Example: <code>eeqxufneitxdplwfgqdqrkf</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>website</code></b>&nbsp;&nbsp;
@@ -1674,10 +1677,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                name="website"                data-endpoint="POSTapi-resume-contact"
-               value="gpvfuvfcos"
+               value="spacjzoehnibwgm"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>gpvfuvfcos</code></p>
+<p>Must not be greater than 255 characters. Example: <code>spacjzoehnibwgm</code></p>
         </div>
         </form>
 
@@ -1700,10 +1703,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"pyuatoliqfcpfou\",
-    \"school_name\": \"casgesymuzxgcvpyr\",
-    \"location\": \"r\",
-    \"feild_of_study\": \"swcvnjwjbdxcxga\",
+    \"name\": \"xyulimtsneqqxgrldl\",
+    \"school_name\": \"puelwxzjtberosedwtvycue\",
+    \"location\": \"xfdmhiglivsh\",
+    \"feild_of_study\": \"fg\",
     \"start_date\": \"2023-05-15\",
     \"active\": true,
     \"end_date\": \"2023-05-15\"
@@ -1723,10 +1726,10 @@ const headers = {
 };
 
 let body = {
-    "name": "pyuatoliqfcpfou",
-    "school_name": "casgesymuzxgcvpyr",
-    "location": "r",
-    "feild_of_study": "swcvnjwjbdxcxga",
+    "name": "xyulimtsneqqxgrldl",
+    "school_name": "puelwxzjtberosedwtvycue",
+    "location": "xfdmhiglivsh",
+    "feild_of_study": "fg",
     "start_date": "2023-05-15",
     "active": true,
     "end_date": "2023-05-15"
@@ -1750,10 +1753,10 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'name' =&gt; 'pyuatoliqfcpfou',
-            'school_name' =&gt; 'casgesymuzxgcvpyr',
-            'location' =&gt; 'r',
-            'feild_of_study' =&gt; 'swcvnjwjbdxcxga',
+            'name' =&gt; 'xyulimtsneqqxgrldl',
+            'school_name' =&gt; 'puelwxzjtberosedwtvycue',
+            'location' =&gt; 'xfdmhiglivsh',
+            'feild_of_study' =&gt; 'fg',
             'start_date' =&gt; '2023-05-15',
             'active' =&gt; true,
             'end_date' =&gt; '2023-05-15',
@@ -1776,7 +1779,7 @@ print_r(json_decode((string) $body));</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 49
+x-ratelimit-remaining: 56
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -1785,17 +1788,17 @@ access-control-allow-origin: *
     &quot;status_code&quot;: 200,
     &quot;message&quot;: &quot;&quot;,
     &quot;data&quot;: {
-        &quot;name&quot;: &quot;pyuatoliqfcpfou&quot;,
-        &quot;school_name&quot;: &quot;casgesymuzxgcvpyr&quot;,
-        &quot;location&quot;: &quot;r&quot;,
-        &quot;feild_of_study&quot;: &quot;swcvnjwjbdxcxga&quot;,
+        &quot;name&quot;: &quot;xyulimtsneqqxgrldl&quot;,
+        &quot;school_name&quot;: &quot;puelwxzjtberosedwtvycue&quot;,
+        &quot;location&quot;: &quot;xfdmhiglivsh&quot;,
+        &quot;feild_of_study&quot;: &quot;fg&quot;,
         &quot;start_date&quot;: &quot;2023-05-15&quot;,
         &quot;active&quot;: true,
         &quot;end_date&quot;: &quot;2023-05-15&quot;,
         &quot;user_id&quot;: &quot;ac49ffdc-8568-481c-8587-5cb3f846af5f&quot;,
-        &quot;id&quot;: &quot;bc4ed000-5d10-4598-9427-4e3b5331e658&quot;,
-        &quot;updated_at&quot;: &quot;2023-05-15T16:26:55.000000Z&quot;,
-        &quot;created_at&quot;: &quot;2023-05-15T16:26:55.000000Z&quot;
+        &quot;id&quot;: &quot;97aafdf4-7f89-4318-9ad9-24cedfaeb2fe&quot;,
+        &quot;updated_at&quot;: &quot;2023-05-15T16:32:40.000000Z&quot;,
+        &quot;created_at&quot;: &quot;2023-05-15T16:32:40.000000Z&quot;
     }
 }</code>
  </pre>
@@ -1898,10 +1901,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="name"                data-endpoint="POSTapi-resume-education"
-               value="pyuatoliqfcpfou"
+               value="xyulimtsneqqxgrldl"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>pyuatoliqfcpfou</code></p>
+<p>Must not be greater than 255 characters. Example: <code>xyulimtsneqqxgrldl</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>school_name</code></b>&nbsp;&nbsp;
@@ -1909,10 +1912,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="school_name"                data-endpoint="POSTapi-resume-education"
-               value="casgesymuzxgcvpyr"
+               value="puelwxzjtberosedwtvycue"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>casgesymuzxgcvpyr</code></p>
+<p>Must not be greater than 255 characters. Example: <code>puelwxzjtberosedwtvycue</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>location</code></b>&nbsp;&nbsp;
@@ -1920,10 +1923,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                name="location"                data-endpoint="POSTapi-resume-education"
-               value="r"
+               value="xfdmhiglivsh"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>r</code></p>
+<p>Must not be greater than 255 characters. Example: <code>xfdmhiglivsh</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>feild_of_study</code></b>&nbsp;&nbsp;
@@ -1931,10 +1934,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                name="feild_of_study"                data-endpoint="POSTapi-resume-education"
-               value="swcvnjwjbdxcxga"
+               value="fg"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>swcvnjwjbdxcxga</code></p>
+<p>Must not be greater than 255 characters. Example: <code>fg</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>start_date</code></b>&nbsp;&nbsp;
@@ -2001,7 +2004,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Accept: application/json" \
     --data "{
     \"skills\": [
-        \"officiis\"
+        \"voluptatibus\"
     ]
 }"
 </code></pre></div>
@@ -2020,7 +2023,7 @@ const headers = {
 
 let body = {
     "skills": [
-        "officiis"
+        "voluptatibus"
     ]
 };
 
@@ -2043,7 +2046,7 @@ $response = $client-&gt;post(
         ],
         'json' =&gt; [
             'skills' =&gt; [
-                'officiis',
+                'voluptatibus',
             ],
         ],
     ]
@@ -2064,7 +2067,7 @@ print_r(json_decode((string) $body));</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 48
+x-ratelimit-remaining: 55
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -2188,10 +2191,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="skills.0.name"                data-endpoint="POSTapi-resume-skill"
-               value="viwhpqzqokyqtkwbfyo"
+               value="lpbgevdbhcolfhfh"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>viwhpqzqokyqtkwbfyo</code></p>
+<p>Must not be greater than 255 characters. Example: <code>lpbgevdbhcolfhfh</code></p>
                     </div>
                                     </details>
         </div>
@@ -2211,7 +2214,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost/api/resume/skill/magnam" \
+    "http://localhost/api/resume/skill/voluptatum" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -2219,7 +2222,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/resume/skill/magnam"
+    "http://localhost/api/resume/skill/voluptatum"
 );
 
 const headers = {
@@ -2237,7 +2240,7 @@ fetch(url, {
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
 $response = $client-&gt;delete(
-    'http://localhost/api/resume/skill/magnam',
+    'http://localhost/api/resume/skill/voluptatum',
     [
         'headers' =&gt; [
             'Authorization' =&gt; 'Bearer {YOUR_AUTH_KEY}',
@@ -2340,10 +2343,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="skill_id"                data-endpoint="DELETEapi-resume-skill--skill_id-"
-               value="magnam"
+               value="voluptatum"
                data-component="url">
     <br>
-<p>The ID of the skill. Example: <code>magnam</code></p>
+<p>The ID of the skill. Example: <code>voluptatum</code></p>
             </div>
                     </form>
 
@@ -2366,7 +2369,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"details\": \"vukihmpjzrdwdirkewjudfiwhwmtnytxdfvwlgmhqtlfijycckfpkzfx\"
+    \"details\": \"zrtrajzxkydyvwrlzkysinhvgzydascffuzrosnkncwzeugdfrktuxyusmxfczevlrvquxkdeynldhzanjnvkymuc\"
 }"
 </code></pre></div>
 
@@ -2383,7 +2386,7 @@ const headers = {
 };
 
 let body = {
-    "details": "vukihmpjzrdwdirkewjudfiwhwmtnytxdfvwlgmhqtlfijycckfpkzfx"
+    "details": "zrtrajzxkydyvwrlzkysinhvgzydascffuzrosnkncwzeugdfrktuxyusmxfczevlrvquxkdeynldhzanjnvkymuc"
 };
 
 fetch(url, {
@@ -2404,7 +2407,7 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'details' =&gt; 'vukihmpjzrdwdirkewjudfiwhwmtnytxdfvwlgmhqtlfijycckfpkzfx',
+            'details' =&gt; 'zrtrajzxkydyvwrlzkysinhvgzydascffuzrosnkncwzeugdfrktuxyusmxfczevlrvquxkdeynldhzanjnvkymuc',
         ],
     ]
 );
@@ -2424,7 +2427,7 @@ print_r(json_decode((string) $body));</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 47
+x-ratelimit-remaining: 54
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -2534,10 +2537,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="details"                data-endpoint="POSTapi-resume-objective"
-               value="vukihmpjzrdwdirkewjudfiwhwmtnytxdfvwlgmhqtlfijycckfpkzfx"
+               value="zrtrajzxkydyvwrlzkysinhvgzydascffuzrosnkncwzeugdfrktuxyusmxfczevlrvquxkdeynldhzanjnvkymuc"
                data-component="body">
     <br>
-<p>Must be at least 20 characters. Example: <code>vukihmpjzrdwdirkewjudfiwhwmtnytxdfvwlgmhqtlfijycckfpkzfx</code></p>
+<p>Must be at least 20 characters. Example: <code>zrtrajzxkydyvwrlzkysinhvgzydascffuzrosnkncwzeugdfrktuxyusmxfczevlrvquxkdeynldhzanjnvkymuc</code></p>
         </div>
         </form>
 
@@ -2560,11 +2563,11 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"title\": \"ehyupixqnugjighubcw\",
-    \"role\": \"cumjxuatg\",
+    \"title\": \"skpsrimlz\",
+    \"role\": \"nmdw\",
     \"start_date\": \"2023-05-15\",
     \"end_date\": \"2023-05-15\",
-    \"details\": \"tmhwaxqnxykvafvmuievxxkvxzvxgsxyoumgpiqirpbdxpugbigssripfjmaeurneawvzfenijvkfhamc\"
+    \"details\": \"vvoesyygrbuhjgdxwksnofmdkaqyywainnorbwhaykujgboteoonqbtebjegfvddzchgdiumvkzhofmvx\"
 }"
 </code></pre></div>
 
@@ -2581,11 +2584,11 @@ const headers = {
 };
 
 let body = {
-    "title": "ehyupixqnugjighubcw",
-    "role": "cumjxuatg",
+    "title": "skpsrimlz",
+    "role": "nmdw",
     "start_date": "2023-05-15",
     "end_date": "2023-05-15",
-    "details": "tmhwaxqnxykvafvmuievxxkvxzvxgsxyoumgpiqirpbdxpugbigssripfjmaeurneawvzfenijvkfhamc"
+    "details": "vvoesyygrbuhjgdxwksnofmdkaqyywainnorbwhaykujgboteoonqbtebjegfvddzchgdiumvkzhofmvx"
 };
 
 fetch(url, {
@@ -2606,11 +2609,11 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'title' =&gt; 'ehyupixqnugjighubcw',
-            'role' =&gt; 'cumjxuatg',
+            'title' =&gt; 'skpsrimlz',
+            'role' =&gt; 'nmdw',
             'start_date' =&gt; '2023-05-15',
             'end_date' =&gt; '2023-05-15',
-            'details' =&gt; 'tmhwaxqnxykvafvmuievxxkvxzvxgsxyoumgpiqirpbdxpugbigssripfjmaeurneawvzfenijvkfhamc',
+            'details' =&gt; 'vvoesyygrbuhjgdxwksnofmdkaqyywainnorbwhaykujgboteoonqbtebjegfvddzchgdiumvkzhofmvx',
         ],
     ]
 );
@@ -2630,7 +2633,7 @@ print_r(json_decode((string) $body));</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 46
+x-ratelimit-remaining: 53
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
@@ -2639,12 +2642,12 @@ access-control-allow-origin: *
     &quot;status_code&quot;: 200,
     &quot;message&quot;: &quot;&quot;,
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;c9088795-fbc0-4223-89be-9fe021647306&quot;,
-        &quot;title&quot;: &quot;ehyupixqnugjighubcw&quot;,
-        &quot;role&quot;: &quot;cumjxuatg&quot;,
+        &quot;id&quot;: &quot;3f04fe59-5d5d-4dac-aeaa-43814a41e2cc&quot;,
+        &quot;title&quot;: &quot;skpsrimlz&quot;,
+        &quot;role&quot;: &quot;nmdw&quot;,
         &quot;start_date&quot;: &quot;2023-05-15&quot;,
         &quot;end_date&quot;: &quot;2023-05-15&quot;,
-        &quot;details&quot;: &quot;tmhwaxqnxykvafvmuievxxkvxzvxgsxyoumgpiqirpbdxpugbigssripfjmaeurneawvzfenijvkfhamc&quot;
+        &quot;details&quot;: &quot;vvoesyygrbuhjgdxwksnofmdkaqyywainnorbwhaykujgboteoonqbtebjegfvddzchgdiumvkzhofmvx&quot;
     }
 }</code>
  </pre>
@@ -2747,10 +2750,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="title"                data-endpoint="POSTapi-resume-project"
-               value="ehyupixqnugjighubcw"
+               value="skpsrimlz"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>ehyupixqnugjighubcw</code></p>
+<p>Must not be greater than 255 characters. Example: <code>skpsrimlz</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>role</code></b>&nbsp;&nbsp;
@@ -2758,10 +2761,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                name="role"                data-endpoint="POSTapi-resume-project"
-               value="cumjxuatg"
+               value="nmdw"
                data-component="body">
     <br>
-<p>Must not be greater than 255 characters. Example: <code>cumjxuatg</code></p>
+<p>Must not be greater than 255 characters. Example: <code>nmdw</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>start_date</code></b>&nbsp;&nbsp;
@@ -2791,12 +2794,162 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                name="details"                data-endpoint="POSTapi-resume-project"
-               value="tmhwaxqnxykvafvmuievxxkvxzvxgsxyoumgpiqirpbdxpugbigssripfjmaeurneawvzfenijvkfhamc"
+               value="vvoesyygrbuhjgdxwksnofmdkaqyywainnorbwhaykujgboteoonqbtebjegfvddzchgdiumvkzhofmvx"
                data-component="body">
     <br>
-<p>Must be at least 10 characters. Example: <code>tmhwaxqnxykvafvmuievxxkvxzvxgsxyoumgpiqirpbdxpugbigssripfjmaeurneawvzfenijvkfhamc</code></p>
+<p>Must be at least 10 characters. Example: <code>vvoesyygrbuhjgdxwksnofmdkaqyywainnorbwhaykujgboteoonqbtebjegfvddzchgdiumvkzhofmvx</code></p>
         </div>
         </form>
+
+                    <h2 id="resume-DELETEapi-resume-project--project_id-">Delete project</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-DELETEapi-resume-project--project_id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request DELETE \
+    "http://localhost/api/resume/project/sequi" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/resume/project/sequi"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "DELETE",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+
+<div class="php-example">
+    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
+$response = $client-&gt;delete(
+    'http://localhost/api/resume/project/sequi',
+    [
+        'headers' =&gt; [
+            'Authorization' =&gt; 'Bearer {YOUR_AUTH_KEY}',
+            'Content-Type' =&gt; 'application/json',
+            'Accept' =&gt; 'application/json',
+        ],
+    ]
+);
+$body = $response-&gt;getBody();
+print_r(json_decode((string) $body));</code></pre></div>
+
+</span>
+
+<span id="example-responses-DELETEapi-resume-project--project_id-">
+</span>
+<span id="execution-results-DELETEapi-resume-project--project_id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-DELETEapi-resume-project--project_id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEapi-resume-project--project_id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-DELETEapi-resume-project--project_id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-DELETEapi-resume-project--project_id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-DELETEapi-resume-project--project_id-" data-method="DELETE"
+      data-path="api/resume/project/{project_id}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-resume-project--project_id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-DELETEapi-resume-project--project_id-"
+                    onclick="tryItOut('DELETEapi-resume-project--project_id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-DELETEapi-resume-project--project_id-"
+                    onclick="cancelTryOut('DELETEapi-resume-project--project_id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-DELETEapi-resume-project--project_id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-red">DELETE</small>
+            <b><code>api/resume/project/{project_id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+               name="Authorization" class="auth-value"               data-endpoint="DELETEapi-resume-project--project_id-"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+               name="Content-Type"                data-endpoint="DELETEapi-resume-project--project_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+               name="Accept"                data-endpoint="DELETEapi-resume-project--project_id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>project_id</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+               name="project_id"                data-endpoint="DELETEapi-resume-project--project_id-"
+               value="sequi"
+               data-component="url">
+    <br>
+<p>The ID of the project. Example: <code>sequi</code></p>
+            </div>
+                    </form>
 
             
 

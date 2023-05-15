@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "4f44b963-13cd-408b-8c7e-2c93cbd96342",
+        "_postman_id": "ebfc70db-291b-48a0-bafa-4d311236e313",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -41,7 +41,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"ar\",\"email\":\"robin.waters@example.net\",\"password\":\"^[O$cK>f_E$Ii:g0N\",\"confirm_password\":\"facilis\"}"
+                            "raw": "{\"name\":\"pxftcndcmfjvsfytfmy\",\"email\":\"jacquelyn.crist@example.net\",\"password\":\"'t|z*{>nk<;{d.>1b~5\",\"confirm_password\":\"sint\"}"
                         },
                         "description": "",
                         "auth": {
@@ -65,7 +65,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "55"
+                                    "value": "59"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -100,7 +100,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"okeefe.geraldine@example.com\",\"password\":\"o5cVo7;OQl\"}"
+                            "raw": "{\"email\":\"viviane.vandervort@example.org\",\"password\":\"y3ozM$6[lEO{0hN,\"}"
                         },
                         "description": "",
                         "auth": {
@@ -124,7 +124,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "54"
+                                    "value": "58"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -183,7 +183,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "52"
+                                    "value": "59"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -218,7 +218,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"id\":\"ab\",\"name\":\"zlkahostzkzkntmarz\",\"dob\":\"2023-05-15\",\"phone\":\"unfbedjngcn\"}"
+                            "raw": "{\"id\":\"ab\",\"name\":\"aemx\",\"dob\":\"2023-05-15\",\"phone\":\"fwngtymxyyp\"}"
                         },
                         "description": ""
                     },
@@ -239,7 +239,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "51"
+                                    "value": "58"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -280,7 +280,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"johnathon.stark@example.net\"}"
+                            "raw": "{\"email\":\"tanner76@example.org\"}"
                         },
                         "description": "",
                         "auth": {
@@ -304,7 +304,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "53"
+                                    "value": "57"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -339,7 +339,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"token\":\"consequatur\",\"password\":\"GO#vAU\",\"email\":\"ckuhn@example.com\"}"
+                            "raw": "{\"token\":\"architecto\",\"password\":\"r2\\\/'w>\\\\[IE\",\"email\":\"taylor.yundt@example.net\"}"
                         },
                         "description": "",
                         "auth": {
@@ -363,7 +363,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "52"
+                                    "value": "56"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -404,7 +404,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"id\":\"non\",\"first_name\":\"nhsa\",\"last_name\":\"lqnmgmdiyalvytwu\",\"email\":\"guy38@example.com\",\"job_title\":\"tbnvoiajsofgpxmfthmth\",\"phone\":\"chrtlgvchcapzzplrodqxxmly\",\"location\":\"stlnzqspqpwizkmqsuyqxpdii\",\"linkedin_link\":\"sjelwrctpdodsgyiv\",\"facebook_link\":\"nnhonpcefwjbqet\",\"twitter_link\":\"ihv\",\"website\":\"gpvfuvfcos\"}"
+                            "raw": "{\"id\":\"quis\",\"first_name\":\"xvqwpkqkmtc\",\"last_name\":\"adcmzniyqjdvudrrmeuzoenl\",\"email\":\"tad69@example.com\",\"job_title\":\"ywwmeiczfvcwfvecoszplr\",\"phone\":\"xluk\",\"location\":\"oxjsswvlvcyz\",\"linkedin_link\":\"iakiewygrvevx\",\"facebook_link\":\"zls\",\"twitter_link\":\"eeqxufneitxdplwfgqdqrkf\",\"website\":\"spacjzoehnibwgm\"}"
                         },
                         "description": ""
                     },
@@ -425,7 +425,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "50"
+                                    "value": "57"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -460,7 +460,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"pyuatoliqfcpfou\",\"school_name\":\"casgesymuzxgcvpyr\",\"location\":\"r\",\"feild_of_study\":\"swcvnjwjbdxcxga\",\"start_date\":\"2023-05-15\",\"active\":true,\"end_date\":\"2023-05-15\"}"
+                            "raw": "{\"name\":\"xyulimtsneqqxgrldl\",\"school_name\":\"puelwxzjtberosedwtvycue\",\"location\":\"xfdmhiglivsh\",\"feild_of_study\":\"fg\",\"start_date\":\"2023-05-15\",\"active\":true,\"end_date\":\"2023-05-15\"}"
                         },
                         "description": ""
                     },
@@ -481,7 +481,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "49"
+                                    "value": "56"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -489,7 +489,7 @@
                                 }
                             ],
                             "code": 201,
-                            "body": "{\"status\":true,\"status_code\":200,\"message\":\"\",\"data\":{\"name\":\"pyuatoliqfcpfou\",\"school_name\":\"casgesymuzxgcvpyr\",\"location\":\"r\",\"feild_of_study\":\"swcvnjwjbdxcxga\",\"start_date\":\"2023-05-15\",\"active\":true,\"end_date\":\"2023-05-15\",\"user_id\":\"ac49ffdc-8568-481c-8587-5cb3f846af5f\",\"id\":\"bc4ed000-5d10-4598-9427-4e3b5331e658\",\"updated_at\":\"2023-05-15T16:26:55.000000Z\",\"created_at\":\"2023-05-15T16:26:55.000000Z\"}}",
+                            "body": "{\"status\":true,\"status_code\":200,\"message\":\"\",\"data\":{\"name\":\"xyulimtsneqqxgrldl\",\"school_name\":\"puelwxzjtberosedwtvycue\",\"location\":\"xfdmhiglivsh\",\"feild_of_study\":\"fg\",\"start_date\":\"2023-05-15\",\"active\":true,\"end_date\":\"2023-05-15\",\"user_id\":\"ac49ffdc-8568-481c-8587-5cb3f846af5f\",\"id\":\"97aafdf4-7f89-4318-9ad9-24cedfaeb2fe\",\"updated_at\":\"2023-05-15T16:32:40.000000Z\",\"created_at\":\"2023-05-15T16:32:40.000000Z\"}}",
                             "name": ""
                         }
                     ]
@@ -516,7 +516,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"skills\":[\"officiis\"]}"
+                            "raw": "{\"skills\":[\"voluptatibus\"]}"
                         },
                         "description": ""
                     },
@@ -537,7 +537,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "48"
+                                    "value": "55"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -562,7 +562,7 @@
                                 {
                                     "id": "skill_id",
                                     "key": "skill_id",
-                                    "value": "magnam",
+                                    "value": "voluptatum",
                                     "description": "The ID of the skill."
                                 }
                             ]
@@ -605,7 +605,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"details\":\"vukihmpjzrdwdirkewjudfiwhwmtnytxdfvwlgmhqtlfijycckfpkzfx\"}"
+                            "raw": "{\"details\":\"zrtrajzxkydyvwrlzkysinhvgzydascffuzrosnkncwzeugdfrktuxyusmxfczevlrvquxkdeynldhzanjnvkymuc\"}"
                         },
                         "description": ""
                     },
@@ -626,7 +626,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "47"
+                                    "value": "54"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -661,7 +661,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"title\":\"ehyupixqnugjighubcw\",\"role\":\"cumjxuatg\",\"start_date\":\"2023-05-15\",\"end_date\":\"2023-05-15\",\"details\":\"tmhwaxqnxykvafvmuievxxkvxzvxgsxyoumgpiqirpbdxpugbigssripfjmaeurneawvzfenijvkfhamc\"}"
+                            "raw": "{\"title\":\"skpsrimlz\",\"role\":\"nmdw\",\"start_date\":\"2023-05-15\",\"end_date\":\"2023-05-15\",\"details\":\"vvoesyygrbuhjgdxwksnofmdkaqyywainnorbwhaykujgboteoonqbtebjegfvddzchgdiumvkzhofmvx\"}"
                         },
                         "description": ""
                     },
@@ -682,7 +682,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "46"
+                                    "value": "53"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -690,10 +690,43 @@
                                 }
                             ],
                             "code": 201,
-                            "body": "{\"status\":true,\"status_code\":200,\"message\":\"\",\"data\":{\"id\":\"c9088795-fbc0-4223-89be-9fe021647306\",\"title\":\"ehyupixqnugjighubcw\",\"role\":\"cumjxuatg\",\"start_date\":\"2023-05-15\",\"end_date\":\"2023-05-15\",\"details\":\"tmhwaxqnxykvafvmuievxxkvxzvxgsxyoumgpiqirpbdxpugbigssripfjmaeurneawvzfenijvkfhamc\"}}",
+                            "body": "{\"status\":true,\"status_code\":200,\"message\":\"\",\"data\":{\"id\":\"3f04fe59-5d5d-4dac-aeaa-43814a41e2cc\",\"title\":\"skpsrimlz\",\"role\":\"nmdw\",\"start_date\":\"2023-05-15\",\"end_date\":\"2023-05-15\",\"details\":\"vvoesyygrbuhjgdxwksnofmdkaqyywainnorbwhaykujgboteoonqbtebjegfvddzchgdiumvkzhofmvx\"}}",
                             "name": ""
                         }
                     ]
+                },
+                {
+                    "name": "Delete project",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/resume\/project\/:project_id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/resume\/project\/:project_id",
+                            "variable": [
+                                {
+                                    "id": "project_id",
+                                    "key": "project_id",
+                                    "value": "sequi",
+                                    "description": "The ID of the project."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": []
                 }
             ]
         }
