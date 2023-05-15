@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "fd42e507-aabf-4123-94db-fe4a4901a39a",
+        "_postman_id": "4f44b963-13cd-408b-8c7e-2c93cbd96342",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -41,7 +41,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"g\",\"email\":\"bernhard.destiny@example.net\",\"password\":\"07dM<b'au&~\\\"2vZR\",\"confirm_password\":\"rem\"}"
+                            "raw": "{\"name\":\"ar\",\"email\":\"robin.waters@example.net\",\"password\":\"^[O$cK>f_E$Ii:g0N\",\"confirm_password\":\"facilis\"}"
                         },
                         "description": "",
                         "auth": {
@@ -65,7 +65,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "59"
+                                    "value": "55"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -100,7 +100,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"westley12@example.org\",\"password\":\"zQENLC{\"}"
+                            "raw": "{\"email\":\"okeefe.geraldine@example.com\",\"password\":\"o5cVo7;OQl\"}"
                         },
                         "description": "",
                         "auth": {
@@ -124,7 +124,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "58"
+                                    "value": "54"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -183,7 +183,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "59"
+                                    "value": "52"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -218,7 +218,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"id\":\"incidunt\",\"name\":\"cxaiohioywaevtc\",\"dob\":\"2023-05-15\",\"phone\":\"lizihxdbpjt\"}"
+                            "raw": "{\"id\":\"ab\",\"name\":\"zlkahostzkzkntmarz\",\"dob\":\"2023-05-15\",\"phone\":\"unfbedjngcn\"}"
                         },
                         "description": ""
                     },
@@ -239,7 +239,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "58"
+                                    "value": "51"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -280,7 +280,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"torrey04@example.net\"}"
+                            "raw": "{\"email\":\"johnathon.stark@example.net\"}"
                         },
                         "description": "",
                         "auth": {
@@ -304,7 +304,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "57"
+                                    "value": "53"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -339,7 +339,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"token\":\"a\",\"password\":\"=,bqm5<C:\",\"email\":\"violet78@example.org\"}"
+                            "raw": "{\"token\":\"consequatur\",\"password\":\"GO#vAU\",\"email\":\"ckuhn@example.com\"}"
                         },
                         "description": "",
                         "auth": {
@@ -363,7 +363,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "56"
+                                    "value": "52"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -404,7 +404,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"id\":\"porro\",\"first_name\":\"gkvebulcianopmljbhg\",\"last_name\":\"dkhewf\",\"email\":\"hirthe.rosario@example.net\",\"job_title\":\"slpyhemvgfw\",\"phone\":\"je\",\"location\":\"yc\",\"linkedin_link\":\"msdagtxo\",\"facebook_link\":\"yhawepcqpxgj\",\"twitter_link\":\"rpcohiwcxtwraqbbjirbb\",\"website\":\"cfsnteydfkxriog\"}"
+                            "raw": "{\"id\":\"non\",\"first_name\":\"nhsa\",\"last_name\":\"lqnmgmdiyalvytwu\",\"email\":\"guy38@example.com\",\"job_title\":\"tbnvoiajsofgpxmfthmth\",\"phone\":\"chrtlgvchcapzzplrodqxxmly\",\"location\":\"stlnzqspqpwizkmqsuyqxpdii\",\"linkedin_link\":\"sjelwrctpdodsgyiv\",\"facebook_link\":\"nnhonpcefwjbqet\",\"twitter_link\":\"ihv\",\"website\":\"gpvfuvfcos\"}"
                         },
                         "description": ""
                     },
@@ -425,7 +425,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "57"
+                                    "value": "50"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -460,7 +460,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"xuscavemcqwlomprefp\",\"school_name\":\"iyhxcpuvpkxswompah\",\"location\":\"spzligclpxjjlvwtilb\",\"feild_of_study\":\"dexuszxleuezopzh\",\"start_date\":\"2023-05-15\",\"active\":true,\"end_date\":\"2023-05-15\"}"
+                            "raw": "{\"name\":\"pyuatoliqfcpfou\",\"school_name\":\"casgesymuzxgcvpyr\",\"location\":\"r\",\"feild_of_study\":\"swcvnjwjbdxcxga\",\"start_date\":\"2023-05-15\",\"active\":true,\"end_date\":\"2023-05-15\"}"
                         },
                         "description": ""
                     },
@@ -481,7 +481,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "56"
+                                    "value": "49"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -489,7 +489,7 @@
                                 }
                             ],
                             "code": 201,
-                            "body": "{\"status\":true,\"status_code\":200,\"message\":\"\",\"data\":{\"name\":\"xuscavemcqwlomprefp\",\"school_name\":\"iyhxcpuvpkxswompah\",\"location\":\"spzligclpxjjlvwtilb\",\"feild_of_study\":\"dexuszxleuezopzh\",\"start_date\":\"2023-05-15\",\"active\":true,\"end_date\":\"2023-05-15\",\"user_id\":\"ac49ffdc-8568-481c-8587-5cb3f846af5f\",\"id\":\"24326f57-68c7-40c6-a092-88b5cbb39ee2\",\"updated_at\":\"2023-05-15T11:31:07.000000Z\",\"created_at\":\"2023-05-15T11:31:07.000000Z\"}}",
+                            "body": "{\"status\":true,\"status_code\":200,\"message\":\"\",\"data\":{\"name\":\"pyuatoliqfcpfou\",\"school_name\":\"casgesymuzxgcvpyr\",\"location\":\"r\",\"feild_of_study\":\"swcvnjwjbdxcxga\",\"start_date\":\"2023-05-15\",\"active\":true,\"end_date\":\"2023-05-15\",\"user_id\":\"ac49ffdc-8568-481c-8587-5cb3f846af5f\",\"id\":\"bc4ed000-5d10-4598-9427-4e3b5331e658\",\"updated_at\":\"2023-05-15T16:26:55.000000Z\",\"created_at\":\"2023-05-15T16:26:55.000000Z\"}}",
                             "name": ""
                         }
                     ]
@@ -516,7 +516,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"skills\":[\"maxime\"]}"
+                            "raw": "{\"skills\":[\"officiis\"]}"
                         },
                         "description": ""
                     },
@@ -537,7 +537,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "55"
+                                    "value": "48"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -562,7 +562,7 @@
                                 {
                                     "id": "skill_id",
                                     "key": "skill_id",
-                                    "value": "itaque",
+                                    "value": "magnam",
                                     "description": "The ID of the skill."
                                 }
                             ]
@@ -605,7 +605,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"details\":\"ywiufqgvkzwukkmgitlftlatztyrdbmldguihdnpbdyfctpgtjtikcklcnocdworrczqynrughbehgmloym\"}"
+                            "raw": "{\"details\":\"vukihmpjzrdwdirkewjudfiwhwmtnytxdfvwlgmhqtlfijycckfpkzfx\"}"
                         },
                         "description": ""
                     },
@@ -626,7 +626,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "54"
+                                    "value": "47"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -635,6 +635,62 @@
                             ],
                             "code": 400,
                             "body": "{\"status\":false,\"status_code\":400,\"message\":\"Already created data please update your data, if you want any modification\",\"data\":[]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "create or update project",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/resume\/project",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/resume\/project"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"title\":\"ehyupixqnugjighubcw\",\"role\":\"cumjxuatg\",\"start_date\":\"2023-05-15\",\"end_date\":\"2023-05-15\",\"details\":\"tmhwaxqnxykvafvmuievxxkvxzvxgsxyoumgpiqirpbdxpugbigssripfjmaeurneawvzfenijvkfhamc\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "46"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 201,
+                            "body": "{\"status\":true,\"status_code\":200,\"message\":\"\",\"data\":{\"id\":\"c9088795-fbc0-4223-89be-9fe021647306\",\"title\":\"ehyupixqnugjighubcw\",\"role\":\"cumjxuatg\",\"start_date\":\"2023-05-15\",\"end_date\":\"2023-05-15\",\"details\":\"tmhwaxqnxykvafvmuievxxkvxzvxgsxyoumgpiqirpbdxpugbigssripfjmaeurneawvzfenijvkfhamc\"}}",
                             "name": ""
                         }
                     ]
