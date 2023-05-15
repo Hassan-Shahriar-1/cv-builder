@@ -41,7 +41,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5OTI4ODgxNi0xYmI1LTQwMDgtOTc0NC0xMGE4MDQ4NWRlNDQiLCJqdGkiOiI5NTRiMTE2ZjA5YmMzZTg3ZDA4MmY2ZDMyMjdkNWIxM2ZiMmUzNmU1NDEwOWJhMzQyMzVhY2MwMDM0NGE4YzNhNmVhOGQ5OGU3ZDQ4MTcyMyIsImlhdCI6MTY4NDE0ODczOC4wMzk0NTEsIm5iZiI6MTY4NDE0ODczOC4wMzk0NTgsImV4cCI6MTcxNTc3MTEzNy44MTEwMDEsInN1YiI6ImFjNDlmZmRjLTg1NjgtNDgxYy04NTg3LTVjYjNmODQ2YWY1ZiIsInNjb3BlcyI6W119.Q0jHUhuIQALckcLz9HG6nufezcKNuH9aPA9U1y95rYUzXjwBuJGpAvUUPayoN8D6fEDMzFkaOrrbjtruKZbj1DV-eg_xamzZPVkbIG-4GAbFTRlmYJOkrpTYo0-QZf8XGxkycRP8Q3EJXmdbtYkml6jqBHrKJ0gR4pouLlZrOF5fmK5_nAIjK0b2LoyRni6HKmGJINnP5eqp5RriiaxO8TKXnBFiCRl_XmmgN8131mWOiXY0-iefTS7TFnVi_6BOIRbzzdIhl1VnJOp6snw-6tMhxEcCPLxjjgaxXpSNLFLAtH9GFMVYwqgT7k64PTtfwsrgKcKlSeu5T8y8ch5_cOTJE3p0GRSvPErxOU0bKMZousnrirTC-wHD6uzKssgQri7t6x6LD6xQ-cau5IAhn8N2RqOvmWE8CpLRai-WjfsJse1Qzq6lVExMmC1HYHro1rR_oYAF6VEL-BkwLwxXB4TpKJ6Cb4gwqAbX0jC_339iNJdaBMvRW6sqjrkpZWvCgnA5eT2RU4cL2IeOHbFHlKrIbSTx1ePyvH436IfSrJQogFUFvBSd1thb1UFaCTeDD7G6YaucoSZeoS9fWbS9G9phlAXFqp5oPFgSVRT7G_4hwcLMv4Z5atbgCdJkp7AyfPLR9E9e2l_BqCCJWmlIgJ4x9p9XQAdW--HE0E4POwk'
+      - 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5OTJjYmNlOS1iNzcwLTQzYzItYTU4ZS0zMjZmNDExMjBjYmEiLCJqdGkiOiIyY2Q1ZmIwNzgwMDE4OTY3ZjE1YmYwYjk4MjBlY2Q4YWViMDQ4NzZhMTRmNGUyZThmZmZkMDE1ZmQ5ZTQ3YjUwZDBjZjI5NDJiNGJmNzI0NiIsImlhdCI6MTY4NDE3NDM1Ni45NzY4ODEsIm5iZiI6MTY4NDE3NDM1Ni45NzY4ODQsImV4cCI6MTcxNTc5Njc1Ni45MDM5NTcsInN1YiI6ImFjNDlmZmRjLTg1NjgtNDgxYy04NTg3LTVjYjNmODQ2YWY1ZiIsInNjb3BlcyI6W119.lkwFF50H_sjrbU3OCBVkQmeBuv-o-6_wZ37aNQS1-3zSpPXO4ie0rV3sGdWbT1K4m6UjZNb-nHysLIZLRe49KwOO_EZ2SYqQwdyP60CTYXwlBmpPwHheknmN1OicmW20Id6Zew-ZU_wz_i3lYw9z0dWamMftWOAVxiIiwTwsKEcedPlLxWJ8COO7RymvYhXFpDdIJxzDzp8PgIH1YoeDVUEa0euhHqHkdQ0es3UHsO70zMg7OgTQbeYEhFMsobhXLQs3TuHoEji54Vfj2DkLyVm0PCIf8k2h0y1A2j8Ed-mdR9uq7JYQCSsD-0k208SbFSjjJvXL7SE-c-V2jIfBqTaFUwOb7mdIibP_l-m5vStmYJ8yL_7jLeIYt_qaiytLWYTGsHhZtaOArN-zvzV5BNFqA4i1FojMTU9aXtpZUtRUtsReYh07RvLZt62tL8JRPKy2OHPkQjj4H0rJ9H4ARASOHUPs-66JgwxSmXd0CpvPbcWRgGtIzJgCYz3sKd9ZHI2ApLWvZtDn_lIjZkIP5YgjgZv1vwQN7h7C7eJKsHL1Loal8QR_cahYVoguPw4SJae-pL_lOY2LPiqFFHn5R6rUgDxqWZ4KyfNe-9PuTJUSFKJ6QbooovHKhW8AXNsoDLRk2tYZna7z8gns9VZbGHX864vFqg970czp__PZOfc'
     controller: null
     method: null
     route: null
@@ -72,14 +72,14 @@ endpoints:
         name: id
         description: ''
         required: true
-        example: ab
+        example: soluta
         type: string
         custom: []
       name:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: aemx
+        example: ldhchmxyceu
         type: string
         custom: []
       dob:
@@ -93,14 +93,14 @@ endpoints:
         name: phone
         description: 'Must be 11 characters.'
         required: false
-        example: fwngtymxyyp
+        example: ymickzqkwrj
         type: string
         custom: []
     cleanBodyParameters:
-      id: ab
-      name: aemx
+      id: soluta
+      name: ldhchmxyceu
       dob: '2023-05-15'
-      phone: fwngtymxyyp
+      phone: ymickzqkwrj
     fileParameters: []
     responses:
       -
@@ -118,7 +118,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5OTI4ODgxNi0xYmI1LTQwMDgtOTc0NC0xMGE4MDQ4NWRlNDQiLCJqdGkiOiI5NTRiMTE2ZjA5YmMzZTg3ZDA4MmY2ZDMyMjdkNWIxM2ZiMmUzNmU1NDEwOWJhMzQyMzVhY2MwMDM0NGE4YzNhNmVhOGQ5OGU3ZDQ4MTcyMyIsImlhdCI6MTY4NDE0ODczOC4wMzk0NTEsIm5iZiI6MTY4NDE0ODczOC4wMzk0NTgsImV4cCI6MTcxNTc3MTEzNy44MTEwMDEsInN1YiI6ImFjNDlmZmRjLTg1NjgtNDgxYy04NTg3LTVjYjNmODQ2YWY1ZiIsInNjb3BlcyI6W119.Q0jHUhuIQALckcLz9HG6nufezcKNuH9aPA9U1y95rYUzXjwBuJGpAvUUPayoN8D6fEDMzFkaOrrbjtruKZbj1DV-eg_xamzZPVkbIG-4GAbFTRlmYJOkrpTYo0-QZf8XGxkycRP8Q3EJXmdbtYkml6jqBHrKJ0gR4pouLlZrOF5fmK5_nAIjK0b2LoyRni6HKmGJINnP5eqp5RriiaxO8TKXnBFiCRl_XmmgN8131mWOiXY0-iefTS7TFnVi_6BOIRbzzdIhl1VnJOp6snw-6tMhxEcCPLxjjgaxXpSNLFLAtH9GFMVYwqgT7k64PTtfwsrgKcKlSeu5T8y8ch5_cOTJE3p0GRSvPErxOU0bKMZousnrirTC-wHD6uzKssgQri7t6x6LD6xQ-cau5IAhn8N2RqOvmWE8CpLRai-WjfsJse1Qzq6lVExMmC1HYHro1rR_oYAF6VEL-BkwLwxXB4TpKJ6Cb4gwqAbX0jC_339iNJdaBMvRW6sqjrkpZWvCgnA5eT2RU4cL2IeOHbFHlKrIbSTx1ePyvH436IfSrJQogFUFvBSd1thb1UFaCTeDD7G6YaucoSZeoS9fWbS9G9phlAXFqp5oPFgSVRT7G_4hwcLMv4Z5atbgCdJkp7AyfPLR9E9e2l_BqCCJWmlIgJ4x9p9XQAdW--HE0E4POwk'
+      - 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5OTJjYmNlOS1iNzcwLTQzYzItYTU4ZS0zMjZmNDExMjBjYmEiLCJqdGkiOiIyY2Q1ZmIwNzgwMDE4OTY3ZjE1YmYwYjk4MjBlY2Q4YWViMDQ4NzZhMTRmNGUyZThmZmZkMDE1ZmQ5ZTQ3YjUwZDBjZjI5NDJiNGJmNzI0NiIsImlhdCI6MTY4NDE3NDM1Ni45NzY4ODEsIm5iZiI6MTY4NDE3NDM1Ni45NzY4ODQsImV4cCI6MTcxNTc5Njc1Ni45MDM5NTcsInN1YiI6ImFjNDlmZmRjLTg1NjgtNDgxYy04NTg3LTVjYjNmODQ2YWY1ZiIsInNjb3BlcyI6W119.lkwFF50H_sjrbU3OCBVkQmeBuv-o-6_wZ37aNQS1-3zSpPXO4ie0rV3sGdWbT1K4m6UjZNb-nHysLIZLRe49KwOO_EZ2SYqQwdyP60CTYXwlBmpPwHheknmN1OicmW20Id6Zew-ZU_wz_i3lYw9z0dWamMftWOAVxiIiwTwsKEcedPlLxWJ8COO7RymvYhXFpDdIJxzDzp8PgIH1YoeDVUEa0euhHqHkdQ0es3UHsO70zMg7OgTQbeYEhFMsobhXLQs3TuHoEji54Vfj2DkLyVm0PCIf8k2h0y1A2j8Ed-mdR9uq7JYQCSsD-0k208SbFSjjJvXL7SE-c-V2jIfBqTaFUwOb7mdIibP_l-m5vStmYJ8yL_7jLeIYt_qaiytLWYTGsHhZtaOArN-zvzV5BNFqA4i1FojMTU9aXtpZUtRUtsReYh07RvLZt62tL8JRPKy2OHPkQjj4H0rJ9H4ARASOHUPs-66JgwxSmXd0CpvPbcWRgGtIzJgCYz3sKd9ZHI2ApLWvZtDn_lIjZkIP5YgjgZv1vwQN7h7C7eJKsHL1Loal8QR_cahYVoguPw4SJae-pL_lOY2LPiqFFHn5R6rUgDxqWZ4KyfNe-9PuTJUSFKJ6QbooovHKhW8AXNsoDLRk2tYZna7z8gns9VZbGHX864vFqg970czp__PZOfc'
     controller: null
     method: null
     route: null

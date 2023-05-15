@@ -19,7 +19,8 @@ class ExperienceRequest extends BaseRequest
             'job_title' => 'required|string|max:255',
             'location' => 'nullable|string|max:255',
             'start_date' => 'required|date_format:Y-m-d',
-            'active' =>'required|boolean',
+            'active' => 'required|boolean',
+            'responsibilities' => 'nullable|string',
             'end_date' => 'sometimes|nullable|date_format:Y-m-d|required_if:active,true',
         ];
     }
