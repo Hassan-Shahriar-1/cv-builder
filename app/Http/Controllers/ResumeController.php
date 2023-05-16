@@ -15,6 +15,7 @@ use App\Http\Resources\ObjectiveResource;
 use App\Http\Resources\ProjectResource;
 use App\Http\Resources\SkillResource;
 use App\Models\CareerObjective;
+use App\Models\Media;
 use App\Models\Project;
 use App\Models\Skill;
 use App\Models\WorkExperience;
@@ -44,6 +45,19 @@ class ResumeController extends Controller
         $data = $request->validated();
         try{
             $contactData = $this->resumeService->createOrUpdateContact($data);
+
+            //cv media image upload or update
+            if($request->has('image')) {
+                $storagePath = Media::uploadImage($request->file('image'), 'cv-image');
+                
+                if($contactData->media){
+                    
+                    Media::removeFile($contactData->media->photo, config('settings.media.disc'));
+                    $contactData->media->update(['photo' => $storagePath]);
+                }else{
+                    $contactData->media()->create(['photo' => $storagePath]);
+                }
+            }
             return ApiResponseHelper::otherResponse(true, 200, '', $contactData, 201);
         } catch (Exception $e) {
             return ApiResponseHelper::serverError($e);
@@ -202,4 +216,5 @@ class ResumeController extends Controller
             return ApiResponseHelper::serverError($e);
         }
     }
+
 }

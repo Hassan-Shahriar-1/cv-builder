@@ -24,7 +24,8 @@ class ContactRequest extends BaseRequest
             'linkedin_link' => 'sometimes|nullable|string|max:255',
             'facebook_link' => 'sometimes|nullable|string|max:255',
             'twitter_link' => 'sometimes|nullable|string|max:255',
-            'website' => 'sometimes|nullable|string|max:255'
+            'website' => 'sometimes|nullable|string|max:255',
+            'image' => 'nullable|image|max:2000',
             
         ];
     }
